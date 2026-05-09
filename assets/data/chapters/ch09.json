@@ -1,0 +1,239 @@
+{
+  "id": 9,
+  "title_de": "Rules",
+  "title_zh": "規則",
+  "topic_zh": "談規則、必須與允許、用 weil 解釋原因",
+  "grammar_focus": ["modal verbs müssen / dürfen", "subordinate clauses with weil"],
+  "sections": [
+    {
+      "type": "intro",
+      "title_zh": "本章你會學到",
+      "zh": "兩個跟『規則』有關的情態動詞：müssen（必須）和 dürfen（被允許）。再學德文最重要的子句連接詞 weil（因為），讓你能解釋『為什麼』 — 這是 A1 進入 A2 的分水嶺，因為 Nebensatz（子句）會把動詞丟到句尾，動詞位置改變了！"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Modalverb: dürfen",
+      "title_zh": "情態動詞：dürfen（被允許）",
+      "explanation_zh": "dürfen 表示『被允許做』。否定句 nicht dürfen ＝『不被允許』≈ 英文 mustn't。",
+      "tables": [
+        {
+          "headers": ["人稱", "dürfen"],
+          "rows": [
+            ["ich", "darf"],
+            ["du", "darfst"],
+            ["er / sie / es", "darf"],
+            ["wir", "dürfen"],
+            ["ihr", "dürft"],
+            ["sie / Sie", "dürfen"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Darf ich hier etwas essen?", "zh": "我可以在這吃東西嗎？" },
+        { "de": "Nein, hier dürfen Sie nicht essen.", "zh": "不行，這裡禁止飲食。" },
+        { "de": "Dürfen wir heute PS5 spielen? — Ja, ihr dürft 2 Stunden spielen.", "zh": "今天可以玩 PS5 嗎？— 可以玩兩小時。" }
+      ]
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Modalverb: müssen",
+      "title_zh": "情態動詞：müssen（必須）",
+      "explanation_zh": "müssen ＝『必須 / 不得不』。注意一個常見的『假朋友』陷阱：英文 must not ≠ 德文 muss nicht！否定的 müssen 是『不必』，禁止才是 darf nicht。",
+      "tables": [
+        {
+          "headers": ["人稱", "müssen"],
+          "rows": [
+            ["ich", "muss"],
+            ["du", "musst"],
+            ["er / sie / es", "muss"],
+            ["wir", "müssen"],
+            ["ihr", "müsst"],
+            ["sie / Sie", "müssen"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Ich muss um 7:30 Uhr aufstehen.", "zh": "我必須 7:30 起床。" },
+        { "de": "Musst du oft im Haushalt helfen?", "zh": "你常需要做家事嗎？" },
+        { "de": "Du musst nicht kommen.", "zh": "你『不必』來。（≠ 你不能來！）" },
+        { "de": "Du darfst nicht kommen.", "zh": "你『不能』來。（被禁止）" }
+      ],
+      "tips_zh": "規則告示牌常見字：verboten（禁止）、erlaubt（允許）。例如『Radfahren verboten』＝『禁止騎車』。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Nebensatz mit „weil\"",
+      "title_zh": "子句連接詞 weil（因為）",
+      "explanation_zh": "weil 是德文最常用的『因為』。重點：weil 之後是『子句（Nebensatz）』，**動詞會被踢到子句最後**！這跟主句『動詞放第二位』完全相反，是 A1 學員最常出錯的地方。",
+      "tables": [
+        {
+          "title": "主句 + weil 子句",
+          "headers": ["主句（結果）", ",", "weil + 主詞 + …", "動詞放最後"],
+          "rows": [
+            ["Sie hat Kopfschmerzen", ",", "weil Deutsch so kompliziert", "ist."],
+            ["Er ist zu Hause", ",", "weil er Hausaufgaben machen", "muss."],
+            ["Janosh ist reich", ",", "weil er im Lotto gewonnen", "hat."],
+            ["Karina ist sauer", ",", "weil ihr Sohn sein Zimmer nicht", "aufräumt."]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Er hat Kopfschmerzen, weil Deutsch so kompliziert ist.", "zh": "他頭痛，因為德文太複雜。" },
+        { "de": "Sie ist sehr nervös, weil sie morgen einen Test schreibt.", "zh": "她很緊張，因為明天有考試。" }
+      ],
+      "tips_zh": "可分動詞在子句裡會『合體』：er räumt auf → weil er aufräumt。情態動詞句：…machen muss（變位的 muss 在最後，原型 machen 在它前面）。"
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Regeln",
+      "title_zh": "規則相關",
+      "items": [
+        { "de": "die Regel", "plural": "-n", "zh": "規則" },
+        { "de": "verboten", "plural": "", "zh": "禁止的" },
+        { "de": "erlaubt", "plural": "", "zh": "允許的" },
+        { "de": "dürfen", "plural": "", "zh": "可以 / 被允許" },
+        { "de": "müssen", "plural": "", "zh": "必須" },
+        { "de": "an|machen", "plural": "", "zh": "打開（電器）" },
+        { "de": "aus|machen", "plural": "", "zh": "關掉（電器）" },
+        { "de": "baden", "plural": "", "zh": "游泳 / 泡澡" },
+        { "de": "betreten", "plural": "", "zh": "進入" },
+        { "de": "fotografieren", "plural": "", "zh": "拍照" },
+        { "de": "rauchen", "plural": "", "zh": "抽煙" },
+        { "de": "der Blitz", "plural": "-e", "zh": "閃光燈" },
+        { "de": "das Flugzeug", "plural": "-e", "zh": "飛機" },
+        { "de": "der Flug", "plural": "⸚e", "zh": "航班" },
+        { "de": "der Flugmodus", "plural": "-", "zh": "飛行模式" },
+        { "de": "der Hund", "plural": "-e", "zh": "狗" },
+        { "de": "der Gehweg", "plural": "-e", "zh": "人行道" },
+        { "de": "der Radweg", "plural": "-e", "zh": "自行車道" },
+        { "de": "das Fahrrad / das Rad", "plural": "⸚er", "zh": "腳踏車" },
+        { "de": "das Radfahren", "plural": "", "zh": "騎自行車（這個動作）" },
+        { "de": "überall", "plural": "", "zh": "到處" },
+        { "de": "gefährlich", "plural": "", "zh": "危險的" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Weitere wichtige Wörter",
+      "title_zh": "其他常用字",
+      "items": [
+        { "de": "der Nebensatz", "plural": "⸚e", "zh": "子句" },
+        { "de": "der Test", "plural": "-s", "zh": "考試 / 測驗" },
+        { "de": "das Lotto", "plural": "-", "zh": "樂透" },
+        { "de": "gewinnen", "plural": "", "zh": "贏" },
+        { "de": "kompliziert", "plural": "", "zh": "複雜的" },
+        { "de": "reich", "plural": "", "zh": "有錢的" },
+        { "de": "nervös", "plural": "", "zh": "緊張的" },
+        { "de": "sauer", "plural": "", "zh": "生氣的（口語）" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "規則對話",
+      "lines": [
+        { "speaker": "Q", "de": "Darf man im Museum überall fotografieren?", "zh": "博物館裡到處都能拍照嗎？" },
+        { "speaker": "A", "de": "Ja, Fotografieren ist erlaubt, aber nur ohne Blitz.", "zh": "可以，但不能用閃光燈。" },
+        { "speaker": "Q", "de": "Im Flugzeug ist Telefonieren verboten. Man muss sein Handy ausmachen.", "zh": "飛機上禁止打電話，要關手機。" },
+        { "speaker": "A", "de": "Ich weiß. Aber man kann auch den Flugmodus anmachen.", "zh": "我知道，也可以開飛航模式。" },
+        { "speaker": "Q", "de": "Ist Radfahren auf dem Gehweg in Deutschland erlaubt?", "zh": "德國允許在人行道上騎車嗎？" },
+        { "speaker": "A", "de": "Nein, das ist verboten. Man muss auf dem Radweg fahren.", "zh": "不行，要走自行車道。" },
+        { "speaker": "Q", "de": "Papa, das Meer ist so schön. Dürfen wir im Meer baden?", "zh": "爸，海好美！我們可以下水游泳嗎？" },
+        { "speaker": "A", "de": "Lieber nicht. Schwimmen ist hier verboten. Es ist zu gefährlich.", "zh": "別。這裡禁止游泳，太危險了。" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 1：4 個情態動詞變位",
+      "instruction_zh": "把 müssen / dürfen / können / wollen 的 6 個人稱變位都填完。",
+      "instruction_de": "Konjugieren Sie die Verben.",
+      "questions": [
+        {
+          "id": "ch9-ex1",
+          "type": "table-fill",
+          "headers": ["", "müssen", "dürfen", "können", "wollen"],
+          "rows": [
+            { "cells": [{ "text": "ich" }, { "input": true, "answer": "muss" }, { "input": true, "answer": "darf" }, { "input": true, "answer": "kann" }, { "input": true, "answer": "will" }] },
+            { "cells": [{ "text": "du" }, { "input": true, "answer": "musst" }, { "input": true, "answer": "darfst" }, { "input": true, "answer": "kannst" }, { "input": true, "answer": "willst" }] },
+            { "cells": [{ "text": "er/sie/es" }, { "input": true, "answer": "muss" }, { "input": true, "answer": "darf" }, { "input": true, "answer": "kann" }, { "input": true, "answer": "will" }] },
+            { "cells": [{ "text": "wir" }, { "input": true, "answer": "müssen" }, { "input": true, "answer": "dürfen" }, { "input": true, "answer": "können" }, { "input": true, "answer": "wollen" }] },
+            { "cells": [{ "text": "ihr" }, { "input": true, "answer": "müsst" }, { "input": true, "answer": "dürft" }, { "input": true, "answer": "könnt" }, { "input": true, "answer": "wollt" }] },
+            { "cells": [{ "text": "sie/Sie" }, { "input": true, "answer": "müssen" }, { "input": true, "answer": "dürfen" }, { "input": true, "answer": "können" }, { "input": true, "answer": "wollen" }] }
+          ],
+          "answer": [
+            "muss", "darf", "kann", "will",
+            "musst", "darfst", "kannst", "willst",
+            "muss", "darf", "kann", "will",
+            "müssen", "dürfen", "können", "wollen",
+            "müsst", "dürft", "könnt", "wollt",
+            "müssen", "dürfen", "können", "wollen"
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 2：müssen / dürfen / erlaubt / verboten",
+      "instruction_zh": "依語意填入正確的字。",
+      "instruction_de": "Müssen — dürfen — erlaubt — verboten.",
+      "questions": [
+        { "id": "ch9-ex2a", "label": "a)", "type": "multi-blank", "prompt_md": "Entschuldigung, ___ ich hier mein Handy benutzen? Oder ist das ___?", "answer": [["darf"], ["verboten"]], "hint_zh": "ich → darf；那是被禁止的嗎？" },
+        { "id": "ch9-ex2b", "label": "b)", "type": "fill-blank", "prompt_md": "Hier ___ man langsam fahren. Auf der Straße spielen oft Kinder.", "answer": ["muss"], "hint_zh": "規定要慢行 → muss" },
+        { "id": "ch9-ex2c", "label": "c)", "type": "multi-blank", "prompt_md": "In der Bibliothek ___ ihr nicht so laut reden. Ihr ___ leise sein.", "answer": [["dürft"], ["müsst"]], "hint_zh": "ihr 不被允許 → dürft；ihr 必須安靜 → müsst" },
+        { "id": "ch9-ex2d", "label": "d)", "type": "multi-blank", "prompt_md": "Sie ___ hier nicht Rad fahren. Das ist nicht ___.", "answer": [["dürfen"], ["erlaubt"]], "hint_zh": "Sie 不被允許 → dürfen + nicht；不是被允許的 → erlaubt" },
+        { "id": "ch9-ex2e", "label": "e)", "type": "fill-blank", "prompt_md": "___ du auch immer direkt nach der Schule deine Hausaufgaben machen?", "answer": ["Musst"], "hint_zh": "你也必須馬上做作業嗎？" },
+        { "id": "ch9-ex2f", "label": "f)", "type": "fill-blank", "prompt_md": "Wann ___ ihr am Wochenende abends zu Hause sein?", "answer": ["müsst"], "hint_zh": "ihr 必須 → müsst" },
+        { "id": "ch9-ex2g", "label": "g)", "type": "fill-blank", "prompt_md": "Morgen ist Montag. Ich ___ früh aufstehen und arbeiten.", "answer": ["muss"], "hint_zh": "我必須早起" },
+        { "id": "ch9-ex2h", "label": "h)", "type": "fill-blank", "prompt_md": "Wir ___ später noch einkaufen. (冰箱空了)", "answer": ["müssen"], "hint_zh": "wir 必須 → müssen" },
+        { "id": "ch9-ex2i", "label": "i)", "type": "fill-blank", "prompt_md": "Warum ist im Flugzeug Telefonieren nicht ___?", "answer": ["erlaubt"], "hint_zh": "為什麼不被允許？" },
+        { "id": "ch9-ex2j", "label": "j)", "type": "multi-blank", "prompt_md": "Im Restaurant ist Rauchen ___. Man ___ dort nicht rauchen.", "answer": [["verboten"], ["darf"]], "hint_zh": "禁止 → verboten；不被允許 → darf nicht" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 3：用 weil 合併句子",
+      "instruction_zh": "把兩個句子用 weil 連起來，注意 weil 子句的動詞要放最後。寫出整句。",
+      "instruction_de": "Verbinden Sie die Sätze mit „weil\".",
+      "questions": [
+        { "id": "ch9-ex3a", "label": "a)", "type": "fill-blank", "prompt_md": "Ich habe heute keine Zeit. — Ich muss bis 21 Uhr arbeiten.", "answer": ["Ich habe heute keine Zeit, weil ich bis 21 Uhr arbeiten muss."], "hint_zh": "情態動詞句子：…arbeiten muss（muss 放最後）" },
+        { "id": "ch9-ex3b", "label": "b)", "type": "fill-blank", "prompt_md": "Lorenz macht jeden Tag Sport. — Lorenz ist viel zu dick.", "answer": ["Lorenz macht jeden Tag Sport, weil er viel zu dick ist."], "hint_zh": "ist 放最後" },
+        { "id": "ch9-ex3c", "label": "c)", "type": "fill-blank", "prompt_md": "Milena ist beim Arzt. — Milena hat Rückenschmerzen.", "answer": ["Milena ist beim Arzt, weil sie Rückenschmerzen hat."], "hint_zh": "hat 放最後" },
+        { "id": "ch9-ex3d", "label": "d)", "type": "fill-blank", "prompt_md": "Carlos und seine Freundin sind traurig. — Carlos und seine Freundin hatten Streit.", "answer": ["Carlos und seine Freundin sind traurig, weil sie Streit hatten."], "hint_zh": "hatten 放最後（過去式）" },
+        { "id": "ch9-ex3e", "label": "e)", "type": "fill-blank", "prompt_md": "Seid ihr sauer? — Ich räume mein Zimmer nicht auf.", "answer": ["Seid ihr sauer, weil ich mein Zimmer nicht aufräume?"], "hint_zh": "可分動詞 aufräumen 在子句中合體 → aufräume" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 4：5 個連接詞 (und / aber / oder / denn / weil) 大綜合",
+      "instruction_zh": "閱讀整段，依語意填入合適的連接詞。",
+      "instruction_de": "Verbinden Sie die Sätze.",
+      "questions": [
+        { "id": "ch9-ex4a", "label": "a)", "type": "fill-blank", "prompt_md": "Letzte Woche habe ich mein Fahrrad verkauft, ___ ich es nicht brauche.", "answer": ["weil"], "hint_zh": "說明原因（注意：brauche 在後 → 子句結構）→ weil" },
+        { "id": "ch9-ex4b", "label": "b)", "type": "fill-blank", "prompt_md": "Sie war sehr glücklich, ___ ich habe ihr das Rad sehr billig verkauft.", "answer": ["denn"], "hint_zh": "後面 ich habe 是主句結構 → denn（不是 weil）" },
+        { "id": "ch9-ex4c", "label": "c)", "type": "fill-blank", "prompt_md": "Sie hat mir das Geld gegeben ___ ist mit dem Rad nach Hause gefahren.", "answer": ["und"], "hint_zh": "兩個動作並列 → und" },
+        { "id": "ch9-ex4d", "label": "d)", "type": "fill-blank", "prompt_md": "___ vorgestern hat sie mich angerufen, ___ sie ein Problem mit dem Fahrrad hatte.", "answer": [["Aber"], ["weil"]], "hint_zh": "事情轉折 → Aber；解釋原因（hatte 在後）→ weil" },
+        { "id": "ch9-ex4e", "label": "e)", "type": "fill-blank", "prompt_md": "Ich kann ihr das Geld zurückgeben ___ wir können das Licht zusammen reparieren.", "answer": ["oder"], "hint_zh": "兩個選項 → oder" },
+        { "id": "ch9-ex4f", "label": "f)", "type": "fill-blank", "prompt_md": "Wir wollen zusammen Sport machen ___ ins Kino gehen.", "answer": ["oder"], "hint_zh": "兩個選擇 → oder" },
+        { "id": "ch9-ex4g", "label": "g)", "type": "fill-blank", "prompt_md": "Sie fährt auch gern Rad, ___ ich habe kein Fahrrad mehr.", "answer": ["aber"], "hint_zh": "對比 → aber" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 5：自由作答",
+      "instruction_zh": "用 weil 寫 4 個句子，解釋為什麼你今天 / 這禮拜要做某事。例：『Ich gehe heute nicht ins Kino, weil ich ___.』",
+      "questions": [
+        { "id": "ch9-ex5", "type": "free", "prompt_md": "用 weil 寫 4 個解釋原因的句子。", "answer_zh": "範例：Ich kann heute nicht kommen, weil ich krank bin. Ich lerne Deutsch, weil ich nach Berlin fahren möchte. Mein Bruder ist sauer, weil ich sein Auto kaputt gemacht habe. Wir essen heute keine Pizza, weil wir gestern schon Pizza gegessen haben.", "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查 weil 子句的動詞位置。" }
+      ]
+    }
+  ]
+}

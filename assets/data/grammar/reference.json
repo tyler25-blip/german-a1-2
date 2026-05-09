@@ -1,0 +1,651 @@
+{
+  "title_zh": "A1.2 文法手冊",
+  "subtitle_zh": "11 個主題、可隨時來查",
+  "topics": [
+    {
+      "id": "dativ",
+      "title_de": "Dativ",
+      "title_zh": "與格",
+      "summary_zh": "與格用來標示『間接受詞』、『被某動詞 / 介係詞要求』的對象。最常見：給某人某物（dem Mann das Buch geben）、9 個位置介係詞、14 個 Dativ 動詞、人稱代名詞 mir / dir / ihm / ihr…。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "定冠詞 / 不定冠詞 在 Dativ 的形式",
+          "headers": ["", "陽 (m.)", "中 (n.)", "陰 (f.)", "複數 (Pl.)"],
+          "rows": [
+            ["Nominativ 主格", "der / ein", "das / ein", "die / eine", "die / —"],
+            ["Akkusativ 受格", "den / einen", "das / ein", "die / eine", "die / —"],
+            ["Dativ 與格", "dem / einem", "dem / einem", "der / einer", "den / —"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "物主 / 否定冠詞（mein- / kein-）的 Dativ 變化",
+          "headers": ["", "陽 + 中", "陰", "複數"],
+          "rows": [
+            ["mein-", "meinem", "meiner", "meinen"],
+            ["dein-", "deinem", "deiner", "deinen"],
+            ["sein- / ihr-", "seinem / ihrem", "seiner / ihrer", "seinen / ihren"],
+            ["kein-", "keinem", "keiner", "keinen"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "人稱代名詞 完整三格",
+          "headers": ["Nominativ", "Akkusativ", "Dativ"],
+          "rows": [
+            ["ich", "mich", "mir"],
+            ["du", "dich", "dir"],
+            ["er / es", "ihn / es", "ihm"],
+            ["sie", "sie", "ihr"],
+            ["wir", "uns", "uns"],
+            ["ihr", "euch", "euch"],
+            ["sie / Sie", "sie / Sie", "ihnen / Ihnen"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "9 個位置介係詞（Wo? → 接 Dativ）",
+          "headers": ["介係詞", "中文", "範例"],
+          "rows": [
+            ["auf", "在…上面（接觸）", "auf dem Tisch"],
+            ["unter", "在…下面", "unter dem Bett"],
+            ["über", "在…上方（不接觸）", "über dem Sofa"],
+            ["in", "在…裡面", "in der Küche"],
+            ["vor", "在…前面", "vor der Kirche"],
+            ["hinter", "在…後面", "hinter dem Haus"],
+            ["an", "在…旁／靠著", "an der Wand"],
+            ["neben", "在…隔壁", "neben dem Stuhl"],
+            ["zwischen", "在…之間", "zwischen den Pflanzen"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "14 個 A1 必背 Dativ 動詞",
+          "headers": ["動詞", "中文", "例句"],
+          "rows": [
+            ["antworten", "回答（某人）", "Ich antworte dir später."],
+            ["danken", "感謝", "Ich danke dir."],
+            ["gefallen", "讓人喜歡", "Das Haus gefällt mir."],
+            ["gehören", "屬於", "Das Auto gehört ihm."],
+            ["glauben", "相信（某人）", "Ich glaube dir nicht."],
+            ["gratulieren", "祝賀", "Wir gratulieren dir!"],
+            ["helfen", "幫忙", "Hilf mir bitte!"],
+            ["passen", "（衣物）合身", "Die Schuhe passen ihm nicht."],
+            ["schmecken", "（食物）合口味", "Die Pizza schmeckt mir."],
+            ["stehen", "（外觀）適合", "Der Bart steht ihm gut."],
+            ["weh|tun", "讓某人痛", "Mein Bein tut mir weh."],
+            ["zu|hören", "聆聽", "Hör mir bitte zu!"],
+            ["es geht …", "某人覺得…", "Mir geht es gut."],
+            ["folgen", "跟隨", "Folgen Sie mir!"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "重要：複數名詞在 Dativ 時，如果原本不是 -n 結尾要加 -n（die Kinder → den Kindern）。例外：以 -s 結尾不加（die Autos → den Autos）。"
+        },
+        {
+          "type": "tip",
+          "text": "縮寫：in + dem = im、an + dem = am、zu + dem = zum、zu + der = zur、von + dem = vom、bei + dem = beim。這些都是 Dativ 的縮寫，超常用。"
+        }
+      ],
+      "see_chapters": [1, 4, 5]
+    },
+
+    {
+      "id": "satzbau",
+      "title_de": "Satzbau — Hauptsatz / Nebensatz",
+      "title_zh": "句子結構：主句 / 子句",
+      "summary_zh": "德文句子規則：主句的『被變位的動詞』永遠在第二位（問句在第一位）。子句（Nebensatz）由連接詞引導，動詞被踢到最後。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "Hauptsatz（主句）— 動詞放第二位",
+          "headers": ["位置 1", "位置 2 (動詞)", "中段", "句尾"],
+          "rows": [
+            ["Er", "spielt", "morgen", "Fußball."],
+            ["Morgen", "spielt", "er", "Fußball."],
+            ["Er", "kann", "gut Fußball", "spielen."],
+            ["Wir", "haben", "gestern", "gegessen."]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "把時間 / 地點放第一位時，主詞要跑到動詞後面（位置 3）。動詞死守第二位。"
+        },
+        {
+          "type": "table",
+          "title": "Ja / Nein 問句 — 動詞放第一位",
+          "headers": ["位置 1 (動詞)", "位置 2 (主詞)", "其他"],
+          "rows": [
+            ["Spielst", "du", "Fußball?"],
+            ["Hast", "du", "Hunger?"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Hauptsatz 連接詞（不影響動詞位置）",
+          "headers": ["連接詞", "中文", "範例"],
+          "rows": [
+            ["und", "和", "Ich bin müde und ich gehe ins Bett."],
+            ["aber", "但是", "Ich mag Pizza, aber ich esse keine."],
+            ["oder", "或", "Wir gehen ins Kino oder wir bleiben zu Hause."],
+            ["denn", "因為（口語感）", "Ich lerne Deutsch, denn ich möchte in Berlin arbeiten."]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Nebensatz（子句）— 動詞放最後",
+          "headers": ["主句（結果）", ",", "連接詞", "主詞 + 中段", "動詞放最後"],
+          "rows": [
+            ["Sie ist nervös", ",", "weil", "sie morgen einen Test", "schreibt."],
+            ["Er ist zu Hause", ",", "weil", "er Hausaufgaben machen", "muss."],
+            ["Janosh ist reich", ",", "weil", "er im Lotto gewonnen", "hat."]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "可分動詞在子句裡會『合體』：er räumt auf → weil er aufräumt（單一動詞放最後）。情態動詞句的子句：本動詞原型 + 變位的情態動詞放最後（…machen muss）。"
+        },
+        {
+          "type": "table",
+          "title": "denn vs weil（兩個都是『因為』）",
+          "headers": ["特徵", "denn", "weil"],
+          "rows": [
+            ["後面句子結構", "主句結構（動詞第二位）", "子句結構（動詞放最後）"],
+            ["逗點", "前面要逗點", "前面要逗點"],
+            ["建議", "口語常用、容易", "正式 / 寫作首選"]
+          ]
+        }
+      ],
+      "see_chapters": [4, 9]
+    },
+
+    {
+      "id": "imperativ",
+      "title_de": "Imperativ",
+      "title_zh": "命令式（祈使句）",
+      "summary_zh": "三種命令式：① 對長輩 / 客戶用 Sie；② 對單一熟人用 du；③ 對複數熟人用 ihr。動詞都放第一位。加 bitte 變客氣、加 doch 變建議。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "三種命令式 — 規則彙整",
+          "headers": ["對誰", "規則", "範例：machen → ?"],
+          "rows": [
+            ["Sie", "Sie 的變位（=動詞原型） + Sie", "Machen Sie ...!"],
+            ["du", "du 變位 → 拿掉 -st 與 du", "Mach ...!"],
+            ["ihr", "ihr 變位（=動詞變位後一樣） → 拿掉 ihr", "Macht ...!"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "重要動詞的命令式",
+          "headers": ["原型", "Sie", "du", "ihr"],
+          "rows": [
+            ["machen", "Machen Sie!", "Mach!", "Macht!"],
+            ["nehmen", "Nehmen Sie!", "Nimm!", "Nehmt!"],
+            ["lesen", "Lesen Sie!", "Lies!", "Lest!"],
+            ["geben", "Geben Sie!", "Gib!", "Gebt!"],
+            ["sprechen", "Sprechen Sie!", "Sprich!", "Sprecht!"],
+            ["essen", "Essen Sie!", "Iss!", "Esst!"],
+            ["schlafen", "Schlafen Sie!", "Schlaf!", "Schlaft!"],
+            ["fahren", "Fahren Sie!", "Fahr!", "Fahrt!"],
+            ["sein", "Seien Sie!", "Sei!", "Seid!"],
+            ["haben", "Haben Sie!", "Hab!", "Habt!"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "強動詞（e → i / ie 換音）的 du 命令式跟著 du 變位走：du sprichst → Sprich! du nimmst → Nimm! 但 a → ä 不適用：du fährst → Fahr!（去 Umlaut）。"
+        },
+        {
+          "type": "tip",
+          "text": "加 bitte 變客氣：Mach bitte deine Hausaufgaben!；加 doch 變『不如…吧』的建議：Trinken Sie doch einen Tee.（不如喝杯茶吧。）"
+        }
+      ],
+      "see_chapters": [6, 8]
+    },
+
+    {
+      "id": "modalverben",
+      "title_de": "Modalverben",
+      "title_zh": "情態動詞",
+      "summary_zh": "A1 常見的情態動詞：können（會 / 能）、wollen（想要）、möchten（想要，禮貌版）、sollen（被交代）、müssen（必須）、dürfen（被允許）。共通規則：情態動詞變位放第二位，主要動詞用原型放句尾。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "6 個情態動詞變位",
+          "headers": ["", "können", "wollen", "möchten", "sollen", "müssen", "dürfen"],
+          "rows": [
+            ["ich", "kann", "will", "möchte", "soll", "muss", "darf"],
+            ["du", "kannst", "willst", "möchtest", "sollst", "musst", "darfst"],
+            ["er/sie/es", "kann", "will", "möchte", "soll", "muss", "darf"],
+            ["wir", "können", "wollen", "möchten", "sollen", "müssen", "dürfen"],
+            ["ihr", "könnt", "wollt", "möchtet", "sollt", "müsst", "dürft"],
+            ["sie/Sie", "können", "wollen", "möchten", "sollen", "müssen", "dürfen"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "意思與用法對比",
+          "headers": ["動詞", "中文", "場景"],
+          "rows": [
+            ["können", "會 / 能", "Ich kann Deutsch sprechen."],
+            ["wollen", "想要（直接）", "Ich will reich werden."],
+            ["möchten", "想要（禮貌）", "Ich möchte einen Kaffee, bitte."],
+            ["sollen", "被交代要…", "Der Arzt hat gesagt, ich soll viel Wasser trinken."],
+            ["müssen", "必須", "Ich muss morgen früh aufstehen."],
+            ["dürfen", "被允許", "Darf ich rein kommen?"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "陷阱：英文 must not = 德文 darf nicht（被禁止），不是 muss nicht！muss nicht = 不必。例：Du musst nicht kommen.（你不必來）≠ Du darfst nicht kommen.（你不能來）。"
+        },
+        {
+          "type": "tip",
+          "text": "wollen 在德國人耳裡很直接，不適合餐廳點餐。請用 möchten。例：『Ich möchte ein Bier, bitte.』比 『Ich will ein Bier』禮貌得多。"
+        }
+      ],
+      "see_chapters": [5, 6, 9]
+    },
+
+    {
+      "id": "possessivartikel",
+      "title_de": "Possessivartikel",
+      "title_zh": "物主冠詞",
+      "summary_zh": "依擁有者代換字根（mein / dein / sein / ihr / unser / euer / ihr-Ihr），詞尾跟著被擁有的名詞之『性 + 格』走 — 規則跟 ein-/kein- 完全一樣。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "字根對照（依擁有者）",
+          "headers": ["擁有者", "字根", "中文"],
+          "rows": [
+            ["ich", "mein-", "我的"],
+            ["du", "dein-", "你的"],
+            ["er / es", "sein-", "他的 / 它的"],
+            ["sie 她", "ihr-", "她的"],
+            ["wir", "unser-", "我們的"],
+            ["ihr 你們", "euer-", "你們的"],
+            ["sie 他們", "ihr-", "他們的"],
+            ["Sie 您", "Ihr-", "您的"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "詞尾變化（用 mein- 為例）",
+          "headers": ["", "陽 (m.)", "中 (n.)", "陰 (f.)", "複數"],
+          "rows": [
+            ["Nominativ", "mein", "mein", "meine", "meine"],
+            ["Akkusativ", "meinen", "mein", "meine", "meine"],
+            ["Dativ", "meinem", "meinem", "meiner", "meinen"]
+          ]
+        },
+        {
+          "type": "examples",
+          "title": "sein- 範例（依後面名詞變化）",
+          "items": [
+            { "de": "Sein Rucksack ist neu.", "zh": "他的背包是新的。（陽 Nom）" },
+            { "de": "Er hat seinen Rucksack gekauft.", "zh": "他買了他的背包。（陽 Akk → -en）" },
+            { "de": "Er hilft seinem Opa.", "zh": "他幫他爺爺。（陽 Dat → -em）" },
+            { "de": "Seine Mütze ist braun.", "zh": "他的毛帽是棕色的。（陰 Nom = Akk）" },
+            { "de": "Er hilft seiner Oma.", "zh": "他幫他奶奶。（陰 Dat → -er）" },
+            { "de": "Seine Zähne sind weiß.", "zh": "他的牙齒是白的。（複數）" }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "口訣：物主冠詞變化規則 = ein/kein 的規則。記得 ein/kein 怎麼變，所有物主冠詞都會變了。"
+        }
+      ],
+      "see_chapters": [2, 4]
+    },
+
+    {
+      "id": "komparativ",
+      "title_de": "Komparativ & Superlativ",
+      "title_zh": "比較級與最高級",
+      "summary_zh": "規則：原型 → 加 -er（比較級） → am ___ -sten（最高級）。比較用 als；同等用 (genau)so + 形容詞 + wie。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "規則變化",
+          "headers": ["原型", "Komparativ", "Superlativ"],
+          "rows": [
+            ["billig", "billiger", "am billigsten"],
+            ["schön", "schöner", "am schönsten"],
+            ["klein", "kleiner", "am kleinsten"],
+            ["schnell", "schneller", "am schnellsten"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Umlaut 規則：單音節 a/o/u 加 ä/ö/ü",
+          "headers": ["原型", "Komparativ", "Superlativ"],
+          "rows": [
+            ["alt", "älter", "am ältesten"],
+            ["jung", "jünger", "am jüngsten"],
+            ["lang", "länger", "am längsten"],
+            ["kurz", "kürzer", "am kürzesten"],
+            ["groß", "größer", "am größten"],
+            ["warm", "wärmer", "am wärmsten"],
+            ["kalt", "kälter", "am kältesten"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "以 d / s / t / z / ß 結尾 → 最高級加 -esten",
+          "headers": ["原型", "Komparativ", "Superlativ"],
+          "rows": [
+            ["leicht", "leichter", "am leichtesten"],
+            ["nett", "netter", "am nettesten"],
+            ["alt", "älter", "am ältesten"],
+            ["heiß", "heißer", "am heißesten"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "不規則（必背！）",
+          "headers": ["原型", "Komparativ", "Superlativ", "中文"],
+          "rows": [
+            ["gern", "lieber", "am liebsten", "喜歡 → 更愛 → 最愛"],
+            ["gut", "besser", "am besten", "好 → 更好 → 最好"],
+            ["viel", "mehr", "am meisten", "多 → 更多 → 最多"],
+            ["hoch", "höher", "am höchsten", "高 → 更高 → 最高"],
+            ["nah", "näher", "am nächsten", "近 → 更近 → 最近"]
+          ]
+        },
+        {
+          "type": "examples",
+          "title": "比較句型",
+          "items": [
+            { "de": "Die Jacke ist billiger als der Mantel.", "zh": "夾克比大衣便宜。" },
+            { "de": "Der Pullover ist am billigsten.", "zh": "毛衣最便宜。" },
+            { "de": "Der Schal ist genauso teuer wie die Handschuhe.", "zh": "圍巾跟手套一樣貴。" },
+            { "de": "Tim trägt lieber Jogginghosen als Jeans.", "zh": "Tim 喜歡穿運動褲勝於牛仔褲。" }
+          ]
+        }
+      ],
+      "see_chapters": [10]
+    },
+
+    {
+      "id": "praeteritum",
+      "title_de": "Präteritum",
+      "title_zh": "簡單過去式",
+      "summary_zh": "A1 階段只要會兩個簡單過去式：haben（有）→ hatte，sein（是）→ war。其他動詞講過去事件用 Perfekt（haben/sein + 過去分詞）。Präteritum 主要寫作用，但 haben/sein 連口語都常用。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "haben 簡單過去：hatte",
+          "headers": ["人稱", "Präteritum"],
+          "rows": [
+            ["ich", "hatte"],
+            ["du", "hattest"],
+            ["er / sie / es", "hatte"],
+            ["wir", "hatten"],
+            ["ihr", "hattet"],
+            ["sie / Sie", "hatten"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "sein 簡單過去：war",
+          "headers": ["人稱", "Präteritum"],
+          "rows": [
+            ["ich", "war"],
+            ["du", "warst"],
+            ["er / sie / es", "war"],
+            ["wir", "waren"],
+            ["ihr", "wart"],
+            ["sie / Sie", "waren"]
+          ]
+        },
+        {
+          "type": "examples",
+          "title": "範例",
+          "items": [
+            { "de": "Ich war gestern müde.", "zh": "我昨天很累。" },
+            { "de": "Wir hatten kein Geld.", "zh": "我們沒錢。" },
+            { "de": "Letztes Jahr war ich in Berlin.", "zh": "去年我在柏林。" },
+            { "de": "Hattest du heute Deutschkurs?", "zh": "你今天有德文課嗎？" }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "其他動詞講過去用 Perfekt（haben / sein + Partizip II）。例：『Ich habe Pizza gegessen.』『Ich bin nach Berlin gefahren.』"
+        }
+      ],
+      "see_chapters": [7]
+    },
+
+    {
+      "id": "daten",
+      "title_de": "Daten & Richtungen",
+      "title_zh": "日期與方向",
+      "summary_zh": "日期：序數 + 月份。問路 / 指路：geradeaus、links、rechts、an … vorbei、abbiegen。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "序數規則",
+          "headers": ["範圍", "Nominativ", "Dativ"],
+          "rows": [
+            ["1. – 19.", "+ -te", "+ -ten"],
+            ["20. 起", "+ -ste", "+ -sten"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "1. – 10. 序數（含不規則）",
+          "headers": ["數字", "Nominativ", "Dativ"],
+          "rows": [
+            ["1.", "erste", "ersten"],
+            ["2.", "zweite", "zweiten"],
+            ["3.", "dritte", "dritten"],
+            ["4.", "vierte", "vierten"],
+            ["5.", "fünfte", "fünften"],
+            ["6.", "sechste", "sechsten"],
+            ["7.", "siebte", "siebten"],
+            ["8.", "achte", "achten"],
+            ["9.", "neunte", "neunten"],
+            ["10.", "zehnte", "zehnten"]
+          ]
+        },
+        {
+          "type": "examples",
+          "title": "日期範例",
+          "items": [
+            { "de": "Heute ist der 12. Januar.", "zh": "今天是 1 月 12 日。（Nominativ → der + -te）" },
+            { "de": "Ich habe am 9. September Geburtstag.", "zh": "我 9 月 9 日生日。（am + Dativ → -ten）" },
+            { "de": "Wir sind vom 1. bis zum 15. August in Urlaub.", "zh": "我們 8 月 1 日到 15 日度假。" }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "問路 / 指路常用詞",
+          "headers": ["德文", "中文"],
+          "rows": [
+            ["geradeaus", "直走"],
+            ["(nach) links", "向左"],
+            ["(nach) rechts", "向右"],
+            ["an … vorbei", "經過…"],
+            ["ab|biegen", "轉彎（可分動詞）"],
+            ["zuerst", "首先"],
+            ["dann", "然後"],
+            ["danach", "之後"],
+            ["in der Nähe", "附近"],
+            ["Wie komme ich zum / zur …?", "我怎麼去…？"],
+            ["Kennen Sie den Weg zum / zur …?", "您知道去…的路嗎？"]
+          ]
+        }
+      ],
+      "see_chapters": [1, 5]
+    },
+
+    {
+      "id": "spezial",
+      "title_de": "Spezialthemen",
+      "title_zh": "特別主題",
+      "summary_zh": "兩個 A1 後段的特殊文法：① 不加 ge- 的過去分詞；② 同時帶兩個受詞（Dat + Akk）的動詞。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "① 不加 ge- 的過去分詞",
+          "headers": ["條件", "範例"],
+          "rows": [
+            ["前綴 be-", "besuchen → besucht"],
+            ["前綴 er-", "erklären → erklärt"],
+            ["前綴 emp-", "empfehlen → empfohlen"],
+            ["前綴 ge-", "gefallen → gefallen"],
+            ["前綴 ver-", "verkaufen → verkauft"],
+            ["以 -ieren 結尾", "studieren → studiert"],
+            ["以 -ieren 結尾", "fotografieren → fotografiert"],
+            ["以 -ieren 結尾", "passieren → passiert"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "② 雙受詞動詞（Dat + Akk）— 詞序 Dat 在前",
+          "headers": ["動詞", "中文", "範例"],
+          "rows": [
+            ["geben", "給", "Ich gebe dir den Stift."],
+            ["schenken", "贈送", "Sie schenkt ihm ein Buch."],
+            ["bringen", "拿來", "Bring mir bitte einen Kaffee."],
+            ["zeigen", "展示給某人看", "Er zeigt mir sein Foto."],
+            ["erklären", "向某人解釋", "Der Lehrer erklärt uns die Grammatik."],
+            ["empfehlen", "推薦給某人", "Empfiehlst du mir den Film?"],
+            ["leihen", "借（給）", "Kannst du mir 10 Euro leihen?"],
+            ["schicken", "寄", "Ich schicke dir eine E-Mail."],
+            ["schreiben", "寫信給某人", "Sie schreibt ihrer Mutter einen Brief."],
+            ["kaufen", "為某人買", "Er kauft seiner Frau Blumen."]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "雙受詞口訣：『誰』（人）放 Dativ，『什麼』（物）放 Akkusativ。順序：Dat 通常在 Akk 之前。"
+        }
+      ],
+      "see_chapters": [7]
+    },
+
+    {
+      "id": "tipps",
+      "title_de": "Tipps & Tricks",
+      "title_zh": "易混淆的字",
+      "summary_zh": "A1 學員最常搞錯的幾組字：wie vs als、nach vs zu、kennen vs wissen、mögen vs gern vs möchten。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "wie vs als",
+          "headers": ["", "wie", "als"],
+          "rows": [
+            ["用法", "比較『相同』", "比較『有差別』"],
+            ["搭配", "(genau)so + Adj + wie", "Komparativ + als"],
+            ["範例", "Er ist so groß wie ich.", "Er ist größer als ich."],
+            ["中文", "和我一樣高", "比我高"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "nach vs zu（兩個都可譯成『去』）",
+          "headers": ["", "nach", "zu"],
+          "rows": [
+            ["接國家 / 城市（無冠詞）", "✓", "✗"],
+            ["接人名 / 機構 / 含冠詞地方", "✗", "✓"],
+            ["範例", "nach Berlin / nach Deutschland / nach Hause", "zum Bahnhof / zur Bank / zu Maria"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "kennen vs wissen（兩個都可譯成『知道』）",
+          "headers": ["", "kennen", "wissen"],
+          "rows": [
+            ["用法", "認識 / 熟悉（人 / 地方 / 東西）", "知道（事實 / 資訊）"],
+            ["接受詞", "名詞", "子句（dass / wann / ob / wer …）"],
+            ["範例", "Ich kenne ihn.", "Ich weiß, wo er wohnt."],
+            ["", "Kennst du Berlin?", "Weißt du das?"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "mögen / gern / möchten",
+          "headers": ["", "mögen", "gern", "möchten"],
+          "rows": [
+            ["詞性", "動詞（現在式）", "副詞", "情態動詞"],
+            ["意思", "喜歡（一般）", "樂意做某事", "想要（禮貌）"],
+            ["範例", "Ich mag Pizza.", "Ich esse gern Pizza.", "Ich möchte eine Pizza."]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "點餐 / 買東西絕對用 möchten 而不是 wollen — 後者太直接。"
+        }
+      ],
+      "see_chapters": [4, 5, 7]
+    },
+
+    {
+      "id": "vokabular",
+      "title_de": "Wichtiges Vokabular",
+      "title_zh": "重要單字總整理",
+      "summary_zh": "A1 級別必背的不規則動詞與所有介係詞。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "A1 不規則動詞",
+          "headers": ["原型", "Präsens 3.Sg", "Partizip II", "助動詞", "中文"],
+          "rows": [
+            ["sein", "ist", "gewesen", "sein", "是"],
+            ["haben", "hat", "gehabt", "haben", "有"],
+            ["werden", "wird", "geworden", "sein", "變成"],
+            ["geben", "gibt", "gegeben", "haben", "給"],
+            ["nehmen", "nimmt", "genommen", "haben", "拿"],
+            ["sprechen", "spricht", "gesprochen", "haben", "說"],
+            ["essen", "isst", "gegessen", "haben", "吃"],
+            ["lesen", "liest", "gelesen", "haben", "讀"],
+            ["sehen", "sieht", "gesehen", "haben", "看見"],
+            ["fahren", "fährt", "gefahren", "sein", "駕駛 / 搭乘"],
+            ["fliegen", "fliegt", "geflogen", "sein", "飛"],
+            ["gehen", "geht", "gegangen", "sein", "去"],
+            ["kommen", "kommt", "gekommen", "sein", "來"],
+            ["bleiben", "bleibt", "geblieben", "sein", "留下"],
+            ["schlafen", "schläft", "geschlafen", "haben", "睡"],
+            ["waschen", "wäscht", "gewaschen", "haben", "洗"],
+            ["tragen", "trägt", "getragen", "haben", "穿戴 / 帶"],
+            ["helfen", "hilft", "geholfen", "haben", "幫忙"],
+            ["finden", "findet", "gefunden", "haben", "覺得 / 找到"],
+            ["trinken", "trinkt", "getrunken", "haben", "喝"],
+            ["schreiben", "schreibt", "geschrieben", "haben", "寫"],
+            ["lügen", "lügt", "gelogen", "haben", "說謊"],
+            ["gewinnen", "gewinnt", "gewonnen", "haben", "贏"],
+            ["empfehlen", "empfiehlt", "empfohlen", "haben", "推薦"],
+            ["vergessen", "vergisst", "vergessen", "haben", "忘記"],
+            ["verstehen", "versteht", "verstanden", "haben", "了解"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "A1 介係詞 + 格位",
+          "headers": ["介係詞", "格位", "中文"],
+          "rows": [
+            ["aus", "Dativ", "從…來 / 出"],
+            ["bei", "Dativ", "在…那兒"],
+            ["mit", "Dativ", "和 / 用 / 帶"],
+            ["nach", "Dativ", "去（國家 / 城市 / Hause）"],
+            ["seit", "Dativ", "自從"],
+            ["von", "Dativ", "從 / …的"],
+            ["zu", "Dativ", "去（人 / 機構）"],
+            ["gegenüber", "Dativ", "對面"],
+            ["für", "Akkusativ", "為了 / 持續"],
+            ["ohne", "Akkusativ", "沒有"],
+            ["gegen", "Akkusativ", "對抗 / 對付"],
+            ["um", "Akkusativ", "在…點鐘 / 圍繞"],
+            ["durch", "Akkusativ", "穿過"],
+            ["in / an / auf …", "Wo? Dativ / Wohin? Akk", "9 個位置介係詞"]
+          ]
+        }
+      ],
+      "see_chapters": [1, 3, 5, 7]
+    }
+  ]
+}

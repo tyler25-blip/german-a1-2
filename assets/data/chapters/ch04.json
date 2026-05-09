@@ -1,0 +1,456 @@
+{
+  "id": 4,
+  "title_de": "Likes & dislikes",
+  "title_zh": "喜歡與不喜歡",
+  "topic_zh": "用 Dativ 動詞表達感受、認識主句連接詞 und/aber/oder/denn",
+  "grammar_focus": ["Dativ pronouns (mir, dir, ihm, ihr)", "Dativ verbs", "main clause + conjunctions"],
+  "sections": [
+    {
+      "type": "intro",
+      "title_zh": "本章你會學到",
+      "zh": "說『我喜歡 / 不喜歡 …』時，德文用『Dativ 動詞』，主詞跟受詞會跟中文反過來：『這菜對我（mir）很合口味』= Das Essen schmeckt mir。再學完整的 Dativ 人稱代名詞、4 個主句連接詞（und / aber / oder / denn）。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Personalpronomen Dativ (Singular)",
+      "title_zh": "人稱代名詞：Dativ（單數）",
+      "explanation_zh": "Dativ 形式可看成『對某人 / 給某人』。",
+      "tables": [
+        {
+          "title": "單數人稱代名詞變化",
+          "headers": ["Nominativ 主格", "Akkusativ 受格", "Dativ 與格"],
+          "rows": [
+            ["ich 我", "mich", "mir"],
+            ["du 你", "dich", "dir"],
+            ["er 他 / es 它", "ihn / es", "ihm"],
+            ["sie 她", "sie", "ihr"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Kannst du mir bitte helfen? — Ja, natürlich helfe ich dir.", "zh": "你可以幫我嗎？— 當然，我幫你。" },
+        { "de": "Telefonierst du oft mit dem Chef? — Ja, ich telefoniere oft mit ihm.", "zh": "你常跟老闆通電話嗎？— 對，我常跟他講。" },
+        { "de": "Spielst du gern Tennis mit Monika? — Ja, mit ihr.", "zh": "你喜歡跟 Monika 打網球嗎？— 對，跟她打。" }
+      ],
+      "tips_zh": "口訣：mir / dir / ihm / ihr — 都以 -r 結尾（除了 ihm）。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Verben mit Dativ",
+      "title_zh": "Dativ 動詞（必接與格）",
+      "explanation_zh": "德文絕大多數動詞接 Akkusativ；只有少部分『感受 / 給予 / 屬於』類的動詞會強制接 Dativ。A1 階段就把這 14 個記下來。",
+      "tables": [
+        {
+          "title": "A1 必背 Dativ 動詞",
+          "headers": ["動詞", "中文", "範例"],
+          "rows": [
+            ["helfen", "幫忙", "Er hilft der Frau."],
+            ["gehören", "屬於", "Gehört der Laden dir?"],
+            ["gefallen", "讓人喜歡", "Das Kaufhaus gefällt mir."],
+            ["schmecken", "（食物）合口味", "Der Döner schmeckt dem Gast."],
+            ["antworten", "回答（某人）", "Ich antworte dir morgen."],
+            ["danken", "感謝", "Ich danke dir."],
+            ["glauben", "相信（某人）", "Ich glaube ihm nicht."],
+            ["gratulieren", "祝賀", "Wir gratulieren dir!"],
+            ["weh|tun", "（部位）痛", "Mein Kopf tut mir weh."],
+            ["zu|hören", "聆聽", "Hör mir bitte zu!"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Das Kaufhaus gefällt mir.", "zh": "我喜歡這家百貨。（直譯：百貨『讓我喜歡』）" },
+        { "de": "Der Döner schmeckt dem Gast.", "zh": "客人覺得 Döner 好吃。" },
+        { "de": "Mir geht es gut. / Wie geht es dir?", "zh": "我很好。／你好嗎？（geht es 也是 Dativ）" }
+      ],
+      "tips_zh": "重要：gefallen / schmecken 主受詞會跟中文反過來 — 主詞是『被喜歡的東西』，喜歡的人放 Dativ。所以動詞通常用第三人稱單／複變位。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Hauptsatz: Verb auf Position 2",
+      "title_zh": "主句結構：動詞放第二位",
+      "explanation_zh": "德文陳述句最重要規則：被變位的動詞永遠放在『第二格位』。第一格位可以是主詞、時間副詞、地點副詞…等等。第二動詞（原型 / 過去分詞）放句尾。",
+      "tables": [
+        {
+          "headers": ["位置 1", "位置 2 (動詞)", "中段", "句尾"],
+          "rows": [
+            ["Er", "spielt", "morgen", "Fußball."],
+            ["Morgen", "spielt", "er", "Fußball."],
+            ["Er", "kann", "gut Fußball", "spielen."]
+          ]
+        }
+      ],
+      "tips_zh": "注意第二行：把『Morgen』放第一位後，主詞 er 就要跑到動詞後面。動詞絕對是第二位。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "und / aber / oder / denn",
+      "title_zh": "主句連接詞：四大金剛",
+      "explanation_zh": "這 4 個連接詞放在『第二句的第 0 位』（不算位置），所以後面的句子結構不變 — 還是『主詞 + 動詞…』。",
+      "tables": [
+        {
+          "headers": ["連接詞", "中文", "範例"],
+          "rows": [
+            ["und", "和、而且", "Ich bin in Berlin und [ich] besuche viele Museen."],
+            ["aber", "但是", "Ich mag Deutsch, aber die Grammatik ist kompliziert."],
+            ["oder", "或者", "Morgen lese ich ein Buch oder [ich] spiele Computer."],
+            ["denn", "因為", "Ich lerne Deutsch, denn ich möchte in Deutschland arbeiten."]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Ich mag Deutsch, aber die Grammatik ist kompliziert.", "zh": "我喜歡德文，但文法很複雜。" },
+        { "de": "Ich lerne Deutsch, denn ich möchte in Deutschland arbeiten.", "zh": "我學德文，因為我想在德國工作。" }
+      ],
+      "tips_zh": "denn 與 weil 都是『因為』。但 weil 是子句連接詞（動詞會被丟到句尾），下一章會學。denn 比較簡單，後面句子結構照舊。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Possessivartikel: alle Singular-Personen",
+      "title_zh": "物主冠詞完整版（mein/dein/sein/ihr）",
+      "explanation_zh": "把 mein-/dein-/sein-/ihr- 三大格位一次看完。詞尾跟著後面名詞的『性 + 格』走。",
+      "tables": [
+        {
+          "title": "Nominativ / Akkusativ / Dativ",
+          "headers": ["", "陽 Nom", "陰/複 Nom", "陽 Akk", "陽/中 Dat", "陰 Dat", "複 Dat"],
+          "rows": [
+            ["mein-", "mein", "meine", "meinen", "meinem", "meiner", "meinen"],
+            ["dein-", "dein", "deine", "deinen", "deinem", "deiner", "deinen"],
+            ["sein-", "sein", "seine", "seinen", "seinem", "seiner", "seinen"],
+            ["ihr-", "ihr", "ihre", "ihren", "ihrem", "ihrer", "ihren"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Ist das dein Computer? — Ja, das ist mein Computer.", "zh": "這是你的電腦嗎？— 是的，是我的。" },
+        { "de": "Kennst du seinen Vater? — Nein, ich kenne nur seine Großeltern.", "zh": "你認識他爸嗎？— 不，我只認識他爺奶。" },
+        { "de": "Isst Lisa in ihrer Küche? — Nein, sie isst in ihrem Wohnzimmer.", "zh": "Lisa 在她廚房吃嗎？— 不，她在她客廳吃。" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Wichtige Nomen",
+      "title_zh": "本章名詞",
+      "items": [
+        { "de": "die Band", "plural": "-s", "zh": "樂團" },
+        { "de": "die Blume", "plural": "-n", "zh": "花" },
+        { "de": "das Geschäft", "plural": "-e", "zh": "商店" },
+        { "de": "der Laden", "plural": "⸚", "zh": "店面" },
+        { "de": "das Kaufhaus", "plural": "⸚er", "zh": "百貨公司" },
+        { "de": "das Museum", "plural": "Museen", "zh": "博物館" },
+        { "de": "das Gespräch", "plural": "-e", "zh": "對話" },
+        { "de": "die Hilfe", "plural": "-", "zh": "幫忙" },
+        { "de": "der Gast", "plural": "⸚e", "zh": "客人" },
+        { "de": "der Mitschüler", "plural": "-", "zh": "同學" },
+        { "de": "die Pizza", "plural": "-s", "zh": "披薩" },
+        { "de": "der Döner", "plural": "-", "zh": "土耳其捲餅 (Döner Kebab)" },
+        { "de": "die Currywurst", "plural": "⸚e", "zh": "咖哩香腸（柏林名菜）" },
+        { "de": "das Wiener Schnitzel", "plural": "-", "zh": "維也納炸肉排" },
+        { "de": "die Serie", "plural": "-n", "zh": "影集" },
+        { "de": "der Hauptsatz", "plural": "⸚e", "zh": "主句" },
+        { "de": "die Konjunktion", "plural": "-en", "zh": "連接詞" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Weitere wichtige Wörter",
+      "title_zh": "其他常用字",
+      "items": [
+        { "de": "echt", "plural": "", "zh": "真的（口語感嘆）" },
+        { "de": "lecker", "plural": "", "zh": "好吃" },
+        { "de": "gesund", "plural": "", "zh": "健康的" },
+        { "de": "nett", "plural": "", "zh": "親切的 / 善良的" },
+        { "de": "Wie geht es dir?", "plural": "", "zh": "你好嗎？" },
+        { "de": "Mir geht es gut.", "plural": "", "zh": "我很好。" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "Mirko 在科隆",
+      "lines": [
+        { "speaker": "A", "de": "Hi Mirko. Wie gefällt dir Köln?", "zh": "嗨 Mirko，你覺得科隆怎麼樣？" },
+        { "speaker": "Mirko", "de": "Bis jetzt sehr gut. Nur das Essen schmeckt mir nicht so.", "zh": "目前不錯，只是食物不太合我胃口。" },
+        { "speaker": "A", "de": "Echt? Döner auch nicht?", "zh": "真的嗎？連 Döner 都不愛？" },
+        { "speaker": "Mirko", "de": "Doch doch, Döner schmeckt mir natürlich, und Currywurst auch.", "zh": "不不，Döner 我當然愛，咖哩腸也可以。" },
+        { "speaker": "A", "de": "Und wie gefällt dir dein Deutschkurs?", "zh": "你的德文課呢？" },
+        { "speaker": "Mirko", "de": "Der Kurs gefällt mir richtig gut. Aber manchmal verstehe ich nicht alles.", "zh": "課我超喜歡，只是有時候聽不懂全部。" },
+        { "speaker": "A", "de": "Brauchst du Hilfe?", "zh": "需要幫忙嗎？" },
+        { "speaker": "Mirko", "de": "Nein nein, eine Mitschülerin hilft mir im Kurs und auch mit den Hausaufgaben.", "zh": "不用，有個同學會在課上和功課上幫我。" },
+        { "speaker": "A", "de": "Das ist sehr nett von ihr. Woher kommt sie denn?", "zh": "她真好心，她哪裡人？" },
+        { "speaker": "Mirko", "de": "Aus Italien, aber ihr gehört das Restaurant neben der Uni.", "zh": "義大利人，不過大學旁邊那家餐廳是她的。" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 1：人稱代名詞 Dativ",
+      "instruction_zh": "填入正確的 Dativ 人稱代名詞（mir / dir / ihm / ihr）。",
+      "instruction_de": "Vervollständigen Sie mit Personalpronomen in Dativ.",
+      "questions": [
+        {
+          "id": "ch4-ex1a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Wie findet Timo das Bild? — Es gefällt ___ sehr gut.",
+          "answer": ["ihm"],
+          "hint_zh": "Timo = er → Dat = ihm"
+        },
+        {
+          "id": "ch4-ex1b",
+          "label": "b)",
+          "type": "multi-blank",
+          "prompt_md": "Hallo Sarah. Wie geht es dir? — ___ geht's gut. Und ___?",
+          "answer": [["Mir"], ["dir"]],
+          "hint_zh": "我 → mir；你 → dir"
+        },
+        {
+          "id": "ch4-ex1c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Wo ist Mia? — Sie ist bei Klara und spielt Monopoly mit ___.",
+          "answer": ["ihr"],
+          "hint_zh": "Klara = sie → Dat = ihr"
+        },
+        {
+          "id": "ch4-ex1d",
+          "label": "d)",
+          "type": "fill-blank",
+          "prompt_md": "Mein Deutschkurs gefällt ___ sehr gut.",
+          "answer": ["mir"],
+          "hint_zh": "我喜歡 → mir"
+        },
+        {
+          "id": "ch4-ex1e",
+          "label": "e)",
+          "type": "fill-blank",
+          "prompt_md": "Gehört das Auto Ines? — Ja, es gehört ___.",
+          "answer": ["ihr"],
+          "hint_zh": "Ines = sie → ihr"
+        },
+        {
+          "id": "ch4-ex1f",
+          "label": "f)",
+          "type": "fill-blank",
+          "prompt_md": "Telefoniert Elena mit ihrem Bruder? — Ja, sie telefoniert mit ___.",
+          "answer": ["ihm"],
+          "hint_zh": "Bruder = er → ihm"
+        },
+        {
+          "id": "ch4-ex1g",
+          "label": "g)",
+          "type": "fill-blank",
+          "prompt_md": "Schmeckt deinem Mann das Essen nicht? — Doch, die Spaghetti schmecken ___.",
+          "answer": ["ihm"],
+          "hint_zh": "Mann = er → ihm"
+        },
+        {
+          "id": "ch4-ex1h",
+          "label": "h)",
+          "type": "fill-blank",
+          "prompt_md": "Peter, kannst du mir helfen? — Ja, wie kann ich ___ helfen?",
+          "answer": ["dir"],
+          "hint_zh": "你 → dir"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 2：Dativ 動詞變位",
+      "instruction_zh": "從下框選一個 Dativ 動詞填入並變位：schmecken / gefallen / danken / helfen / gehören / [es] gehen。",
+      "instruction_de": "Setzen Sie die Verben ein und konjugieren Sie sie.",
+      "questions": [
+        {
+          "id": "ch4-ex2a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Aber der Salat ___ mir.",
+          "answer": ["schmeckt"],
+          "hint_zh": "沙拉合我口味（第三人稱單數）"
+        },
+        {
+          "id": "ch4-ex2b",
+          "label": "b)",
+          "type": "fill-blank",
+          "prompt_md": "Und wie ___ ihm der Job?",
+          "answer": ["gefällt"],
+          "hint_zh": "工作讓他喜歡嗎？"
+        },
+        {
+          "id": "ch4-ex2c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Wie ___ es dir?",
+          "answer": ["geht"],
+          "hint_zh": "你好嗎？"
+        },
+        {
+          "id": "ch4-ex2d",
+          "label": "d)",
+          "type": "fill-blank",
+          "prompt_md": "Jazz ___ mir einfach nicht.",
+          "answer": ["gefällt"],
+          "hint_zh": "我不喜歡爵士"
+        },
+        {
+          "id": "ch4-ex2e",
+          "label": "e)",
+          "type": "fill-blank",
+          "prompt_md": "Lukas hat zu viel Geld. Ihm ___ 3 Häuser.",
+          "answer": ["gehören"],
+          "hint_zh": "3 棟房子（複數）→ gehören"
+        },
+        {
+          "id": "ch4-ex2f",
+          "label": "f)",
+          "type": "fill-blank",
+          "prompt_md": "Ich möchte dir für deine Hilfe ___.",
+          "answer": ["danken"],
+          "hint_zh": "möchten 之後接原型"
+        },
+        {
+          "id": "ch4-ex2g",
+          "label": "g)",
+          "type": "fill-blank",
+          "prompt_md": "___ du mir bitte ein bisschen?",
+          "answer": ["Hilfst"],
+          "hint_zh": "你能幫我一下嗎？helfen → du hilfst（不規則 e→i）"
+        },
+        {
+          "id": "ch4-ex2h",
+          "label": "h)",
+          "type": "fill-blank",
+          "prompt_md": "Ich habe es gekauft. Es ___ mir.",
+          "answer": ["gehört"],
+          "hint_zh": "屬於我（第三人稱單數）"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 3：物主冠詞填空（Akk / Dat）",
+      "instruction_zh": "填入正確的物主冠詞形式。",
+      "instruction_de": "Ergänzen Sie den passenden Possessivartikel.",
+      "questions": [
+        {
+          "id": "ch4-ex3a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Hat dir der Film gefallen? — Ja, aber ___ Frau hat er nicht gefallen.",
+          "answer": ["meiner"],
+          "hint_zh": "die Frau（陰 Dat）→ meiner（我太太）"
+        },
+        {
+          "id": "ch4-ex3b",
+          "label": "b)",
+          "type": "fill-blank",
+          "prompt_md": "Dein Bruder hat mir geholfen. Ich möchte ihm für ___ Hilfe danken.",
+          "answer": ["seine"],
+          "hint_zh": "die Hilfe（陰 Akk）→ seine（他的幫忙）"
+        },
+        {
+          "id": "ch4-ex3c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Nina hilft ___ Eltern sehr viel.",
+          "answer": ["ihren"],
+          "hint_zh": "die Eltern（複 Dat — 因為 helfen 接 Dat）→ ihren"
+        },
+        {
+          "id": "ch4-ex3d",
+          "label": "d)",
+          "type": "fill-blank",
+          "prompt_md": "Die Stifte gehören nicht mir. Sie gehören ___ Bruder.",
+          "answer": ["meinem"],
+          "hint_zh": "der Bruder（陽 Dat — gehören 接 Dat）→ meinem"
+        },
+        {
+          "id": "ch4-ex3e",
+          "label": "e)",
+          "type": "fill-blank",
+          "prompt_md": "Wann rufst du ___ Schwester an?",
+          "answer": ["deine"],
+          "hint_zh": "die Schwester（陰 Akk — anrufen 接 Akk）→ deine"
+        },
+        {
+          "id": "ch4-ex3f",
+          "label": "f)",
+          "type": "fill-blank",
+          "prompt_md": "Kate trifft heute ___ Mutter in einem Restaurant.",
+          "answer": ["ihre"],
+          "hint_zh": "die Mutter（陰 Akk — treffen 接 Akk）→ ihre"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 4：用連接詞合併句子",
+      "instruction_zh": "用 und / aber / oder / denn 把兩個句子合成一句，自己選最合適的連接詞，整句寫出來。",
+      "instruction_de": "Verbinden Sie die Sätze.",
+      "questions": [
+        {
+          "id": "ch4-ex4a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Marita fährt jeden Tag 20 km Rad. Marita isst auch sehr gesund.",
+          "answer": [
+            "Marita fährt jeden Tag 20 km Rad und sie isst auch sehr gesund.",
+            "Marita fährt jeden Tag 20 km Rad und isst auch sehr gesund."
+          ],
+          "hint_zh": "兩個正向 → und"
+        },
+        {
+          "id": "ch4-ex4b",
+          "label": "b)",
+          "type": "fill-blank",
+          "prompt_md": "Heute Abend lese ich ein Buch. Heute Abend sehe ich fern.",
+          "answer": [
+            "Heute Abend lese ich ein Buch oder ich sehe fern.",
+            "Heute Abend lese ich ein Buch oder sehe fern."
+          ],
+          "hint_zh": "二選一 → oder"
+        },
+        {
+          "id": "ch4-ex4c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Peter macht immer seine Hausaufgaben. Sie sind oft falsch.",
+          "answer": ["Peter macht immer seine Hausaufgaben, aber sie sind oft falsch."],
+          "hint_zh": "對比 → aber"
+        },
+        {
+          "id": "ch4-ex4d",
+          "label": "d)",
+          "type": "fill-blank",
+          "prompt_md": "Ich gehe heute nicht joggen. Das Wetter ist schlecht.",
+          "answer": ["Ich gehe heute nicht joggen, denn das Wetter ist schlecht."],
+          "hint_zh": "說明原因 → denn"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 5：自由作答",
+      "instruction_zh": "用 5 句話寫『你最近的喜好』 — 用至少 3 個 Dativ 動詞（gefallen / schmecken / gehören / helfen / gehen）和 1 個連接詞。",
+      "questions": [
+        {
+          "id": "ch4-ex5",
+          "type": "free",
+          "prompt_md": "用德文寫 5 句話描述你的喜好。",
+          "answer_zh": "範例：Mir geht es gut. Mein Deutschkurs gefällt mir, denn der Lehrer ist sehr nett. Pizza schmeckt mir nicht so gut, aber Sushi schmeckt mir richtig gut. Meine Freundin hilft mir oft mit den Hausaufgaben. Mein neues Fahrrad gehört mir seit letzter Woche.",
+          "explanation_zh": "完成後可以按「🤔 問 Claude」幫你改文法。"
+        }
+      ]
+    }
+  ]
+}

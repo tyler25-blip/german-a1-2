@@ -1,0 +1,19 @@
+{
+  "name": "德文 A1.2 自學",
+  "short_name": "德文 A1.2",
+  "description": "依課本章節學習德文 A1.2，含互動練習與單字卡",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fafaf7",
+  "theme_color": "#b45309",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "id": 7,
+  "title_de": "Personality & appearance",
+  "title_zh": "個性與外表",
+  "topic_zh": "形容人的個性與外貌、過去式（不加 ge- 的動詞）、雙受詞動詞",
+  "grammar_focus": ["Partizip II without ge-", "verbs with Akkusativ + Dativ"],
+  "sections": [
+    {
+      "type": "intro",
+      "title_zh": "本章你會學到",
+      "zh": "形容一個人是『高瘦／微胖／好看／親切／怪怪的』；學德文過去式（Partizip II）裡兩種『不加 ge-』的特例：① 有特定前綴（be-, ver-, er-, ge-, emp-）；② 以 -ieren 結尾。最後學會把『給某人某物』的句型寫對：把人放 Dativ、把物放 Akkusativ，順序通常是 Dativ 先、Akk 後。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Partizip II ohne „ge-\"",
+      "title_zh": "Partizip II 不加 ge-",
+      "explanation_zh": "標準 Partizip II 是 ge- + 動詞 + -t（gemacht、gespielt）。但有兩種動詞**不加** ge-：",
+      "tables": [
+        {
+          "title": "① 帶前綴 be-, er-, emp-, ge-, ver- 的動詞",
+          "headers": ["前綴", "原型", "Partizip II"],
+          "rows": [
+            ["be-", "besuchen", "besucht"],
+            ["er-", "erklären", "erklärt"],
+            ["emp-", "empfehlen", "empfohlen"],
+            ["ge-", "gefallen", "gefallen"],
+            ["ver-", "verkaufen", "verkauft"]
+          ]
+        },
+        {
+          "title": "② 以 -ieren 結尾的動詞",
+          "headers": ["原型", "Partizip II"],
+          "rows": [
+            ["studieren", "studiert"],
+            ["telefonieren", "telefoniert"],
+            ["fotografieren", "fotografiert"],
+            ["passieren", "passiert"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Ich habe meine Großeltern besucht.", "zh": "我拜訪了爺爺奶奶。（不加 ge）" },
+        { "de": "Der Lehrer hat die Grammatik erklärt.", "zh": "老師解釋了文法。" },
+        { "de": "Sie hat in München studiert.", "zh": "她在慕尼黑念過大學。" }
+      ],
+      "tips_zh": "另外還有 ent- 和 zer- 也不加 ge-，但 A1 不會碰到。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Verben mit Akkusativ + Dativ",
+      "title_zh": "雙受詞動詞（Dat + Akk）",
+      "explanation_zh": "有些動詞同時帶兩個受詞：『給誰（Dativ）』+『什麼東西（Akkusativ）』。最基本的順序是 Dativ 在前、Akkusativ 在後。",
+      "tables": [
+        {
+          "title": "句子結構",
+          "headers": ["主詞 (Nom)", "動詞", "間接受詞 (Dat)", "直接受詞 (Akk)"],
+          "rows": [
+            ["Ich", "gebe", "dir", "den Stift."],
+            ["Der Lehrer", "erklärt", "dem Schüler", "die Grammatik."],
+            ["Martin", "kauft", "seiner Freundin", "ein Buch."]
+          ]
+        },
+        {
+          "title": "常見的雙受詞動詞",
+          "headers": ["動詞", "中文"],
+          "rows": [
+            ["geben", "給"],
+            ["schenken", "贈送"],
+            ["bringen", "拿來 / 帶來"],
+            ["zeigen", "展示給某人看"],
+            ["erklären", "向某人解釋"],
+            ["empfehlen", "推薦給某人"],
+            ["leihen", "借（給）"],
+            ["schicken", "寄"],
+            ["schreiben", "寫信給某人"],
+            ["kaufen", "（為）某人買"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Sie hat ihm eine E-Mail geschickt.", "zh": "她給他寄了一封 email。" },
+        { "de": "Ich bringe ihr später einen Kuchen.", "zh": "我等下給她帶蛋糕。" },
+        { "de": "Kannst du mir 10 Euro leihen?", "zh": "你可以借我 10 歐元嗎？" }
+      ]
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Dativ-Verben: passen & stehen",
+      "title_zh": "外表 / 衣著的兩個 Dativ 動詞",
+      "explanation_zh": "形容衣服適合某人時用 stehen（適合外觀）和 passen（適合大小）。兩個都是 Dativ 動詞。",
+      "examples": [
+        { "de": "Der Bart steht ihm sehr gut.", "zh": "鬍子很適合他（看起來好看）。" },
+        { "de": "Aber die Schuhe passen ihm nicht. Sie sind zu groß.", "zh": "但鞋子不合腳，太大了。" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Charakter & Aussehen",
+      "title_zh": "個性與外表",
+      "items": [
+        { "de": "interessant ↔ uninteressant / langweilig", "plural": "", "zh": "有趣的 ↔ 無聊的" },
+        { "de": "freundlich ↔ unfreundlich", "plural": "", "zh": "親切的 ↔ 不友善的" },
+        { "de": "normal ↔ seltsam / komisch", "plural": "", "zh": "正常 ↔ 奇怪的" },
+        { "de": "glücklich ↔ unglücklich / traurig", "plural": "", "zh": "開心的 ↔ 不開心的 / 難過的" },
+        { "de": "gutaussehend ↔ hässlich", "plural": "", "zh": "好看的 ↔ 醜的" },
+        { "de": "sympathisch / nett ↔ unsympathisch", "plural": "", "zh": "討喜的 ↔ 討厭的" },
+        { "de": "dick", "plural": "", "zh": "胖的" },
+        { "de": "dünn / schlank", "plural": "", "zh": "瘦的 / 苗條的" },
+        { "de": "hübsch", "plural": "", "zh": "漂亮的" },
+        { "de": "kurze Haare", "plural": "", "zh": "短頭髮" },
+        { "de": "lange Haare", "plural": "", "zh": "長頭髮" },
+        { "de": "glatte Haare", "plural": "", "zh": "直髮" },
+        { "de": "die Locke", "plural": "-n", "zh": "捲髮" },
+        { "de": "der Bart", "plural": "⸚e", "zh": "鬍子" },
+        { "de": "die Frisur", "plural": "-en", "zh": "髮型" },
+        { "de": "das Haar", "plural": "-e", "zh": "頭髮" },
+        { "de": "aus|sehen", "plural": "", "zh": "看起來（可分動詞）" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Weitere wichtige Wörter",
+      "title_zh": "其他常用字",
+      "items": [
+        { "de": "der Brief", "plural": "-e", "zh": "信" },
+        { "de": "die Hälfte", "plural": "-n", "zh": "一半" },
+        { "de": "der Austauschstudent", "plural": "-en", "zh": "交換學生（陽）" },
+        { "de": "die Austauschstudentin", "plural": "-nen", "zh": "交換學生（陰）" },
+        { "de": "leihen", "plural": "", "zh": "借（給／向）" },
+        { "de": "schenken", "plural": "", "zh": "送禮物" },
+        { "de": "kostenlos", "plural": "", "zh": "免費" },
+        { "de": "schade", "plural": "", "zh": "可惜" },
+        { "de": "ganz", "plural": "", "zh": "相當 / 蠻" },
+        { "de": "warum", "plural": "", "zh": "為什麼" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "Sina 在慕尼黑",
+      "lines": [
+        { "speaker": "A", "de": "Hi Sina. Du warst letztes Jahr in Deutschland, oder?", "zh": "嗨 Sina，你去年在德國對吧？" },
+        { "speaker": "Sina", "de": "Ja, ich war 6 Monate in München und habe dort an der Uni studiert.", "zh": "對，我在慕尼黑住了 6 個月，在大學念書。" },
+        { "speaker": "A", "de": "Hast du auch einen Deutschkurs besucht?", "zh": "你也有上德文課嗎？" },
+        { "speaker": "Sina", "de": "Ja, einmal pro Woche für 3 Stunden. Er hat mir aber nicht so gut gefallen.", "zh": "有，每週一次，每次 3 小時。但我不太喜歡。" },
+        { "speaker": "A", "de": "Das ist schade. Warum nicht?", "zh": "好可惜，為什麼？" },
+        { "speaker": "Sina", "de": "Der Lehrer hat viel zu schnell gesprochen. Ich habe oft nur die Hälfte verstanden.", "zh": "老師講話太快，我常常只聽懂一半。" },
+        { "speaker": "A", "de": "Das ist natürlich nicht so gut. Wer hat dir den Kurs empfohlen?", "zh": "那真的不好，誰推薦這課給你的？" },
+        { "speaker": "Sina", "de": "Niemand. Der Kurs war für Austauschstudenten kostenlos.", "zh": "沒人，是免費課給交換生的。" },
+        { "speaker": "A", "de": "Hast du dein Kursbuch noch? Oder hast du es schon verkauft?", "zh": "你課本還在嗎？還是賣掉了？" },
+        { "speaker": "Sina", "de": "Das Buch hat nicht mir gehört. Ich habe es von einem Freund bekommen.", "zh": "課本不是我的，是朋友給我的。" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 1：找對應的形容詞",
+      "instruction_zh": "依描述填入合適的形容詞。",
+      "instruction_de": "Wie heißen die Adjektive?",
+      "questions": [
+        { "id": "ch7-ex1a", "label": "a)", "type": "fill-blank", "prompt_md": "Der Mann dort sieht unfreundlich aus. Ich finde ihn ___.", "answer": ["unsympathisch"], "hint_zh": "不友善 → 看起來不討喜" },
+        { "id": "ch7-ex1b", "label": "b)", "type": "fill-blank", "prompt_md": "Peter hat seine Prüfung nicht bestanden. Er ist sehr ___.", "answer": ["traurig", "unglücklich"], "hint_zh": "考試沒過 → 難過" },
+        { "id": "ch7-ex1c", "label": "c)", "type": "fill-blank", "prompt_md": "Max hilft mir sehr oft. Er ist wirklich ___.", "answer": ["nett"], "hint_zh": "常幫忙 = 親切" },
+        { "id": "ch7-ex1d", "label": "d)", "type": "fill-blank", "prompt_md": "Ich bin gestern im Kino eingeschlafen. Der Film war sehr ___.", "answer": ["langweilig"], "hint_zh": "看電影睡著了 → 無聊" },
+        { "id": "ch7-ex1e", "label": "e)", "type": "fill-blank", "prompt_md": "Sie ist wirklich ___. (誇女老師很美)", "answer": ["hübsch"], "hint_zh": "漂亮" },
+        { "id": "ch7-ex1f", "label": "f)", "type": "fill-blank", "prompt_md": "Siehst du den Mann mit dem Rock? Er sieht wirklich ___ aus.", "answer": ["komisch", "seltsam"], "hint_zh": "穿裙子的男生 → 怪怪的" },
+        { "id": "ch7-ex1g", "label": "g)", "type": "fill-blank", "prompt_md": "Frank sagt nie „bitte\" oder „danke\". Er ist sehr ___.", "answer": ["unfreundlich", "unhöflich"], "hint_zh": "不講禮貌字 = 不友善 / 沒禮貌" },
+        { "id": "ch7-ex1h", "label": "h)", "type": "fill-blank", "prompt_md": "Florians Auto ist modern, aber die Farbe ist ___.", "answer": ["hässlich"], "hint_zh": "顏色不好看" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 2：Partizip II 加 ge 還是不加？",
+      "instruction_zh": "從框內選一個動詞，寫出正確的過去分詞填入：fliegen / gehören / fernsehen / passieren / sprechen / verkaufen / einkaufen / verstehen / besuchen / studieren / erklären / hören。",
+      "instruction_de": "Partizip II mit oder ohne „ge\" ?",
+      "questions": [
+        { "id": "ch7-ex2a", "label": "a)", "type": "fill-blank", "prompt_md": "Ich habe gestern meine Großeltern in Berlin ___.", "answer": ["besucht"], "hint_zh": "be- 不加 ge-" },
+        { "id": "ch7-ex2b", "label": "b)", "type": "fill-blank", "prompt_md": "Martin hat heute Morgen eine Stunde Podcast ___.", "answer": ["gehört"], "hint_zh": "hören → gehört（規則）" },
+        { "id": "ch7-ex2c", "label": "c)", "type": "fill-blank", "prompt_md": "Mika und Jonas haben zusammen ___.", "answer": ["ferngesehen"], "hint_zh": "可分動詞：ge 夾在中間 → ferngesehen" },
+        { "id": "ch7-ex2d1", "label": "d1)", "type": "fill-blank", "prompt_md": "Hast du die Grammatik ___?", "answer": ["verstanden"], "hint_zh": "ver- 不加 ge-，且為強動詞" },
+        { "id": "ch7-ex2d2", "label": "d2)", "type": "fill-blank", "prompt_md": "Ja. Der Lehrer hat sie gut ___.", "answer": ["erklärt"], "hint_zh": "er- 不加 ge-" },
+        { "id": "ch7-ex2e", "label": "e)", "type": "fill-blank", "prompt_md": "Wir sind letztes Jahr nach Frankreich ___.", "answer": ["geflogen"], "hint_zh": "fliegen 強動詞 → geflogen，助動詞用 sein" },
+        { "id": "ch7-ex2f1", "label": "f1)", "type": "fill-blank", "prompt_md": "Das Haus hat früher mir ___.", "answer": ["gehört"], "hint_zh": "gehören → gehört" },
+        { "id": "ch7-ex2f2", "label": "f2)", "type": "fill-blank", "prompt_md": "Ich habe es letztes Jahr ___.", "answer": ["verkauft"], "hint_zh": "ver- 不加 ge-" },
+        { "id": "ch7-ex2g", "label": "g)", "type": "fill-blank", "prompt_md": "Melanie hat im Supermarkt ___.", "answer": ["eingekauft"], "hint_zh": "可分動詞 → eingekauft（ge 夾中間）" },
+        { "id": "ch7-ex2h", "label": "h)", "type": "fill-blank", "prompt_md": "Was ist ___?", "answer": ["passiert"], "hint_zh": "-ieren 結尾不加 ge-" },
+        { "id": "ch7-ex2i", "label": "i)", "type": "fill-blank", "prompt_md": "Er hat drei Jahre in London ___.", "answer": ["studiert"], "hint_zh": "-ieren 結尾不加 ge-" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 3：句子重組（Dat + Akk）",
+      "instruction_zh": "依詞重組句子，並把動詞變位。注意 Dativ 通常放 Akkusativ 之前。寫出整句即可。",
+      "instruction_de": "Schreiben Sie die Sätze richtig.",
+      "questions": [
+        { "id": "ch7-ex3a1", "label": "a1)", "type": "fill-blank", "prompt_md": "Geburtstag | haben | Karls Schwester →", "answer": ["Karls Schwester hat Geburtstag."], "hint_zh": "Karls 是名字所有格 → Karl 的姊妹生日" },
+        { "id": "ch7-ex3a2", "label": "a2)", "type": "fill-blank", "prompt_md": "schenken | er | einen Computer | ihr →", "answer": ["Er schenkt ihr einen Computer."], "hint_zh": "Dat（ihr）在前、Akk（einen Computer）在後" },
+        { "id": "ch7-ex3b1", "label": "b1)", "type": "fill-blank", "prompt_md": "meine Stifte | ich | vergessen | haben →", "answer": ["Ich habe meine Stifte vergessen."], "hint_zh": "完成式：haben + 過去分詞放最後" },
+        { "id": "ch7-ex3b2", "label": "b2)", "type": "fill-blank", "prompt_md": "einen Kuli | mir | können | du | geben ?", "answer": ["Kannst du mir einen Kuli geben?"], "hint_zh": "Dat（mir）在前、原型動詞放最後" },
+        { "id": "ch7-ex3c1", "label": "c1)", "type": "fill-blank", "prompt_md": "Papa! | einschlafen | ich | können | nicht →", "answer": ["Papa! Ich kann nicht einschlafen."], "hint_zh": "可分動詞放最後（einschlafen 不分）" },
+        { "id": "ch7-ex3c2", "label": "c2)", "type": "fill-blank", "prompt_md": "eine Geschichte | mir | erzählen | du ?", "answer": ["Erzählst du mir eine Geschichte?"], "hint_zh": "問句：動詞先" },
+        { "id": "ch7-ex3d1", "label": "d1)", "type": "fill-blank", "prompt_md": "gehen | mein Bruder | ins Kino | gerne →", "answer": ["Mein Bruder geht gerne ins Kino."], "hint_zh": "陳述句：主詞 + 動詞 + …" },
+        { "id": "ch7-ex3d2", "label": "d2)", "type": "fill-blank", "prompt_md": "du | einen Film | empfehlen | ihm | können ?", "answer": ["Kannst du ihm einen Film empfehlen?"], "hint_zh": "Dat（ihm）+ Akk（einen Film）" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 4：自由作答",
+      "instruction_zh": "用 5 句話描述你的好朋友：他 / 她長什麼樣（外貌）+ 個性如何 + 你們最近一起做了什麼（用 1 句完成式）。",
+      "questions": [
+        { "id": "ch7-ex4", "type": "free", "prompt_md": "用德文 5 句話介紹你的好朋友。", "answer_zh": "範例：Mein bester Freund heißt Tim. Er hat kurze schwarze Haare und einen Bart. Er ist sehr nett und immer freundlich. Letzte Woche haben wir zusammen ein Konzert besucht. Wir haben viel Spaß gehabt.", "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查文法，特別是 Partizip II。" }
+      ]
+    }
+  ]
+}

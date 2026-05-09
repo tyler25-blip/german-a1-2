@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>德文 A1.2 自學</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./assets/icon.svg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="德文 A1.2" />
+  <meta name="theme-color" content="#b45309" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title"><a href="./index.html">🇩🇪 德文 A1.2 自學</a></h1>
+      <nav class="site-nav">
+        <a href="./flashcards.html">單字卡</a>
+        <a href="./grammar.html">文法手冊</a>
+        <a href="./progress.html">進度</a>
+        <a href="./settings.html">設定</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>章節列表</h1>
+    <p class="lead">點選章節開始學習。每章包含文法、單字、對話與練習題。</p>
+
+    <div id="chapter-grid" class="chapter-grid">
+      <p class="muted">載入中…</p>
+    </div>
+
+    <h2 style="margin-top: 40px;">其他工具</h2>
+    <div class="chapter-grid">
+      <a href="./flashcards.html" class="chapter-card">
+        <span class="num">📇</span>
+        <h3>單字卡</h3>
+        <p class="topic">記憶曲線排程，每輪 20 題（手機友好）</p>
+      </a>
+      <a href="./grammar.html" class="chapter-card">
+        <span class="num">📚</span>
+        <h3>文法手冊</h3>
+        <p class="topic">A1.2 全套文法重點整理（11 個主題）</p>
+      </a>
+      <a href="./progress.html" class="chapter-card">
+        <span class="num">📊</span>
+        <h3>學習進度</h3>
+        <p class="topic">看每章答對率、清除記錄</p>
+      </a>
+      <a href="./settings.html" class="chapter-card">
+        <span class="num">⚙️</span>
+        <h3>設定</h3>
+        <p class="topic">填入 Anthropic API key 啟用 Claude 對話</p>
+      </a>
+    </div>
+
+    <p class="muted small" style="margin-top: 30px; text-align: center;">
+      💡 鍵盤快捷鍵：<code>J</code>/<code>K</code> 切換章節 · <code>/</code> 開啟對話 · <code>?</code> 查看更多
+    </p>
+  </main>
+
+  <button id="chat-fab" class="chat-fab" aria-label="開啟 Claude 對話">💬</button>
+  <div id="chat-panel" class="chat-panel"></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="./assets/js/settings.js"></script>
+  <script src="./assets/js/progress.js"></script>
+  <script src="./assets/js/api.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/chat.js"></script>
+  <script src="./assets/js/keyboard.js"></script>
+  <script>
+    App.renderChapterGrid(document.getElementById('chapter-grid'));
+  </script>
+</body>
+</html>

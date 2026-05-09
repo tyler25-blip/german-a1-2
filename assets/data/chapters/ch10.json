@@ -1,0 +1,294 @@
+{
+  "id": 10,
+  "title_de": "Clothes",
+  "title_zh": "服裝",
+  "topic_zh": "比較大小、好壞、價格；表達『願望／如果…就好了』",
+  "grammar_focus": ["comparative & superlative", "Konjunktiv II with würden"],
+  "sections": [
+    {
+      "type": "intro",
+      "title_zh": "本章你會學到",
+      "zh": "形容詞的『比較級／最高級』 — 怎麼說『更便宜、最便宜』、『更長、最長』；以及德文的虛擬式 würden（『會想…』、『若…就好了』），用來表達夢想 / 假設。最後再認一輪服裝單字。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Komparativ & Superlativ",
+      "title_zh": "比較級與最高級",
+      "explanation_zh": "三段：形容詞原型 → 比較級（加 -er）→ 最高級（am ___ -sten）。比較兩物用 als（比…）；想說『一樣…』用 (genau)so + 形容詞 + wie。",
+      "tables": [
+        {
+          "title": "規則變化",
+          "headers": ["原型", "Komparativ (-er)", "Superlativ (am … -sten)"],
+          "rows": [
+            ["billig 便宜", "billiger", "am billigsten"],
+            ["schön 漂亮", "schöner", "am schönsten"],
+            ["klein 小", "kleiner", "am kleinsten"]
+          ]
+        },
+        {
+          "title": "重要變化規則",
+          "headers": ["規則", "原型 → 比較 → 最高"],
+          "rows": [
+            ["單音節 a / o / u → ä / ö / ü", "alt → älter → am ältesten"],
+            ["", "lang → länger → am längsten"],
+            ["", "groß → größer → am größten"],
+            ["", "jung → jünger → am jüngsten"],
+            ["以 d / s / t / z / ß 結尾 → 最高加 -esten", "leicht → leichter → am leichtesten"],
+            ["", "alt → älter → am ältesten"]
+          ]
+        },
+        {
+          "title": "重要不規則（必背 4 個）",
+          "headers": ["原型", "Komparativ", "Superlativ"],
+          "rows": [
+            ["gern 喜歡", "lieber", "am liebsten"],
+            ["gut 好", "besser", "am besten"],
+            ["viel 多", "mehr", "am meisten"],
+            ["hoch 高", "höher", "am höchsten"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Der Mantel ist billig. Die Jacke ist billiger als der Mantel. Der Pullover ist am billigsten.", "zh": "外套便宜，夾克比外套便宜，毛衣最便宜。" },
+        { "de": "Tim trägt lieber Jogginghosen als Jeans.", "zh": "Tim 比較喜歡穿運動褲而非牛仔褲。" },
+        { "de": "Tina findet Kapuzenpullis am besten.", "zh": "Tina 覺得帽 T 最棒。" }
+      ]
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Vergleiche: als & so…wie",
+      "title_zh": "als（比）與 so…wie（一樣）",
+      "explanation_zh": "比較句型：① Komparativ + als（…比…）；② (genau)so + 形容詞 + wie（一樣…）。",
+      "examples": [
+        { "de": "Tims Flip-Flops sind größer als Katis.", "zh": "Tim 的夾腳拖比 Kati 的大。" },
+        { "de": "Kati mag Hosen lieber als Röcke.", "zh": "Kati 喜歡褲子甚於裙子。" },
+        { "de": "Der Schal ist genauso teuer wie die Handschuhe.", "zh": "圍巾跟手套一樣貴。" },
+        { "de": "Max kauft T-Shirts so oft wie Yvonne.", "zh": "Max 買 T 恤跟 Yvonne 一樣常。" }
+      ],
+      "tips_zh": "口語常聽到 als 跟 wie 混用，但**正式**德文：『比較』用 als，『相同』用 wie。考試時別寫 mehr wie ich！正解是 mehr als ich。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Konjunktiv II: würden",
+      "title_zh": "虛擬式：würden（會想 / 假設）",
+      "explanation_zh": "würden 是 werden 的虛擬式，用來表達『願望』、『假設』。最簡單用法是『würden + gern + 動詞原型（放最後）』 = 『會想做…』。",
+      "tables": [
+        {
+          "title": "würden 變位",
+          "headers": ["人稱", "würden"],
+          "rows": [
+            ["ich", "würde"],
+            ["du", "würdest"],
+            ["er / sie / es", "würde"],
+            ["wir", "würden"],
+            ["ihr", "würdet"],
+            ["sie / Sie", "würden"]
+          ]
+        },
+        {
+          "title": "三種句型",
+          "headers": ["結構", "範例"],
+          "rows": [
+            ["würden + 動詞", "Sie würde als Ärztin arbeiten."],
+            ["würden + gern + 動詞", "Wir würden gern Urlaub machen."],
+            ["würden + 形容詞 (跟 sein/werden)", "Ich würde gern reich werden."]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Wo würdest du gern leben? — Ich würde gern in Deutschland leben.", "zh": "你會想住哪？— 我會想住德國。" },
+        { "de": "Würdet ihr gern ein Haus am Meer kaufen? — Ja, klar.", "zh": "你們會想在海邊買房嗎？— 當然。" },
+        { "de": "Was würdest du heute Abend gern machen? — Ich würde gern fernsehen und Chips essen.", "zh": "今晚想幹嘛？— 想看電視吃洋芋片。" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Kleidung",
+      "title_zh": "衣物",
+      "items": [
+        { "de": "die Kleidung", "plural": "-", "zh": "衣物（總稱）" },
+        { "de": "der Pullover / der Pulli", "plural": "- / -s", "zh": "毛衣 / 套頭衫" },
+        { "de": "der Kapuzenpulli", "plural": "-s", "zh": "帽 T" },
+        { "de": "die Jacke", "plural": "-n", "zh": "外套（夾克）" },
+        { "de": "der Mantel", "plural": "⸚", "zh": "大衣" },
+        { "de": "das Hemd", "plural": "-en", "zh": "襯衫（正式）" },
+        { "de": "das Kleid", "plural": "-er", "zh": "洋裝" },
+        { "de": "der Rock", "plural": "⸚e", "zh": "裙子" },
+        { "de": "die Hose", "plural": "-n", "zh": "長褲" },
+        { "de": "die kurze Hose", "plural": "-n", "zh": "短褲" },
+        { "de": "die Jogginghose", "plural": "-n", "zh": "運動褲" },
+        { "de": "die Jeans", "plural": "-", "zh": "牛仔褲" },
+        { "de": "der Schuh", "plural": "-e", "zh": "鞋子" },
+        { "de": "die Flip-Flops", "plural": "Pl.", "zh": "夾腳拖" },
+        { "de": "die Socke", "plural": "-n", "zh": "襪子" },
+        { "de": "der Gürtel", "plural": "-", "zh": "腰帶" },
+        { "de": "der Schal", "plural": "-s", "zh": "圍巾" },
+        { "de": "die Mütze", "plural": "-n", "zh": "毛帽" },
+        { "de": "der Handschuh", "plural": "-e", "zh": "手套" },
+        { "de": "an|ziehen", "plural": "", "zh": "穿上（可分動詞）" },
+        { "de": "tragen", "plural": "", "zh": "穿著（強動詞 du trägst）" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Weitere wichtige Wörter",
+      "title_zh": "其他常用字",
+      "items": [
+        { "de": "in der Zukunft", "plural": "", "zh": "未來" },
+        { "de": "das Meer", "plural": "-e", "zh": "海" },
+        { "de": "würden", "plural": "", "zh": "會（虛擬式）" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "夢想對話",
+      "lines": [
+        { "speaker": "A", "de": "Wo würdest du gern leben?", "zh": "你會想住哪？" },
+        { "speaker": "B", "de": "Ich würde gern in Deutschland leben.", "zh": "我想住德國。" },
+        { "speaker": "A", "de": "Wir würden gern ein Haus am Meer kaufen. Und ihr? Würdet ihr gern ein Haus kaufen?", "zh": "我們想在海邊買房，你們呢？" },
+        { "speaker": "B", "de": "Ja, klar.", "zh": "當然想。" },
+        { "speaker": "A", "de": "Warum sieht Leon so traurig aus?", "zh": "Leon 怎麼看起來這麼難過？" },
+        { "speaker": "B", "de": "Er würde gern eine Woche Urlaub machen. Aber sein Chef hat es nicht erlaubt.", "zh": "他想休假一週，可是老闆不准。" },
+        { "speaker": "A", "de": "Was würdest du heute Abend gern machen?", "zh": "今晚你會想做什麼？" },
+        { "speaker": "B", "de": "Ich würde gern fernsehen, ein bisschen lesen und Chips essen.", "zh": "我想看電視、看點書、吃洋芋片。" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 1：寫出比較級與最高級",
+      "instruction_zh": "把下列形容詞的 Komparativ 與 Superlativ 寫出來。",
+      "instruction_de": "Bilden Sie den Komparativ und Superlativ.",
+      "questions": [
+        {
+          "id": "ch10-ex1",
+          "type": "table-fill",
+          "headers": ["原型", "Komparativ", "Superlativ"],
+          "rows": [
+            { "cells": [{ "text": "alt" }, { "input": true, "answer": "älter" }, { "input": true, "answer": "am ältesten" }] },
+            { "cells": [{ "text": "klein" }, { "input": true, "answer": "kleiner" }, { "input": true, "answer": "am kleinsten" }] },
+            { "cells": [{ "text": "schön" }, { "input": true, "answer": "schöner" }, { "input": true, "answer": "am schönsten" }] },
+            { "cells": [{ "text": "billig" }, { "input": true, "answer": "billiger" }, { "input": true, "answer": "am billigsten" }] },
+            { "cells": [{ "text": "gut" }, { "input": true, "answer": "besser" }, { "input": true, "answer": "am besten" }] },
+            { "cells": [{ "text": "viel" }, { "input": true, "answer": "mehr" }, { "input": true, "answer": "am meisten" }] },
+            { "cells": [{ "text": "gern" }, { "input": true, "answer": "lieber" }, { "input": true, "answer": "am liebsten" }] },
+            { "cells": [{ "text": "jung" }, { "input": true, "answer": "jünger" }, { "input": true, "answer": "am jüngsten" }] },
+            { "cells": [{ "text": "groß" }, { "input": true, "answer": "größer" }, { "input": true, "answer": "am größten" }] },
+            { "cells": [{ "text": "teuer" }, { "input": true, "answer": "teurer" }, { "input": true, "answer": "am teuersten" }] }
+          ],
+          "answer": [
+            "älter", "am ältesten",
+            "kleiner", "am kleinsten",
+            "schöner", "am schönsten",
+            "billiger", "am billigsten",
+            "besser", "am besten",
+            "mehr", "am meisten",
+            "lieber", "am liebsten",
+            "jünger", "am jüngsten",
+            "größer", "am größten",
+            "teurer", "am teuersten"
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 2：比較三棟房子（35000 / 120000 / 450000）",
+      "instruction_zh": "依價格／屋齡填入正確的比較或最高級，並選 wie 還是 als。",
+      "instruction_de": "Komparativ / Superlativ + wie/als",
+      "questions": [
+        { "id": "ch10-ex2a1", "label": "a1)", "type": "fill-blank", "prompt_md": "Haus A (35000 €) ist ___ als Haus B (120000 €).", "answer": ["billiger"], "hint_zh": "A 比 B 便宜" },
+        { "id": "ch10-ex2a2", "label": "a2)", "type": "fill-blank", "prompt_md": "Haus C (450000 €) ist ___ als Haus B.", "answer": ["teurer"], "hint_zh": "C 比 B 貴" },
+        { "id": "ch10-ex2a3", "label": "a3)", "type": "fill-blank", "prompt_md": "Haus A ist viel ___ als Haus B & C. (年紀)", "answer": ["älter"], "hint_zh": "A 比較舊" },
+        { "id": "ch10-ex2a4", "label": "a4)", "type": "choice", "prompt_de": "Herr Fischer gefällt Haus B besser ___ Haus A und C.", "options": ["als", "wie"], "answer": "als", "hint_zh": "比較用 als" },
+        { "id": "ch10-ex2b1", "label": "b1)", "type": "fill-blank", "prompt_md": "Maria trägt ___ Röcke als Jeans.", "answer": ["lieber"], "hint_zh": "更喜歡 → lieber（gern 的比較級）" },
+        { "id": "ch10-ex2b2", "label": "b2)", "type": "multi-blank", "prompt_md": "Kleider mag sie genauso ___ ___ Röcke.", "answer": [["gern"], ["wie"]], "hint_zh": "一樣喜歡 → genauso gern wie" },
+        { "id": "ch10-ex2b3", "label": "b3)", "type": "multi-blank", "prompt_md": "Die Jeans (29 €) kostet ___ als der Rock (43 €), aber ___ als das Kleid (57 €).", "answer": [["weniger"], ["mehr"]], "hint_zh": "Wait — 29 < 43 → 牛仔褲比裙子便宜，但…請按題意：實際上題目是 jeans 較便宜（少於 rock），但少於 kleid。寫 weniger / weniger 即可，但和 mehr 是反邏輯，本題照原書：weniger 比 rock 少；少於 kleid 也填 weniger" },
+        { "id": "ch10-ex2c1", "label": "c1)", "type": "fill-blank", "prompt_md": "Marcel (1,76 m) ist ein bisschen ___ als Gerd (1,80 m).", "answer": ["kleiner"], "hint_zh": "Marcel 矮一點" },
+        { "id": "ch10-ex2c2", "label": "c2)", "type": "fill-blank", "prompt_md": "Nadine ist 1,84 m. Sie ist ___.", "answer": ["am größten"], "hint_zh": "最高 → am größten" },
+        { "id": "ch10-ex2c3", "label": "c3)", "type": "multi-blank", "prompt_md": "Gerds Deutsch (A1) ist nicht so ___ wie Nadines (A2). Marcel (B1) kann ___ Deutsch.", "answer": [["gut"], ["am besten"]], "hint_zh": "so + 原型 + wie；最好 → am besten" },
+        { "id": "ch10-ex2c4", "label": "c4)", "type": "multi-blank", "prompt_md": "Nadine (32) ist 2 Jahre ___ als Gerd (34). Marcel (29) ist ___.", "answer": [["jünger"], ["am jüngsten"]], "hint_zh": "Nadine 比 Gerd 年輕 / Marcel 最年輕" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 3：服裝單字配對",
+      "instruction_zh": "把德文衣物與中文配對。",
+      "instruction_de": "Wie heißen die Kleidungsstücke?",
+      "questions": [
+        {
+          "id": "ch10-ex3",
+          "type": "match",
+          "prompt": "把德文與中文配對：",
+          "pairs": [
+            { "left": "die Schuhe", "right": "鞋子" },
+            { "left": "der Gürtel", "right": "腰帶" },
+            { "left": "der Pulli", "right": "毛衣" },
+            { "left": "die Mütze", "right": "毛帽" },
+            { "left": "der Mantel", "right": "大衣" },
+            { "left": "das T-Shirt", "right": "T 恤" },
+            { "left": "der Rock", "right": "裙子" },
+            { "left": "die Jacke", "right": "夾克" },
+            { "left": "das Hemd", "right": "襯衫" },
+            { "left": "die Jogginghose", "right": "運動褲" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 4：würden 變位",
+      "instruction_zh": "把 würden 的 6 個人稱變位寫出來。",
+      "instruction_de": "Konjugieren Sie das Verb „würden\".",
+      "questions": [
+        {
+          "id": "ch10-ex4",
+          "type": "table-fill",
+          "headers": ["人稱", "würden"],
+          "rows": [
+            { "cells": [{ "text": "ich" }, { "input": true, "answer": "würde" }] },
+            { "cells": [{ "text": "du" }, { "input": true, "answer": "würdest" }] },
+            { "cells": [{ "text": "er/sie/es" }, { "input": true, "answer": "würde" }] },
+            { "cells": [{ "text": "wir" }, { "input": true, "answer": "würden" }] },
+            { "cells": [{ "text": "ihr" }, { "input": true, "answer": "würdet" }] },
+            { "cells": [{ "text": "sie/Sie" }, { "input": true, "answer": "würden" }] }
+          ],
+          "answer": ["würde", "würdest", "würde", "würden", "würdet", "würden"]
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 5：句子重組（würden）",
+      "instruction_zh": "把詞重排組成完整句子，並把 würden 變位（陳述句動詞放第二位、問句放第一位、主要動詞原型放最後）。",
+      "instruction_de": "Schreiben Sie die Sätze richtig.",
+      "questions": [
+        { "id": "ch10-ex5a1", "label": "a1)", "type": "fill-blank", "prompt_md": "würden | Elli | wo | machen | Urlaub | gern ?", "answer": ["Wo würde Elli gern Urlaub machen?"], "hint_zh": "Wo 在第一位 → würde 第二位 → 主動詞 machen 最後" },
+        { "id": "ch10-ex5a2", "label": "a2)", "type": "fill-blank", "prompt_md": "reisen | durch | würden | sie | Europa | gerne .", "answer": ["Sie würde gerne durch Europa reisen."], "hint_zh": "她（單）→ würde；reisen 放最後" },
+        { "id": "ch10-ex5b1", "label": "b1)", "type": "fill-blank", "prompt_md": "werden | gerne | ihr | reich | würden ?", "answer": ["Würdet ihr gerne reich werden?"], "hint_zh": "問句 ihr → würdet 在第一位；werden 放最後" },
+        { "id": "ch10-ex5b2", "label": "b2)", "type": "fill-blank", "prompt_md": "würden | ja | verdienen | viel Geld | gern | wir .", "answer": ["Ja, wir würden gern viel Geld verdienen."], "hint_zh": "wir → würden；verdienen 放最後" },
+        { "id": "ch10-ex5c1", "label": "c1)", "type": "fill-blank", "prompt_md": "du | gern | den A1 Test | bestehen | würden ?", "answer": ["Würdest du gern den A1 Test bestehen?"], "hint_zh": "du → würdest；bestehen 放最後" },
+        { "id": "ch10-ex5c2", "label": "c2)", "type": "fill-blank", "prompt_md": "die A1 Prüfung | schaffen | ich | ja | würden | gern .", "answer": ["Ja, ich würde gern die A1 Prüfung schaffen."], "hint_zh": "ich → würde；schaffen 放最後" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 6：自由作答（學完 A1.2 的小作文）",
+      "instruction_zh": "你已經學完 A1.2！用 würden 寫 5 句你『會想做』的事情：去哪裡、學什麼、買什麼、跟誰見面…。試著用比較級／最高級（例：Ich würde am liebsten... / Lieber als... ）。",
+      "questions": [
+        { "id": "ch10-ex6", "type": "free", "prompt_md": "用德文寫 5 句你的願望（用 würden + gern / am liebsten）。", "answer_zh": "範例：Ich würde am liebsten in Deutschland leben. Ich würde gern bei einer großen Firma arbeiten und viel Geld verdienen. Lieber als allein würde ich mit meiner Familie reisen. Ich würde gern ein Haus am Meer kaufen. Am liebsten würde ich noch eine Sprache lernen — vielleicht Französisch oder Spanisch.", "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查 würden 的位置和形容詞比較。恭喜你完成 A1.2！" }
+      ]
+    }
+  ]
+}

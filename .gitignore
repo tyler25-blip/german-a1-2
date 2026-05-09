@@ -1,0 +1,20 @@
+# PDFs（教材原檔，太大且不該公開散布）
+*.pdf
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local server logs
+/tmp/server.log
+
+# Node（如果之後加工具用到）
+node_modules/
+package-lock.json

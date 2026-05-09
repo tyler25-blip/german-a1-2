@@ -1,0 +1,424 @@
+{
+  "id": 2,
+  "title_de": "In & around the house",
+  "title_zh": "住家與房間",
+  "topic_zh": "談論所有物（his/her）、認識住家空間、看懂租屋廣告",
+  "grammar_focus": ["possessive articles sein / ihr", "Genitive with proper names"],
+  "sections": [
+    {
+      "type": "intro",
+      "title_zh": "本章你會學到",
+      "zh": "用 sein- 與 ihr- 表達『他的』和『她的』，認識家裡每個房間的德文說法（廚房、客廳、浴室…），並看懂網路上的租屋廣告（NK、Kaltmiete、möbliert 等專有縮寫）。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Possessivartikel: sein- & ihr-",
+      "title_zh": "物主冠詞：他的 / 她的",
+      "explanation_zh": "上一章學了 mein-（我的）。這章學最常用的兩個第三人稱物主冠詞：sein-（他的、它的）和 ihr-（她的、他們的）。詞尾的變化規則跟 mein- 一模一樣 —— 跟著後面名詞的『性別 + 格位』走。本章先掌握 Nominativ 與 Akkusativ。",
+      "tables": [
+        {
+          "title": "sein- (他的 / 它的)",
+          "headers": ["", "Nominativ", "Akkusativ"],
+          "rows": [
+            ["陽 (m.)", "sein", "seinen"],
+            ["中 (n.)", "sein", "sein"],
+            ["陰 (f.)", "seine", "seine"],
+            ["複數", "seine", "seine"]
+          ]
+        },
+        {
+          "title": "ihr- (她的 / 他們的)",
+          "headers": ["", "Nominativ", "Akkusativ"],
+          "rows": [
+            ["陽 (m.)", "ihr", "ihren"],
+            ["中 (n.)", "ihr", "ihr"],
+            ["陰 (f.)", "ihre", "ihre"],
+            ["複數", "ihre", "ihre"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Sein Auto ist neu.", "zh": "他的車是新的。" },
+        { "de": "Er liebt sein Auto.", "zh": "他愛他的車。" },
+        { "de": "Seine Stifte sind leer.", "zh": "他的筆都沒水了。" },
+        { "de": "Ihr Schlüssel ist weg.", "zh": "她的鑰匙不見了。" },
+        { "de": "Sie sucht ihren Schlüssel.", "zh": "她在找她的鑰匙。" },
+        { "de": "Ihre Tasche ist modern.", "zh": "她的包包很時髦。" }
+      ],
+      "tips_zh": "口訣：陽性 Akkusativ 是唯一會在原型字尾加 -en 的 → seinen / ihren。其他陰性與複數都是加 -e。中性 Nom = 中性 Akk = 原型不變。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Besitzanzeige bei Eigennamen",
+      "title_zh": "用人名表達『某某的』",
+      "explanation_zh": "用人名或家庭成員稱呼來表達所有時，名字後直接加 -s（不加引號的撇號 ’）。只有當名字本身以 s / ß / x / z 結尾，才用 ’。",
+      "examples": [
+        { "de": "Das ist Peters Computer.", "zh": "那是 Peter 的電腦。" },
+        { "de": "Das sind Omas Bücher.", "zh": "那些是奶奶的書。" },
+        { "de": "Das ist Lars' Rucksack.", "zh": "那是 Lars 的背包。（Lars 以 s 結尾，加 ’）" },
+        { "de": "Das sind Liz' Taschen.", "zh": "那些是 Liz 的包包。" }
+      ],
+      "tips_zh": "跟英文 's 不同 — 德文不用撇號（除了 s/ß/x/z 結尾）。"
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Rund ums Haus",
+      "title_zh": "住家相關（房間與部位）",
+      "items": [
+        { "de": "das Haus", "plural": "⸚er", "zh": "房子" },
+        { "de": "das Zimmer", "plural": "-", "zh": "房間" },
+        { "de": "das Schlafzimmer", "plural": "-", "zh": "臥室" },
+        { "de": "das Wohnzimmer", "plural": "-", "zh": "客廳" },
+        { "de": "das Esszimmer", "plural": "-", "zh": "餐廳（房間）" },
+        { "de": "die Küche", "plural": "-n", "zh": "廚房" },
+        { "de": "das Bad / Badezimmer", "plural": "⸚er / -", "zh": "浴室" },
+        { "de": "das Arbeitszimmer", "plural": "-", "zh": "書房" },
+        { "de": "das Kinderzimmer", "plural": "-", "zh": "兒童房" },
+        { "de": "der Balkon", "plural": "-e", "zh": "陽台" },
+        { "de": "die Terrasse", "plural": "-n", "zh": "露台" },
+        { "de": "der Garten", "plural": "⸚", "zh": "花園" },
+        { "de": "die Garage", "plural": "-n", "zh": "車庫" },
+        { "de": "der Keller", "plural": "-", "zh": "地下室" },
+        { "de": "das Erdgeschoss (EG)", "plural": "-e", "zh": "一樓（在德國叫『地面層』）" },
+        { "de": "der 1. Stock", "plural": "⸚e", "zh": "二樓（德國的『1 樓』= 我們的 2 樓）" },
+        { "de": "der 2. Stock", "plural": "⸚e", "zh": "三樓" },
+        { "de": "die Treppe", "plural": "-n", "zh": "樓梯" },
+        { "de": "der Aufzug", "plural": "⸚e", "zh": "電梯" },
+        { "de": "die Tür", "plural": "-en", "zh": "門" },
+        { "de": "das Fenster", "plural": "-", "zh": "窗戶" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Wohnungsanzeigen",
+      "title_zh": "租屋廣告用語",
+      "items": [
+        { "de": "die Wohnung", "plural": "-en", "zh": "公寓 / 住宅" },
+        { "de": "die Mietwohnung", "plural": "-en", "zh": "出租公寓" },
+        { "de": "die Miete", "plural": "-n", "zh": "租金" },
+        { "de": "die Kaltmiete", "plural": "-n", "zh": "淨租金（不含管理／水電）" },
+        { "de": "die Warmmiete", "plural": "-n", "zh": "毛租金（已含 NK）" },
+        { "de": "die Nebenkosten (NK)", "plural": "Pl.", "zh": "管理費 / 水電費等雜支" },
+        { "de": "der Mieter", "plural": "-", "zh": "房客" },
+        { "de": "der Vermieter", "plural": "-", "zh": "房東" },
+        { "de": "die Anzeige", "plural": "-n", "zh": "廣告" },
+        { "de": "der Quadratmeter (m²)", "plural": "-", "zh": "平方公尺" },
+        { "de": "der Strom", "plural": "-", "zh": "電（用電）" },
+        { "de": "die Kosten", "plural": "Pl.", "zh": "費用 / 開銷" },
+        { "de": "möbliert", "plural": "", "zh": "附家具的" },
+        { "de": "unmöbliert", "plural": "", "zh": "不附家具的" },
+        { "de": "inklusive", "plural": "", "zh": "已包含" },
+        { "de": "frei", "plural": "", "zh": "可入住 / 空房" },
+        { "de": "sofort", "plural": "", "zh": "馬上 / 立即" },
+        { "de": "usw.", "plural": "", "zh": "等等（und so weiter）" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Weitere wichtige Wörter",
+      "title_zh": "本章常用動詞",
+      "items": [
+        { "de": "mieten", "plural": "", "zh": "租（房）" },
+        { "de": "vermieten", "plural": "", "zh": "出租" },
+        { "de": "bezahlen", "plural": "", "zh": "支付 / 付款" },
+        { "de": "um|ziehen", "plural": "", "zh": "搬家（可分動詞）" },
+        { "de": "verstehen", "plural": "", "zh": "了解 / 聽懂" },
+        { "de": "erklären", "plural": "", "zh": "解釋" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "看公寓：Nina 的家",
+      "lines": [
+        { "speaker": "A", "de": "Hast du Ninas Schlafzimmer schon gesehen?", "zh": "你看過 Nina 的臥室了嗎？" },
+        { "speaker": "B", "de": "Ja, es ist sehr groß.", "zh": "看了，超大的。" },
+        { "speaker": "A", "de": "Gibt es auch ein Arbeitszimmer?", "zh": "她家有書房嗎？" },
+        { "speaker": "B", "de": "Ja klar... im 1. Stock. Dort ist auch Peters Arbeitszimmer.", "zh": "當然有，在二樓。Peter 的書房也在那。" },
+        { "speaker": "A", "de": "Ah ja, stimmt. Peter braucht den Computer für seine Arbeit.", "zh": "對，Peter 工作需要用電腦。" },
+        { "speaker": "B", "de": "Und seine Kamera... Er ist Fotograf.", "zh": "還有他的相機，他是攝影師。" },
+        { "speaker": "A", "de": "Nina liest abends sehr gern. Sind ihre Bücher im Arbeitszimmer?", "zh": "Nina 晚上很愛閱讀。她的書放書房嗎？" },
+        { "speaker": "B", "de": "Nein, ihre Bücher sind in einem Regal im Wohnzimmer.", "zh": "不，她的書在客廳的書架上。" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "找新家：上網看廣告",
+      "lines": [
+        { "speaker": "A", "de": "Meine Wohnung ist zu klein. Ich möchte umziehen.", "zh": "我家太小了，想搬家。" },
+        { "speaker": "A", "de": "Aber ich verstehe viele Wörter nicht.", "zh": "可是廣告上很多字我看不懂。" },
+        { "speaker": "B", "de": "Du kannst im Internet suchen. Dort gibt es viele Wohnungsanzeigen.", "zh": "你可以上網找，網路上很多租屋廣告。" },
+        { "speaker": "B", "de": "Kein Problem. Ich kann alle Wörter erklären.", "zh": "別擔心，所有字我都可以解釋給你聽。" }
+      ]
+    },
+
+    {
+      "type": "phrases",
+      "title_zh": "看廣告會看到的句子",
+      "groups": [
+        {
+          "title_de": "Typische Anzeigenformulierungen",
+          "title_zh": "廣告常見句型",
+          "items": [
+            { "de": "2-Zimmer-Wohnung 54 m² (möbliert)", "zh": "兩房公寓 54 平方公尺（附家具）" },
+            { "de": "im 3. Stock mit Aufzug", "zh": "在四樓（德國的 3. Stock），有電梯" },
+            { "de": "600 € plus 120 € Nebenkosten", "zh": "600 歐元+120 歐元管理費" },
+            { "de": "Sofort frei.", "zh": "馬上可入住。" },
+            { "de": "Mieter gesucht: 1-Zimmer-Apartment 32 m²", "zh": "誠徵房客：32 平米套房" },
+            { "de": "Miete/Monat: 320 € inklusive NK.", "zh": "月租 320 歐元，含管理費。" },
+            { "de": "Kaltmiete: 450 €", "zh": "淨租金 450 歐元" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 1：Mario 和 Iris — sein 還是 ihr？",
+      "instruction_zh": "看主詞是男是女，並注意句中該空格是 Nominativ（主格）還是 Akkusativ（受格），填入 sein-/ihr- 的正確形式。",
+      "instruction_de": "Sind das seine oder ihre Dinge? Markieren Sie auch Nominativ & Akkusativ.",
+      "questions": [
+        {
+          "id": "ch2-ex1a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Mario benutzt ___ Rucksack jeden Tag.",
+          "answer": ["seinen"],
+          "hint_zh": "der Rucksack（陽 Akk）→ -en"
+        },
+        {
+          "id": "ch2-ex1b",
+          "label": "b)",
+          "type": "fill-blank",
+          "prompt_md": "Iris sucht ___ Handy. Mario hat es auch nicht gesehen.",
+          "answer": ["ihr"],
+          "hint_zh": "das Handy（中 Akk = Nom）→ ihr 不變"
+        },
+        {
+          "id": "ch2-ex1c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Iris hat kein Fahrrad. Das ist ___ Fahrrad.",
+          "answer": ["sein", "Marios"],
+          "hint_zh": "das Fahrrad 是 Mario 的（中 Nom）"
+        },
+        {
+          "id": "ch2-ex1d",
+          "label": "d)",
+          "type": "multi-blank",
+          "prompt_md": "Iris liest fast nie. Das sind ___ Bücher. Er liebt ___ Bücher.",
+          "answer": [["seine", "Marios"], ["seine"]],
+          "hint_zh": "die Bücher（複數）"
+        },
+        {
+          "id": "ch2-ex1e",
+          "label": "e)",
+          "type": "fill-blank",
+          "prompt_md": "Mario hat Iris einen Ring geschenkt. Sie mag ___ neuen Ring.",
+          "answer": ["ihren"],
+          "hint_zh": "der Ring（陽 Akk，主詞是 Sie 戴的）"
+        },
+        {
+          "id": "ch2-ex1f",
+          "label": "f)",
+          "type": "fill-blank",
+          "prompt_md": "Mario arbeitet als Architekt. Er braucht ___ Geld nicht.",
+          "answer": ["ihr", "Iris'"],
+          "hint_zh": "das Geld（中 Akk，是 Iris 的錢）"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 2：選一個合適的租屋廣告",
+      "instruction_zh": "為下列三個人各選最合適的廣告（1–5）。",
+      "instruction_de": "Wählen Sie eine passende Anzeige.",
+      "questions": [
+        {
+          "id": "ch2-ex2a",
+          "label": "a)",
+          "type": "choice",
+          "prompt_de": "Peter sucht eine Wohnung mit Balkon. Möbel hat er schon. (Peter 要陽台，已有家具)",
+          "options": [
+            "1) 3-Zimmer 70 m² Kaufangebot, ab Juli frei",
+            "2) Nachmieter 1-Zimmer-Wohnung möbliert, 250 € warm",
+            "3) Kleine Wohnung im 4. Stock, 1 Zimmer, unmöbliert, 200 € warm",
+            "4) Erdgeschosswohnung 80 m² + Garten, 3 Zimmer, 700 € kalt",
+            "5) 2-Zimmer-Wohnung unmöbliert mit Balkon, 350 € + NK"
+          ],
+          "answer": "5) 2-Zimmer-Wohnung unmöbliert mit Balkon, 350 € + NK",
+          "hint_zh": "他要陽台 → 廣告 5"
+        },
+        {
+          "id": "ch2-ex2b",
+          "label": "b)",
+          "type": "choice",
+          "prompt_de": "Martina sucht eine Mietwohnung. Sie hat zwei Kinder und einen Hund. (兩個小孩 + 一隻狗)",
+          "options": [
+            "1) 3-Zimmer 70 m² Kaufangebot, ab Juli frei",
+            "2) Nachmieter 1-Zimmer-Wohnung möbliert, 250 € warm",
+            "3) Kleine Wohnung im 4. Stock, 1 Zimmer, unmöbliert, 200 € warm",
+            "4) Erdgeschosswohnung 80 m² + Garten, 3 Zimmer, 700 € kalt",
+            "5) 2-Zimmer-Wohnung unmöbliert mit Balkon, 350 € + NK"
+          ],
+          "answer": "4) Erdgeschosswohnung 80 m² + Garten, 3 Zimmer, 700 € kalt",
+          "hint_zh": "她要租，需要花園給狗 → 廣告 4"
+        },
+        {
+          "id": "ch2-ex2c",
+          "label": "c)",
+          "type": "choice",
+          "prompt_de": "Franz ist Student und hat nicht viel Geld. (學生窮)",
+          "options": [
+            "1) 3-Zimmer 70 m² Kaufangebot, ab Juli frei",
+            "2) Nachmieter 1-Zimmer-Wohnung möbliert, 250 € warm",
+            "3) Kleine Wohnung im 4. Stock, 1 Zimmer, unmöbliert, 200 € warm",
+            "4) Erdgeschosswohnung 80 m² + Garten, 3 Zimmer, 700 € kalt",
+            "5) 2-Zimmer-Wohnung unmöbliert mit Balkon, 350 € + NK"
+          ],
+          "answer": "2) Nachmieter 1-Zimmer-Wohnung möbliert, 250 € warm",
+          "hint_zh": "便宜又有家具 → 廣告 2（廣告 3 雖更便宜但 unmöbliert，學生需有家具）"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 3：根據描述猜房間 / 部位",
+      "instruction_zh": "讀描述，寫出對應的房間名（含冠詞）。",
+      "instruction_de": "In einem Haus. Schreiben Sie das Wort mit Artikel.",
+      "questions": [
+        {
+          "id": "ch2-ex3a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Dort ist ein Bett und ein Schrank. → ___",
+          "answer": ["das Schlafzimmer"],
+          "hint_zh": "床 + 衣櫃 = 臥室"
+        },
+        {
+          "id": "ch2-ex3b",
+          "label": "b)",
+          "type": "fill-blank",
+          "prompt_md": "Hier kann man auf der Couch fernsehen. → ___",
+          "answer": ["das Wohnzimmer"],
+          "hint_zh": "在沙發上看電視 = 客廳"
+        },
+        {
+          "id": "ch2-ex3c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Es ist über dem Keller. → ___",
+          "answer": ["das Erdgeschoss"],
+          "hint_zh": "地下室『上方』= 一樓 / 地面層"
+        },
+        {
+          "id": "ch2-ex3d",
+          "label": "d)",
+          "type": "fill-blank",
+          "prompt_md": "Dort kocht man. → ___",
+          "answer": ["die Küche"],
+          "hint_zh": "做飯的地方"
+        },
+        {
+          "id": "ch2-ex3e",
+          "label": "e)",
+          "type": "fill-blank",
+          "prompt_md": "Man kann dort die Hände waschen. → ___",
+          "answer": ["das Bad", "das Badezimmer"],
+          "hint_zh": "洗手的地方"
+        },
+        {
+          "id": "ch2-ex3f",
+          "label": "f)",
+          "type": "fill-blank",
+          "prompt_md": "Über dem Erdgeschoss ist ___",
+          "answer": ["der 1. Stock", "der erste Stock"],
+          "hint_zh": "一樓上面是…"
+        },
+        {
+          "id": "ch2-ex3g",
+          "label": "g)",
+          "type": "fill-blank",
+          "prompt_md": "Man kann es als Home-Office benutzen. → ___",
+          "answer": ["das Arbeitszimmer"],
+          "hint_zh": "在家工作的房間 = 書房"
+        },
+        {
+          "id": "ch2-ex3h",
+          "label": "h)",
+          "type": "fill-blank",
+          "prompt_md": "Ich laufe nicht gerne Treppen. Wo ist ___?",
+          "answer": ["der Aufzug"],
+          "hint_zh": "不喜歡爬樓梯 → 找電梯"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 4：sein- / ihr- 變化練習",
+      "instruction_zh": "選出正確的物主冠詞形式。",
+      "questions": [
+        {
+          "id": "ch2-ex4a",
+          "label": "1.",
+          "type": "choice",
+          "prompt_de": "Peter sucht ___ Schlüssel.",
+          "options": ["sein", "seine", "seinen", "seiner"],
+          "answer": "seinen",
+          "hint_zh": "der Schlüssel（陽 Akk）"
+        },
+        {
+          "id": "ch2-ex4b",
+          "label": "2.",
+          "type": "choice",
+          "prompt_de": "Sarah liebt ___ Familie.",
+          "options": ["ihr", "ihre", "ihren", "ihrer"],
+          "answer": "ihre",
+          "hint_zh": "die Familie（陰 Akk = Nom 形式）"
+        },
+        {
+          "id": "ch2-ex4c",
+          "label": "3.",
+          "type": "choice",
+          "prompt_de": "___ Auto ist sehr teuer. (Hans 的車)",
+          "options": ["Sein", "Seine", "Seinen"],
+          "answer": "Sein",
+          "hint_zh": "das Auto（中 Nom）"
+        },
+        {
+          "id": "ch2-ex4d",
+          "label": "4.",
+          "type": "choice",
+          "prompt_de": "Die Kinder besuchen ___ Großeltern. (他們的爺奶 — 用 ihr)",
+          "options": ["ihr", "ihre", "ihren"],
+          "answer": "ihre",
+          "hint_zh": "die Großeltern（複數 Akk）"
+        }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 5：自由作答",
+      "instruction_zh": "用 4–5 句話描述你家。提示句型：Mein Haus / Meine Wohnung hat … . Im Erdgeschoss ist … . Mein Schlafzimmer ist im 1. Stock. …",
+      "questions": [
+        {
+          "id": "ch2-ex5",
+          "type": "free",
+          "prompt_md": "請用德文描述你家有哪些房間，4–5 句。",
+          "answer_zh": "範例：Meine Wohnung hat 3 Zimmer. Im Erdgeschoss sind die Küche und das Wohnzimmer. Im 1. Stock ist mein Schlafzimmer. Mein Badezimmer ist auch im 1. Stock. Wir haben keinen Garten, aber einen kleinen Balkon.",
+          "explanation_zh": "完成後可以按「🤔 問 Claude」請它檢查文法 / 給更道地寫法。"
+        }
+      ]
+    }
+  ]
+}

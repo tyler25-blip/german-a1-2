@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#b45309" />
+  <title>練習中 — 德文 A1.2</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./assets/icon.svg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="德文 A1.2" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body class="study-body">
+  <div id="study-root">
+    <p class="muted" style="padding: 20px;">載入中…</p>
+  </div>
+
+  <button id="chat-fab" class="chat-fab" aria-label="開啟 Claude 對話" style="display: none;">💬</button>
+  <div id="chat-panel" class="chat-panel"></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="./assets/js/settings.js"></script>
+  <script src="./assets/js/progress.js"></script>
+  <script src="./assets/js/api.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/chat.js"></script>
+  <script src="./assets/js/flashcards.js"></script>
+  <script src="./assets/js/study.js"></script>
+  <script>
+    Study.start();
+  </script>
+</body>
+</html>

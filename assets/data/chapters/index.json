@@ -1,0 +1,114 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title_de": "Locations",
+      "title_zh": "地點與方向",
+      "topic_zh": "描述位置、問路與指路",
+      "grammar": [
+        "Dativ 與格",
+        "Lokalpräpositionen 位置介係詞"
+      ],
+      "available": true
+    },
+    {
+      "id": 2,
+      "title_de": "In & around the house",
+      "title_zh": "住家與房間",
+      "topic_zh": "談論所有物、看公寓廣告",
+      "grammar": [
+        "sein/ihr 物主冠詞"
+      ],
+      "available": true
+    },
+    {
+      "id": 3,
+      "title_de": "In a hotel",
+      "title_zh": "在飯店",
+      "topic_zh": "預約飯店、約時間",
+      "grammar": [
+        "時間介係詞"
+      ],
+      "available": true
+    },
+    {
+      "id": 4,
+      "title_de": "Likes & dislikes",
+      "title_zh": "喜歡與不喜歡",
+      "topic_zh": "談喜好與所有物",
+      "grammar": [
+        "人稱代名詞 Dativ",
+        "物主冠詞 Akk/Dat",
+        "主句連接詞"
+      ],
+      "available": true
+    },
+    {
+      "id": 5,
+      "title_de": "Plans & career",
+      "title_zh": "計畫與職涯",
+      "topic_zh": "聊人生與職涯規劃",
+      "grammar": [
+        "wollen / werden",
+        "mit / ohne",
+        "序數"
+      ],
+      "available": true
+    },
+    {
+      "id": 6,
+      "title_de": "Body & health",
+      "title_zh": "身體與健康",
+      "topic_zh": "形容身體狀況、給敬語建議",
+      "grammar": [
+        "Sie 命令式",
+        "sollen"
+      ],
+      "available": true
+    },
+    {
+      "id": 7,
+      "title_de": "Personality & appearance",
+      "title_zh": "個性與外表",
+      "topic_zh": "形容人物個性與外貌",
+      "grammar": [
+        "不加 ge- 的過去分詞",
+        "雙受詞動詞"
+      ],
+      "available": true
+    },
+    {
+      "id": 8,
+      "title_de": "Housework",
+      "title_zh": "家事",
+      "topic_zh": "下指令、用 du / ihr 命令式",
+      "grammar": [
+        "人稱代名詞複數 Akk/Dat",
+        "du/ihr 命令式"
+      ],
+      "available": true
+    },
+    {
+      "id": 9,
+      "title_de": "Rules",
+      "title_zh": "規則",
+      "topic_zh": "談規則、必須與允許",
+      "grammar": [
+        "子句 + weil",
+        "müssen / dürfen"
+      ],
+      "available": true
+    },
+    {
+      "id": 10,
+      "title_de": "Clothes",
+      "title_zh": "服裝",
+      "topic_zh": "比較、願望與夢想",
+      "grammar": [
+        "比較級與最高級",
+        "虛擬式 würden"
+      ],
+      "available": true
+    }
+  ]
+}

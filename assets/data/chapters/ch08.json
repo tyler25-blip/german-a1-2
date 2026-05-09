@@ -1,0 +1,213 @@
+{
+  "id": 8,
+  "title_de": "Housework",
+  "title_zh": "家事",
+  "topic_zh": "用 du / ihr 對熟人下達指令、學會所有人稱代名詞的 Akk 與 Dat 形式",
+  "grammar_focus": ["informal imperative (du / ihr)", "personal pronouns plural (Akk / Dat)"],
+  "sections": [
+    {
+      "type": "intro",
+      "title_zh": "本章你會學到",
+      "zh": "上一章學了對長輩 / 客戶用的 Sie 命令式；這章學對家人 / 朋友 / 小孩用的 du 和 ihr 命令式。同時把人稱代名詞的『複數 Akk / Dat』補完整（uns / euch / ihnen），這樣 6 個人稱代名詞的三格全部就齊全了。"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Imperativ mit du (informell)",
+      "title_zh": "du 命令式（單數熟人）",
+      "explanation_zh": "規則：① 用 du 變位形式（例：du machst）；② 把『-st』和『du』拿掉。例外：sein → sei，haben → hab。",
+      "tables": [
+        {
+          "title": "du 命令式範例",
+          "headers": ["原型", "du 變位", "命令式"],
+          "rows": [
+            ["machen", "du machst", "Mach!"],
+            ["waschen", "du wäschst", "Wasch!"],
+            ["schlafen", "du schläfst", "Schlaf!"],
+            ["lesen", "du liest", "Lies!"],
+            ["vergessen", "du vergisst", "Vergiss!"],
+            ["aufhängen", "du hängst auf", "Häng auf!"],
+            ["sein", "du bist", "Sei!"],
+            ["haben", "du hast", "Hab!"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Spül jetzt das Geschirr!", "zh": "現在去洗碗！" },
+        { "de": "Mach Hausaufgaben!", "zh": "去做作業！" },
+        { "de": "Sei nicht so laut!", "zh": "別這麼吵！" },
+        { "de": "Hab keine Angst!", "zh": "別怕！" }
+      ]
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Imperativ mit ihr",
+      "title_zh": "ihr 命令式（複數熟人）",
+      "explanation_zh": "規則最簡單：用 ihr 變位形式（例：ihr macht），然後直接把 ihr 拿掉。動詞變位完全照原本 ihr 的樣子。",
+      "tables": [
+        {
+          "headers": ["原型", "ihr 變位", "命令式"],
+          "rows": [
+            ["machen", "ihr macht", "Macht!"],
+            ["spülen", "ihr spült", "Spült!"],
+            ["aufhängen", "ihr hängt auf", "Hängt auf!"],
+            ["sein", "ihr seid", "Seid!"],
+            ["haben", "ihr habt", "Habt!"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Spült jetzt das Geschirr!", "zh": "你們現在去洗碗！" },
+        { "de": "Macht eure Hausaufgaben!", "zh": "你們去做作業！" }
+      ],
+      "tips_zh": "想讓命令更友善，加 bitte：『Wasch bitte die Wäsche!』 = 『請洗一下衣服好嗎。』"
+    },
+
+    {
+      "type": "grammar",
+      "title_de": "Personalpronomen Plural: Akk + Dat",
+      "title_zh": "複數人稱代名詞 Akk + Dat",
+      "explanation_zh": "之前學過單數的 mich/dich/ihn/sie/es、mir/dir/ihm/ihr。把複數補上就齊全了。",
+      "tables": [
+        {
+          "title": "完整人稱代名詞表",
+          "headers": ["Nominativ", "Akkusativ", "Dativ"],
+          "rows": [
+            ["ich 我", "mich", "mir"],
+            ["du 你", "dich", "dir"],
+            ["er 他 / es 它", "ihn / es", "ihm"],
+            ["sie 她", "sie", "ihr"],
+            ["wir 我們", "uns", "uns"],
+            ["ihr 你們", "euch", "euch"],
+            ["sie 他們 / Sie 您", "sie / Sie", "ihnen / Ihnen"]
+          ]
+        }
+      ],
+      "examples": [
+        { "de": "Kannst du uns heute Abend anrufen? — Ja, ich rufe euch später an.", "zh": "今晚能打電話給我們嗎？— 好，我等下打給你們。" },
+        { "de": "Gefällt Ihnen das Haus? — Ja, es gefällt uns sehr gut.", "zh": "您喜歡這房子嗎？— 喜歡。（敬語）" },
+        { "de": "Kannst du Opa und Oma helfen? — Ja, ich helfe ihnen sofort.", "zh": "你能幫爺奶嗎？— 好，我馬上幫他們。" }
+      ],
+      "tips_zh": "口訣：wir / ihr 的 Akk = Dat（uns、euch）；sie / Sie 的 Dat 是 ihnen / Ihnen（敬語版本第一個字母大寫）。"
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Den Haushalt machen",
+      "title_zh": "做家事",
+      "items": [
+        { "de": "das Geschirr spülen", "plural": "", "zh": "洗碗" },
+        { "de": "das Geschirr", "plural": "-", "zh": "碗盤 / 餐具" },
+        { "de": "ab|waschen", "plural": "", "zh": "洗碗（同義）" },
+        { "de": "das Fenster putzen", "plural": "", "zh": "擦窗戶" },
+        { "de": "das Zimmer saugen", "plural": "", "zh": "吸地（吸塵器）" },
+        { "de": "den Boden wischen", "plural": "", "zh": "拖地" },
+        { "de": "der Boden", "plural": "⸚", "zh": "地板" },
+        { "de": "das Bett machen", "plural": "", "zh": "整理床鋪" },
+        { "de": "den Müll trennen", "plural": "", "zh": "做垃圾分類" },
+        { "de": "der Müll", "plural": "-", "zh": "垃圾" },
+        { "de": "die Wäsche waschen", "plural": "", "zh": "洗衣服" },
+        { "de": "die Wäsche", "plural": "", "zh": "髒衣服 / 待洗衣物" },
+        { "de": "die Wäsche auf|hängen", "plural": "", "zh": "晾衣服" },
+        { "de": "weg|werfen", "plural": "", "zh": "丟掉" },
+        { "de": "auf|räumen", "plural": "", "zh": "整理 / 收拾" },
+        { "de": "die Ordnung", "plural": "-", "zh": "秩序 / 整齊" },
+        { "de": "vergessen", "plural": "", "zh": "忘記" },
+        { "de": "lügen", "plural": "", "zh": "說謊" }
+      ]
+    },
+
+    {
+      "type": "vocabulary",
+      "title_de": "Weitere wichtige Wörter",
+      "title_zh": "其他常用字",
+      "items": [
+        { "de": "dreckig", "plural": "", "zh": "髒的" },
+        { "de": "müde", "plural": "", "zh": "累的" },
+        { "de": "gleich", "plural": "", "zh": "馬上" },
+        { "de": "gerade", "plural": "", "zh": "正在 / 剛剛" },
+        { "de": "sofort", "plural": "", "zh": "立刻" },
+        { "de": "der Streit", "plural": "-e", "zh": "爭吵" },
+        { "de": "die Angst", "plural": "⸚e", "zh": "恐懼" }
+      ]
+    },
+
+    {
+      "type": "dialogue",
+      "title_zh": "家裡的命令對話",
+      "lines": [
+        { "speaker": "媽", "de": "Katharina! Räum jetzt sofort dein Zimmer auf!", "zh": "Katharina！馬上去整理你的房間！" },
+        { "speaker": "K", "de": "Ja ja, das mache ich später. Ich spiele gerade Computer.", "zh": "好啦好啦，我等下，我正在玩電腦。" },
+        { "speaker": "孩", "de": "Papa, spielst du mit mir Tennis?", "zh": "爸，你跟我打網球好嗎？" },
+        { "speaker": "爸", "de": "Mach zuerst deine Hausaufgaben. Danach spielen wir Tennis.", "zh": "先把作業做完，再打。" },
+        { "speaker": "M", "de": "Leo, ich habe die Wäsche gewaschen. Sei bitte so nett und häng sie auf.", "zh": "Leo，我洗好衣服了，麻煩你晾一下。" },
+        { "speaker": "Leo", "de": "Ja klar. Kein Problem. Mache ich gleich.", "zh": "沒問題，我馬上。" },
+        { "speaker": "P", "de": "Trennt bitte den Müll und werft ihn weg!", "zh": "你們做好垃圾分類然後拿出去丟！" },
+        { "speaker": "孩", "de": "Das haben wir heute Morgen schon gemacht.", "zh": "今天早上已經做了。" },
+        { "speaker": "M", "de": "Die Küche ist wirklich dreckig. Putzt sie bitte nach dem Essen.", "zh": "廚房很髒，吃完飯後麻煩擦一下。" },
+        { "speaker": "孩", "de": "Aber wir sind sehr müde. Können wir sie morgen putzen?", "zh": "可是我們好累，可以明天嗎？" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 1：誰做什麼家事？",
+      "instruction_zh": "填入正確的家事動詞 + 名詞（含冠詞，注意可分動詞）。",
+      "instruction_de": "Wer macht was?",
+      "questions": [
+        { "id": "ch8-ex1a", "label": "a)", "type": "multi-blank", "prompt_md": "Iris ___ einmal pro Woche die ___.", "answer": [["putzt"], ["Fenster"]], "hint_zh": "putzen 第三人稱單數" },
+        { "id": "ch8-ex1b", "label": "b)", "type": "multi-blank", "prompt_md": "Mario ___ fast jeden Tag den ___.", "answer": [["wischt"], ["Boden"]], "hint_zh": "den Boden wischen = 拖地" },
+        { "id": "ch8-ex1c", "label": "c)", "type": "multi-blank", "prompt_md": "Er ___ nach dem Essen das ___.", "answer": [["spült"], ["Geschirr"]], "hint_zh": "飯後洗碗" },
+        { "id": "ch8-ex1d", "label": "d)", "type": "multi-blank", "prompt_md": "Iris ___ zweimal pro Woche. Und Mario ___ die Wäsche ___.", "answer": [["wäscht"], ["hängt"], ["auf"]], "hint_zh": "waschen 是強動詞 → wäscht；aufhängen 是可分動詞" },
+        { "id": "ch8-ex1e", "label": "e)", "type": "multi-blank", "prompt_md": "Iris ___ jeden Tag das ___.", "answer": [["macht"], ["Bett"]], "hint_zh": "整理床鋪" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 2：du / ihr 命令式",
+      "instruction_zh": "從框內挑動詞並寫出 du 或 ihr 命令式：schlafen / vergessen / aufhängen / sein / aufräumen / wischen / gehen / fahren / einkaufen。",
+      "instruction_de": "Bilden Sie den Imperativ.",
+      "questions": [
+        { "id": "ch8-ex2a", "label": "a)", "type": "fill-blank", "prompt_md": "Kinder, es ist schon spät. ___ jetzt sofort ins Bett!", "answer": ["Geht"], "hint_zh": "對 Kinder（複數）用 ihr 命令式 → Geht" },
+        { "id": "ch8-ex2b", "label": "b)", "type": "multi-blank", "prompt_md": "Miriam, ich wasche gerade die Wäsche. ___ sie später bitte ___.", "answer": [["Häng"], ["auf"]], "hint_zh": "對 Miriam（單數）→ du 命令式；aufhängen 可分" },
+        { "id": "ch8-ex2c", "label": "c)", "type": "fill-blank", "prompt_md": "Franziska, ___ bitte nicht so laut.", "answer": ["sei"], "hint_zh": "sein → sei（不規則）" },
+        { "id": "ch8-ex2d", "label": "d)", "type": "fill-blank", "prompt_md": "Du hast morgen Deutschkurs. ___ deine Hausaufgaben nicht!", "answer": ["Vergiss"], "hint_zh": "vergessen 是強動詞 → du vergisst → 拿掉 -st、du → Vergiss" },
+        { "id": "ch8-ex2e", "label": "e)", "type": "fill-blank", "prompt_md": "Was können wir am Wochenende machen? — ___ doch ein bisschen Rad.", "answer": ["Fahrt"], "hint_zh": "對 wir 提建議 → ihr 命令式 → Fahrt（騎腳踏車）" },
+        { "id": "ch8-ex2f", "label": "f)", "type": "multi-blank", "prompt_md": "Hier ist es echt dreckig. ___ bitte ___ und ___ den Boden.", "answer": [["Räum", "Räumt"], ["auf"], ["wisch", "wischt"]], "hint_zh": "對方一個人或多人都可：du / ihr" },
+        { "id": "ch8-ex2g", "label": "g)", "type": "fill-blank", "prompt_md": "Gute Nacht ihr zwei. ___ gut.", "answer": ["Schlaft"], "hint_zh": "對兩個人 → ihr → Schlaft" },
+        { "id": "ch8-ex2h", "label": "h)", "type": "multi-blank", "prompt_md": "Tina, ___ bitte im Supermarkt ___.", "answer": [["kauf"], ["ein"]], "hint_zh": "對 Tina → du；einkaufen 可分" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 3：人稱代名詞 Akk / Dat 全套",
+      "instruction_zh": "填入正確的人稱代名詞（注意 Akk 還是 Dat）。",
+      "instruction_de": "Ergänzen Sie die Sätze mit Personalpronomen.",
+      "questions": [
+        { "id": "ch8-ex3a", "label": "a)", "type": "multi-blank", "prompt_md": "Mama, holst du ___ nach der Schule ab? — Nein, heute holt ___ Papa ab.", "answer": [["uns"], ["euch"]], "hint_zh": "我們（複數 Akk）→ uns；對你們 → euch" },
+        { "id": "ch8-ex3b", "label": "b)", "type": "multi-blank", "prompt_md": "Wie gefällt ___ das Haus? — Es gefällt ___ wirklich sehr gut.", "answer": [["Ihnen"], ["uns", "mir"]], "hint_zh": "敬語『您』Dat → Ihnen（大寫）" },
+        { "id": "ch8-ex3c", "label": "c)", "type": "fill-blank", "prompt_md": "Peter lügt sehr oft. Glaub ___ kein Wort!", "answer": ["ihm"], "hint_zh": "glauben 接 Dat：別相信他 → ihm" },
+        { "id": "ch8-ex3d", "label": "d)", "type": "fill-blank", "prompt_md": "Heute tun ___ die Beine und der Rücken weh.", "answer": ["mir"], "hint_zh": "wehtun 接 Dat → 我（mir）痛" },
+        { "id": "ch8-ex3e", "label": "e)", "type": "fill-blank", "prompt_md": "Kannst du deinen Großeltern helfen? — Ja, ich helfe ___ sofort.", "answer": ["ihnen"], "hint_zh": "幫他們（複數 Dat）→ ihnen" },
+        { "id": "ch8-ex3f", "label": "f)", "type": "fill-blank", "prompt_md": "Kennst du die Mädchen dort? — Nein, ich kenne ___ nicht.", "answer": ["sie"], "hint_zh": "kennen 接 Akk → sie（她們）" },
+        { "id": "ch8-ex3g", "label": "g)", "type": "fill-blank", "prompt_md": "Der Unterricht gefällt ___ wirklich gut. (學生們)", "answer": ["ihnen"], "hint_zh": "gefallen 接 Dat → 他們 = ihnen" },
+        { "id": "ch8-ex3h", "label": "h)", "type": "multi-blank", "prompt_md": "Tim, Max, gehören die Fahrräder ___? — Nein, sie gehören nicht ___.", "answer": [["euch"], ["uns"]], "hint_zh": "你們（複 Dat）→ euch；我們（複 Dat）→ uns" },
+        { "id": "ch8-ex3i", "label": "i)", "type": "fill-blank", "prompt_md": "Hast du den Test bestanden? — Ja, ich habe ___ bestanden.", "answer": ["ihn"], "hint_zh": "der Test（陽 Akk）→ ihn" },
+        { "id": "ch8-ex3j", "label": "j)", "type": "fill-blank", "prompt_md": "Habt ihr die Kamera schon verkauft? — Nein, wir haben ___ noch nicht verkauft.", "answer": ["sie"], "hint_zh": "die Kamera（陰 Akk）→ sie" },
+        { "id": "ch8-ex3k", "label": "k)", "type": "fill-blank", "prompt_md": "Ich möchte ___ zu meiner Hochzeit einladen. (邀請你)", "answer": ["dich"], "hint_zh": "邀請你（du Akk）→ dich" }
+      ]
+    },
+
+    {
+      "type": "exercise",
+      "title_zh": "練習 4：自由作答",
+      "instruction_zh": "想像你回家發現家裡很亂，用 5 個 du 或 ihr 命令式句子叫家人做家事。",
+      "questions": [
+        { "id": "ch8-ex4", "type": "free", "prompt_md": "用 5 個命令句叫家人做家事。", "answer_zh": "範例：Mach bitte dein Zimmer auf! Spül das Geschirr! Wisch den Boden! Häng die Wäsche auf! Vergesst nicht, den Müll wegzuwerfen!", "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查。" }
+      ]
+    }
+  ]
+}
