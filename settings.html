@@ -68,8 +68,25 @@
 
     <section class="section-block">
       <h3>進度</h3>
-      <p>已完成練習：<strong id="progress-stats">—</strong></p>
-      <button id="clear-progress" class="btn secondary">清除所有作答記錄</button>
+      <p>已完成課本練習：<strong id="progress-stats">—</strong></p>
+      <p>單字卡記錄：<strong id="flashcard-stats">—</strong></p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+        <button id="clear-progress" class="btn secondary">清除課本練習記錄</button>
+        <button id="clear-flashcards" class="btn secondary">清除單字卡記錄</button>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h3>📦 備份 / 還原</h3>
+      <p class="desc">把單字卡與練習進度匯出成 JSON 檔，搬到別台裝置或備份。</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+        <button id="export-data" class="btn">匯出 JSON</button>
+        <label class="btn secondary" style="cursor: pointer;">
+          匯入 JSON
+          <input type="file" id="import-file" accept=".json,application/json" style="display: none;" />
+        </label>
+      </div>
+      <p class="desc" style="margin-top: 8px;">⚠️ 匯入時會詢問用「合併」還是「覆蓋」目前的資料。API key 不會被匯出 / 匯入。</p>
     </section>
   </main>
 
@@ -82,6 +99,7 @@
   <script src="./assets/js/api.js"></script>
   <script src="./assets/js/app.js"></script>
   <script src="./assets/js/chat.js"></script>
+  <script src="./assets/js/flashcards.js"></script>
   <script src="./assets/js/keyboard.js"></script>
   <script>
     Settings.bindUI();

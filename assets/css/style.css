@@ -792,8 +792,76 @@ button.btn:hover { filter: brightness(0.95); }
   min-width: 36px;
   text-align: center;
 }
-.fc-chapter-row .ch-name { flex: 1; }
-.fc-chapter-row .ch-count { color: var(--text-soft); font-size: 0.85rem; }
+.fc-chapter-row .ch-name { flex: 1; min-width: 0; }
+.fc-chapter-row .ch-count {
+  color: var(--text-soft);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fc-chapter-row .ch-progress-bar {
+  display: block;
+  height: 3px;
+  background: var(--bg-soft);
+  border-radius: 2px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+.fc-chapter-row .ch-progress-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--good);
+  transition: width 0.3s;
+}
+
+/* 統計圖 */
+.fc-stats-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.fc-stats-summary > div {
+  background: var(--bg-soft);
+  padding: 10px 4px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.fc-stats-summary strong {
+  font-size: 1.3rem;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.fc-stats-summary span {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+}
+.fc-stats-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px 0 8px;
+}
+
+#fc-stats summary {
+  cursor: pointer;
+  padding: 4px 0;
+  list-style: none;
+}
+#fc-stats summary::-webkit-details-marker { display: none; }
+#fc-stats summary::before {
+  content: '▶ ';
+  display: inline-block;
+  transition: transform 0.15s;
+  color: var(--accent);
+}
+#fc-stats[open] summary::before {
+  transform: rotate(90deg);
+}
 
 .fc-quick-actions {
   display: flex;

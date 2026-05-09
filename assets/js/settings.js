@@ -65,16 +65,84 @@ const Settings = (() => {
     });
 
     $clear.addEventListener('click', () => {
-      if (confirm('確定要清除所有作答記錄嗎？此動作無法還原。')) {
+      if (confirm('確定要清除所有課本作答記錄嗎？此動作無法還原。')) {
         Progress.clearAll();
         renderStats();
-        toast('已清除');
+        toast('已清除課本練習記錄');
+      }
+    });
+
+    // 單字卡記錄
+    const $clearFc = document.getElementById('clear-flashcards');
+    const $fcStats = document.getElementById('flashcard-stats');
+    $clearFc?.addEventListener('click', () => {
+      if (typeof Flashcards === 'undefined') return;
+      if (confirm('確定要清除所有單字卡的記憶曲線資料嗎？此動作無法還原。')) {
+        Flashcards.clearAllFlashcards();
+        renderStats();
+        toast('已清除單字卡記錄');
+      }
+    });
+
+    // 匯出
+    document.getElementById('export-data')?.addEventListener('click', () => {
+      if (typeof Flashcards === 'undefined') return;
+      const data = Flashcards.exportData();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const ts = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `german-a1-2-backup-${ts}.json`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast('已匯出備份');
+    });
+
+    // 匯入
+    document.getElementById('import-file')?.addEventListener('change', async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        const data = JSON.parse(text);
+        if (!data.flashcards) throw new Error('檔案不像 a1.2 備份檔');
+        const mode = confirm(
+          '要怎麼匯入？\n\n' +
+          '【確定】= 合併（保留兩邊較新的進度）\n' +
+          '【取消】= 取消匯入\n\n' +
+          '若要完全覆蓋目前資料，請按取消後重試（將提示是否覆蓋）。'
+        ) ? 'merge' : null;
+        if (!mode) {
+          // 第二次確認：要覆蓋嗎？
+          if (confirm('要「完全覆蓋」目前的單字卡與練習進度嗎？此動作無法還原。')) {
+            Flashcards.importData(data, 'replace');
+            renderStats();
+            toast('已覆蓋匯入');
+          }
+        } else {
+          Flashcards.importData(data, 'merge');
+          renderStats();
+          toast('已合併匯入');
+        }
+      } catch (err) {
+        toast('❌ 匯入失敗：' + err.message);
+      } finally {
+        e.target.value = ''; // 清空 input 讓下次同檔可重選
       }
     });
 
     const renderStats = () => {
       const s = Progress.summary();
       $stats.textContent = `${s.correct} 答對 / ${s.total} 已作答（${s.chapters} 章節有進度）`;
+      if ($fcStats && typeof Flashcards !== 'undefined') {
+        const cardCount = Object.keys(Flashcards.loadState()).length;
+        const logCount = Flashcards.loadLog().length;
+        const hardCount = Flashcards.countHardCards();
+        $fcStats.textContent = `${cardCount} 張卡有進度，累積 ${logCount} 次評分，${hardCount} 張困難`;
+      }
     };
     renderStats();
   };

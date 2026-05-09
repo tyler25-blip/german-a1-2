@@ -15,6 +15,9 @@
 # Local server logs
 /tmp/server.log
 
+# Claude Code internal
+.claude/
+
 # Node（如果之後加工具用到）
 node_modules/
 package-lock.json

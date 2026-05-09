@@ -10,11 +10,13 @@
 
 const Flashcards = (() => {
   const STATE_KEY = 'ygt_flashcards_v1';
+  const LOG_KEY = 'ygt_flashcards_log_v1';
   const SETTINGS_KEY = 'ygt_flashcards_settings_v1';
   const SESSION_KEY = 'ygt_flashcards_session_v1'; // 跨頁傳資料用
   const SESSION_SIZE = 20;
   const DAY_MS = 86400000;
   const FIVE_MIN_MS = 5 * 60 * 1000;
+  const LOG_RETENTION_DAYS = 365;
   const escapeHtml = App.escapeHtml;
 
   // === Pool ===
@@ -86,12 +88,123 @@ const Flashcards = (() => {
         chapters: raw.chapters ?? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         direction: raw.direction ?? 'both',
         sources: raw.sources ?? ['vocabulary', 'phrases'],
+        hardOnly: raw.hardOnly ?? false,
       };
     } catch {
-      return { chapters: [1,2,3,4,5,6,7,8,9,10], direction: 'both', sources: ['vocabulary','phrases'] };
+      return { chapters: [1,2,3,4,5,6,7,8,9,10], direction: 'both', sources: ['vocabulary','phrases'], hardOnly: false };
     }
   };
   const saveSettings = (s) => localStorage.setItem(SETTINGS_KEY, JSON.stringify(s));
+
+  // === Review log（每次評分都記錄一筆，給統計圖用）===
+  const loadLog = () => {
+    try { return JSON.parse(localStorage.getItem(LOG_KEY) || '[]'); }
+    catch { return []; }
+  };
+  const saveLog = (log) => localStorage.setItem(LOG_KEY, JSON.stringify(log));
+
+  const logReview = (cardId, rating) => {
+    const log = loadLog();
+    log.push({ ts: Date.now(), cardId, rating });
+    // 修剪到最近 LOG_RETENTION_DAYS 天
+    const cutoff = Date.now() - LOG_RETENTION_DAYS * DAY_MS;
+    const trimmed = log.filter(e => e.ts >= cutoff);
+    saveLog(trimmed);
+  };
+
+  // 取得近 N 天每日統計：[{ dateLabel, total, correct, accuracy, againCount }]，最舊在前
+  const getDailyStats = (days = 30) => {
+    const log = loadLog();
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+    const buckets = [];
+    for (let i = days - 1; i >= 0; i--) {
+      const dayStart = today - i * DAY_MS;
+      const dayEnd = dayStart + DAY_MS;
+      const dayEntries = log.filter(e => e.ts >= dayStart && e.ts < dayEnd);
+      const total = dayEntries.length;
+      const correct = dayEntries.filter(e => e.rating !== 'again').length;
+      const againCount = dayEntries.filter(e => e.rating === 'again').length;
+      const d = new Date(dayStart);
+      buckets.push({
+        ts: dayStart,
+        dateLabel: `${d.getMonth()+1}/${d.getDate()}`,
+        total,
+        correct,
+        againCount,
+        accuracy: total ? Math.round(correct / total * 100) : null,
+      });
+    }
+    return buckets;
+  };
+
+  // 困難卡判定：lapses ≥ 3，或 已學過且 ease < 2.0
+  const isHard = (cardId, state) => {
+    const s = (state || loadState())[cardId];
+    if (!s) return false;
+    return s.lapses >= 3 || (s.reps > 0 && s.ease < 2.0);
+  };
+
+  const countHardCards = () => {
+    const state = loadState();
+    return Object.keys(state).filter(id => isHard(id, state)).length;
+  };
+
+  // === 備份 / 還原 ===
+  const exportData = () => {
+    return {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      flashcards: {
+        state: loadState(),
+        log: loadLog(),
+        settings: loadSettings(),
+      },
+      progress: (() => {
+        try { return JSON.parse(localStorage.getItem('ygt_progress_v1') || '{}'); }
+        catch { return {}; }
+      })(),
+    };
+  };
+
+  // mode: 'replace' 全部覆蓋；'merge' 合併（state 取較新的 lastReview，log 合併並去重）
+  const importData = (data, mode = 'replace') => {
+    if (!data || !data.flashcards) throw new Error('資料格式不正確');
+    const fc = data.flashcards;
+    if (mode === 'replace') {
+      if (fc.state) saveState(fc.state);
+      if (fc.log) saveLog(fc.log);
+      if (fc.settings) saveSettings(fc.settings);
+      if (data.progress) localStorage.setItem('ygt_progress_v1', JSON.stringify(data.progress));
+    } else {
+      // merge state：以 lastReview 較新為準
+      if (fc.state) {
+        const cur = loadState();
+        for (const id of Object.keys(fc.state)) {
+          if (!cur[id] || (fc.state[id].lastReview || 0) > (cur[id].lastReview || 0)) {
+            cur[id] = fc.state[id];
+          }
+        }
+        saveState(cur);
+      }
+      // merge log：用 (ts, cardId) 去重
+      if (fc.log) {
+        const cur = loadLog();
+        const seen = new Set(cur.map(e => `${e.ts}|${e.cardId}`));
+        for (const e of fc.log) {
+          const k = `${e.ts}|${e.cardId}`;
+          if (!seen.has(k)) { cur.push(e); seen.add(k); }
+        }
+        cur.sort((a, b) => a.ts - b.ts);
+        saveLog(cur);
+      }
+    }
+  };
+
+  const clearAllFlashcards = () => {
+    localStorage.removeItem(STATE_KEY);
+    localStorage.removeItem(LOG_KEY);
+  };
 
   // session 跨頁傳遞
   const stashSession = (data) => sessionStorage.setItem(SESSION_KEY, JSON.stringify(data));
@@ -184,13 +297,14 @@ const Flashcards = (() => {
     return `${(days / 365).toFixed(1)}年`;
   };
 
-  // 套用評分到 state（會 mutate 並儲存）
+  // 套用評分到 state（會 mutate 並儲存）並記 log
   const rate = (cardId, rating) => {
     const state = loadState();
     const old = state[cardId];
     const { newState, intervalDays } = computeNext(old, rating);
     state[cardId] = newState;
     saveState(state);
+    logReview(cardId, rating);
     return { newState, intervalDays };
   };
 
@@ -255,18 +369,39 @@ const Flashcards = (() => {
     }));
     const countById = Object.fromEntries(counts.map(c => [c.id, c]));
 
+    // 每章已學過的卡數（依目前 direction）
+    const sr = loadState();
+    const dirMult = settings.direction === 'both' ? 2 : 1;
+    const chapterLearnCount = (chId) => {
+      let learned = 0;
+      for (const id of Object.keys(sr)) {
+        // id 格式：「{chapter}:{source}:{de}:{dir}」
+        const parts = id.split(':');
+        if (parseInt(parts[0], 10) === chId && (sr[id].reps || 0) > 0) learned++;
+      }
+      return learned;
+    };
+
     const chapterRows = index.map(ch => {
       const c = countById[ch.id];
       const checked = settings.chapters.includes(ch.id) ? 'checked' : '';
+      const total = (c.vocab + c.phrase) * dirMult;
+      const learned = chapterLearnCount(ch.id);
+      const pct = total ? Math.round(learned / total * 100) : 0;
       return `
         <label class="fc-chapter-row">
           <input type="checkbox" class="fc-chapter" value="${ch.id}" ${checked} />
           <span class="ch-num">L ${ch.id}</span>
-          <span class="ch-name">${escapeHtml(ch.title_zh)} <span class="muted small">${escapeHtml(ch.title_de)}</span></span>
-          <span class="ch-count">${c.vocab + c.phrase}</span>
+          <span class="ch-name">
+            ${escapeHtml(ch.title_zh)} <span class="muted small">${escapeHtml(ch.title_de)}</span>
+            <span class="ch-progress-bar"><span style="width:${pct}%"></span></span>
+          </span>
+          <span class="ch-count">${learned} / ${total}</span>
         </label>
       `;
     }).join('');
+
+    const hardCount = countHardCards();
 
     root.innerHTML = `
       <h1>📇 單字卡</h1>
@@ -299,6 +434,16 @@ const Flashcards = (() => {
           </div>
         </div>
 
+        <div class="fc-section">
+          <h3>進階</h3>
+          <div class="fc-checkbox-group">
+            <label>
+              <input type="checkbox" id="fc-hardonly" ${settings.hardOnly?'checked':''}/>
+              <span>只練困難卡 <span class="muted small">(目前 ${hardCount} 張：lapses ≥ 3 或 ease &lt; 2.0)</span></span>
+            </label>
+          </div>
+        </div>
+
         <div class="fc-summary" id="fc-summary">
           <div><span class="num" id="sm-pool">—</span><span class="label">整體池</span></div>
           <div><span class="num" id="sm-due">—</span><span class="label">到期</span></div>
@@ -307,8 +452,13 @@ const Flashcards = (() => {
 
         <button class="fc-start-btn" id="fc-start" disabled>🚀 載入中…</button>
 
-        <p class="muted small" style="text-align: center;">
-          記憶曲線資料只存在你的瀏覽器，可在<a href="./settings.html">設定頁</a>清除。
+        <details class="fc-section" id="fc-stats" style="margin-top: 24px;">
+          <summary><strong>📈 過去 30 天統計</strong></summary>
+          <div id="fc-stats-content" style="margin-top: 12px;"></div>
+        </details>
+
+        <p class="muted small" style="text-align: center; margin-top: 20px;">
+          記憶曲線資料只存在你的瀏覽器。<a href="./settings.html">設定頁</a>可備份 / 還原 / 清除。
         </p>
       </div>
     `;
@@ -319,7 +469,8 @@ const Flashcards = (() => {
       const chapters = Array.from(root.querySelectorAll('input.fc-chapter:checked')).map(i => parseInt(i.value, 10));
       const direction = root.querySelector('input[name="direction"]:checked')?.value || 'both';
       const sources = Array.from(root.querySelectorAll('input.fc-source:checked')).map(i => i.value);
-      return { chapters, direction, sources };
+      const hardOnly = root.querySelector('#fc-hardonly')?.checked || false;
+      return { chapters, direction, sources, hardOnly };
     };
 
     const refresh = async () => {
@@ -343,23 +494,31 @@ const Flashcards = (() => {
       startBtn.disabled = true;
       startBtn.textContent = '計算中…';
 
-      currentPool = await buildPool(s.chapters, s.sources, s.direction);
+      let pool = await buildPool(s.chapters, s.sources, s.direction);
       const state = loadState();
-      const now = Date.now();
-      const dueCount = currentPool.filter(c => state[c.id]?.due && state[c.id].due <= now).length;
-      const newCount = currentPool.filter(c => !state[c.id] || !state[c.id].reps).length;
+      if (s.hardOnly) pool = pool.filter(c => isHard(c.id, state));
+      currentPool = pool;
 
-      $pool.textContent = currentPool.length;
+      const now = Date.now();
+      const dueCount = pool.filter(c => state[c.id]?.due && state[c.id].due <= now).length;
+      const newCount = pool.filter(c => !state[c.id] || !state[c.id].reps).length;
+
+      $pool.textContent = pool.length;
       $due.textContent = dueCount;
       $new.textContent = newCount;
 
-      const sessionSize = Math.min(SESSION_SIZE, currentPool.length);
-      startBtn.disabled = currentPool.length === 0;
-      startBtn.textContent = currentPool.length === 0 ? '池內無卡' : `🚀 開始 ${sessionSize} 題`;
+      const sessionSize = Math.min(SESSION_SIZE, pool.length);
+      startBtn.disabled = pool.length === 0;
+      startBtn.textContent = pool.length === 0
+        ? (s.hardOnly ? '沒有困難卡 🎉' : '池內無卡')
+        : `🚀 開始 ${sessionSize} 題`;
     };
 
+    // 渲染統計圖
+    renderStatsChart(root.querySelector('#fc-stats-content'));
+
     // 綁定
-    root.querySelectorAll('input.fc-chapter, input[name="direction"], input.fc-source').forEach(el => {
+    root.querySelectorAll('input.fc-chapter, input[name="direction"], input.fc-source, #fc-hardonly').forEach(el => {
       el.addEventListener('change', refresh);
     });
     root.querySelector('#fc-all').addEventListener('click', () => {
@@ -379,11 +538,95 @@ const Flashcards = (() => {
     await refresh();
   };
 
+  // === 統計圖（SVG 折線 + 長條）===
+  const renderStatsChart = (container) => {
+    if (!container) return;
+    const stats = getDailyStats(30);
+    const totalReviews = stats.reduce((acc, s) => acc + s.total, 0);
+    const totalCorrect = stats.reduce((acc, s) => acc + s.correct, 0);
+    const overallAcc = totalReviews ? Math.round(totalCorrect / totalReviews * 100) : 0;
+    const studiedDays = stats.filter(s => s.total > 0).length;
+
+    if (totalReviews === 0) {
+      container.innerHTML = `
+        <p class="muted small">最近 30 天還沒有練習記錄。先來一輪單字卡吧！</p>
+      `;
+      return;
+    }
+
+    // 圖：高 200，寬隨容器（viewBox 600x200）
+    const W = 600, H = 200, padX = 30, padY = 20, padBottom = 30;
+    const chartW = W - 2 * padX;
+    const chartH = H - padY - padBottom;
+    const maxTotal = Math.max(...stats.map(s => s.total), 1);
+    const colWidth = chartW / stats.length;
+    const barW = colWidth * 0.65;
+
+    // bars: 每日複習數（背景）
+    const bars = stats.map((s, i) => {
+      if (s.total === 0) return '';
+      const x = padX + i * colWidth + (colWidth - barW) / 2;
+      const barH = (s.total / maxTotal) * chartH;
+      return `<rect x="${x}" y="${padY + chartH - barH}" width="${barW}" height="${barH}" fill="#fde68a" rx="2"><title>${s.dateLabel}：${s.total} 張</title></rect>`;
+    }).join('');
+
+    // line: 每日答對率（顯示有 review 的日子）
+    const linePoints = [];
+    const dots = stats.map((s, i) => {
+      if (s.accuracy === null) return '';
+      const x = padX + i * colWidth + colWidth / 2;
+      const y = padY + chartH - (s.accuracy / 100) * chartH;
+      linePoints.push(`${x},${y}`);
+      return `<circle cx="${x}" cy="${y}" r="3" fill="#b45309"><title>${s.dateLabel}：${s.accuracy}% (${s.correct}/${s.total})</title></circle>`;
+    }).join('');
+
+    const line = linePoints.length >= 2
+      ? `<polyline points="${linePoints.join(' ')}" fill="none" stroke="#b45309" stroke-width="2" stroke-linejoin="round" />`
+      : '';
+
+    // y-axis grid（25 / 50 / 75 / 100%）
+    const grid = [25, 50, 75, 100].map(p => {
+      const y = padY + chartH - (p / 100) * chartH;
+      return `
+        <line x1="${padX}" y1="${y}" x2="${W - padX}" y2="${y}" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="2,2" />
+        <text x="${padX - 4}" y="${y + 3}" font-size="9" fill="#6b7280" text-anchor="end">${p}%</text>
+      `;
+    }).join('');
+
+    // x-axis labels（每 5 天標一次）
+    const xLabels = stats.map((s, i) => {
+      if (i % 5 !== 0 && i !== stats.length - 1) return '';
+      const x = padX + i * colWidth + colWidth / 2;
+      return `<text x="${x}" y="${H - padBottom + 14}" font-size="9" fill="#6b7280" text-anchor="middle">${s.dateLabel}</text>`;
+    }).join('');
+
+    container.innerHTML = `
+      <div class="fc-stats-summary">
+        <div><strong>${totalReviews}</strong><span>30 天總複習</span></div>
+        <div><strong>${overallAcc}%</strong><span>整體答對率</span></div>
+        <div><strong>${studiedDays}</strong><span>有練習的天數</span></div>
+      </div>
+      <svg class="fc-stats-chart" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">
+        ${grid}
+        ${bars}
+        ${line}
+        ${dots}
+        ${xLabels}
+      </svg>
+      <p class="muted small" style="text-align: center;">
+        🟧 折線：每日答對率　🟨 長條：每日複習數量
+      </p>
+    `;
+  };
+
   return {
     buildPool, loadState, saveState, loadSettings, saveSettings,
     stashSession, popSession, clearSession,
     rate, computeNext, previewIntervals, formatInterval, buildQueue,
-    renderSetupPage,
+    renderSetupPage, renderStatsChart,
+    loadLog, saveLog, getDailyStats, isHard, countHardCards,
+    exportData, importData, clearAllFlashcards,
     SESSION_SIZE, DAY_MS, FIVE_MIN_MS,
+    LOG_KEY, STATE_KEY, SETTINGS_KEY,
   };
 })();

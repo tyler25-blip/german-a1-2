@@ -29,7 +29,11 @@ const Study = (() => {
     state.settings = session.settings;
 
     // 重新組池與隊列
-    const pool = await Flashcards.buildPool(session.settings.chapters, session.settings.sources, session.settings.direction);
+    let pool = await Flashcards.buildPool(session.settings.chapters, session.settings.sources, session.settings.direction);
+    const sr = Flashcards.loadState();
+    if (session.settings.hardOnly) {
+      pool = pool.filter(c => Flashcards.isHard(c.id, sr));
+    }
     if (pool.length === 0) {
       root.innerHTML = `
         <div class="study-summary">
@@ -40,7 +44,6 @@ const Study = (() => {
       return;
     }
 
-    const sr = Flashcards.loadState();
     const queue = Flashcards.buildQueue(pool, sr);
     state.queue = queue;
     state.target = queue.length;
