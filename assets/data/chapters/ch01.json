@@ -3,14 +3,16 @@
   "title_de": "Locations",
   "title_zh": "地點與方向",
   "topic_zh": "描述位置、問路與指路",
-  "grammar_focus": ["dative case", "local prepositions"],
+  "grammar_focus": [
+    "dative case",
+    "local prepositions"
+  ],
   "sections": [
     {
       "type": "intro",
       "title_zh": "本章你會學到",
       "zh": "用德文描述東西在哪裡（在桌『上』、『下』、『旁邊』），認識城市裡的地點（火車站、銀行、醫院…），會用德文問路也能聽懂指路的句子。重點文法是 Dativ（與格）以及 9 個位置介係詞。"
     },
-
     {
       "type": "grammar",
       "title_de": "Dativ",
@@ -19,28 +21,66 @@
       "tables": [
         {
           "title": "定冠詞與不定冠詞變化",
-          "headers": ["", "陽性 (mask.)", "中性 (neut.)", "陰性 (fem.)", "複數 (Plural)"],
+          "headers": [
+            "",
+            "陽性 (mask.)",
+            "中性 (neut.)",
+            "陰性 (fem.)",
+            "複數 (Plural)"
+          ],
           "rows": [
-            ["Nominativ 主格", "der / ein", "das / ein", "die / eine", "die / —"],
-            ["Dativ 與格", "dem / einem", "dem / einem", "der / einer", "den / —"]
+            [
+              "Nominativ 主格",
+              "der / ein",
+              "das / ein",
+              "die / eine",
+              "die / —"
+            ],
+            [
+              "Dativ 與格",
+              "dem / einem",
+              "dem / einem",
+              "der / einer",
+              "den / —"
+            ]
           ]
         },
         {
           "title": "物主冠詞 / 否定冠詞 在 Dativ 的變化",
-          "headers": ["", "陽 + 中", "陰", "複數"],
+          "headers": [
+            "",
+            "陽 + 中",
+            "陰",
+            "複數"
+          ],
           "rows": [
-            ["mein- 我的", "meinem", "meiner", "meinen"],
-            ["kein- 沒有的", "keinem", "keiner", "keinen"]
+            [
+              "mein- 我的",
+              "meinem",
+              "meiner",
+              "meinen"
+            ],
+            [
+              "kein- 沒有的",
+              "keinem",
+              "keiner",
+              "keinen"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Ich gebe dem Mann das Buch.", "zh": "我把書給那個男人。（dem Mann 是間接受詞、Dativ）" },
-        { "de": "Das Buch ist auf dem Tisch.", "zh": "書在桌上。（auf 後面接 Dativ 描述位置）" }
+        {
+          "de": "Ich gebe dem Mann das Buch.",
+          "zh": "我把書給那個男人。（dem Mann 是間接受詞、Dativ）"
+        },
+        {
+          "de": "Das Buch ist auf dem Tisch.",
+          "zh": "書在桌上。（auf 後面接 Dativ 描述位置）"
+        }
       ],
       "tips_zh": "重要規則：複數名詞在 Dativ 時，如果原本『不是』以 -n 結尾，要加上 -n。die Kinder → den Kindern。例外：以 -s 結尾的複數不變（die Autos → den Autos）。"
     },
-
     {
       "type": "grammar",
       "title_de": "Lokalpräpositionen",
@@ -49,84 +89,270 @@
       "tables": [
         {
           "title": "9 個位置介係詞",
-          "headers": ["介係詞", "中文", "介係詞", "中文"],
+          "headers": [
+            "介係詞",
+            "中文",
+            "介係詞",
+            "中文"
+          ],
           "rows": [
-            ["auf", "在…上面（接觸）", "unter", "在…下面"],
-            ["in", "在…裡面", "über", "在…上方（不接觸）"],
-            ["vor", "在…前面", "hinter", "在…後面"],
-            ["an", "在…旁邊／靠著", "neben", "在…隔壁"],
-            ["zwischen", "在…之間", "", ""]
+            [
+              "auf",
+              "在…上面（接觸）",
+              "unter",
+              "在…下面"
+            ],
+            [
+              "in",
+              "在…裡面",
+              "über",
+              "在…上方（不接觸）"
+            ],
+            [
+              "vor",
+              "在…前面",
+              "hinter",
+              "在…後面"
+            ],
+            [
+              "an",
+              "在…旁邊／靠著",
+              "neben",
+              "在…隔壁"
+            ],
+            [
+              "zwischen",
+              "在…之間",
+              "",
+              ""
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Wo ist das Buch? — Das Buch ist unter dem Tisch.", "zh": "書在哪？— 書在桌子下面。" },
-        { "de": "Wo ist das Kissen? — Das Kissen ist auf dem Sofa.", "zh": "枕頭在哪？— 枕頭在沙發上。" },
-        { "de": "Wo ist das Bild? — Das Bild ist an der Wand.", "zh": "畫在哪？— 畫掛在牆上。" },
-        { "de": "Wo ist das Sofa? — Das Sofa ist zwischen den Pflanzen.", "zh": "沙發在哪？— 沙發在那兩株植物之間。（Plural → den + 加 n）" }
+        {
+          "de": "Wo ist das Buch? — Das Buch ist unter dem Tisch.",
+          "zh": "書在哪？— 書在桌子下面。"
+        },
+        {
+          "de": "Wo ist das Kissen? — Das Kissen ist auf dem Sofa.",
+          "zh": "枕頭在哪？— 枕頭在沙發上。"
+        },
+        {
+          "de": "Wo ist das Bild? — Das Bild ist an der Wand.",
+          "zh": "畫在哪？— 畫掛在牆上。"
+        },
+        {
+          "de": "Wo ist das Sofa? — Das Sofa ist zwischen den Pflanzen.",
+          "zh": "沙發在哪？— 沙發在那兩株植物之間。（Plural → den + 加 n）"
+        }
       ],
       "tips_zh": "縮寫：in + dem = im、an + dem = am。所以你會看到「im Hauptbahnhof」（在主火車站裡）、「am Tisch」（在桌邊）。"
     },
-
     {
       "type": "vocabulary",
       "title_de": "Orte in einer Stadt",
       "title_zh": "城市裡的地點",
       "items": [
-        { "de": "die Ampel", "plural": "-n", "zh": "紅綠燈" },
-        { "de": "der Bahnhof", "plural": "⸚e", "zh": "火車站" },
-        { "de": "die Bank", "plural": "-en", "zh": "銀行" },
-        { "de": "die Bibliothek", "plural": "-en", "zh": "圖書館" },
-        { "de": "das Café", "plural": "-s", "zh": "咖啡店" },
-        { "de": "der Dom", "plural": "-e", "zh": "大教堂" },
-        { "de": "der Geldautomat", "plural": "-en", "zh": "提款機 (ATM)" },
-        { "de": "der Hauptbahnhof", "plural": "⸚e", "zh": "主火車站" },
-        { "de": "das Kaufhaus", "plural": "⸚er", "zh": "百貨公司" },
-        { "de": "die Kirche", "plural": "-n", "zh": "教堂" },
-        { "de": "das Krankenhaus", "plural": "⸚er", "zh": "醫院" },
-        { "de": "die Kreuzung", "plural": "-en", "zh": "十字路口" },
-        { "de": "der Markt", "plural": "⸚e", "zh": "市場" },
-        { "de": "das Parkhaus", "plural": "⸚er", "zh": "停車場（建築）" },
-        { "de": "die Polizei", "plural": "-en", "zh": "警察局" },
-        { "de": "die Post", "plural": "-", "zh": "郵局" },
-        { "de": "die Praxis", "plural": "Praxen", "zh": "（醫師）診所" },
-        { "de": "das Restaurant", "plural": "-s", "zh": "餐廳" },
-        { "de": "die Stadtmitte", "plural": "-n", "zh": "市中心" },
-        { "de": "der Supermarkt", "plural": "⸚e", "zh": "超市" },
-        { "de": "die Tankstelle", "plural": "-n", "zh": "加油站" },
-        { "de": "das Zentrum", "plural": "Zentren", "zh": "市中心" }
+        {
+          "de": "die Ampel",
+          "plural": "-n",
+          "zh": "紅綠燈"
+        },
+        {
+          "de": "der Bahnhof",
+          "plural": "⸚e",
+          "zh": "火車站"
+        },
+        {
+          "de": "die Bank",
+          "plural": "-en",
+          "zh": "銀行"
+        },
+        {
+          "de": "die Bibliothek",
+          "plural": "-en",
+          "zh": "圖書館"
+        },
+        {
+          "de": "das Café",
+          "plural": "-s",
+          "zh": "咖啡店"
+        },
+        {
+          "de": "der Dom",
+          "plural": "-e",
+          "zh": "大教堂"
+        },
+        {
+          "de": "der Geldautomat",
+          "plural": "-en",
+          "zh": "提款機 (ATM)"
+        },
+        {
+          "de": "der Hauptbahnhof",
+          "plural": "⸚e",
+          "zh": "主火車站"
+        },
+        {
+          "de": "das Kaufhaus",
+          "plural": "⸚er",
+          "zh": "百貨公司"
+        },
+        {
+          "de": "die Kirche",
+          "plural": "-n",
+          "zh": "教堂"
+        },
+        {
+          "de": "das Krankenhaus",
+          "plural": "⸚er",
+          "zh": "醫院"
+        },
+        {
+          "de": "die Kreuzung",
+          "plural": "-en",
+          "zh": "十字路口"
+        },
+        {
+          "de": "der Markt",
+          "plural": "⸚e",
+          "zh": "市場"
+        },
+        {
+          "de": "das Parkhaus",
+          "plural": "⸚er",
+          "zh": "停車場（建築）"
+        },
+        {
+          "de": "die Polizei",
+          "plural": "-en",
+          "zh": "警察局"
+        },
+        {
+          "de": "die Post",
+          "plural": "-",
+          "zh": "郵局"
+        },
+        {
+          "de": "die Praxis",
+          "plural": "Praxen",
+          "zh": "（醫師）診所"
+        },
+        {
+          "de": "das Restaurant",
+          "plural": "-s",
+          "zh": "餐廳"
+        },
+        {
+          "de": "die Stadtmitte",
+          "plural": "-n",
+          "zh": "市中心"
+        },
+        {
+          "de": "der Supermarkt",
+          "plural": "⸚e",
+          "zh": "超市"
+        },
+        {
+          "de": "die Tankstelle",
+          "plural": "-n",
+          "zh": "加油站"
+        },
+        {
+          "de": "das Zentrum",
+          "plural": "Zentren",
+          "zh": "市中心"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "問路範例",
       "lines": [
-        { "speaker": "A", "de": "Entschuldigung … Gibt es hier in der Nähe eine Post?", "zh": "不好意思…附近有郵局嗎？" },
-        { "speaker": "B", "de": "Ja, die XYZ Bank ist neben der Post. Das ist nicht weit.", "zh": "有的，XYZ 銀行就在郵局隔壁。不會很遠。" },
-        { "speaker": "A", "de": "Entschuldigung … Ist hier ein Geldautomat in der Nähe?", "zh": "請問…附近有提款機嗎？" },
-        { "speaker": "B", "de": "Ja, im Hauptbahnhof ist ein Geldautomat.", "zh": "有，主火車站裡面就有一台。" },
-        { "speaker": "A", "de": "Haben Sie kurz Zeit? Wir suchen die Magnus Kirche.", "zh": "請問有空嗎？我們在找 Magnus 教堂。" },
-        { "speaker": "B", "de": "Die Magnus Kirche ist gleich hinter dem Krankenhaus.", "zh": "Magnus 教堂就在醫院後面。" },
-        { "speaker": "A", "de": "Wo ist die Bushaltestelle?", "zh": "公車站在哪？" },
-        { "speaker": "B", "de": "Tut mir leid. Das weiß ich nicht. Ich bin auch fremd hier.", "zh": "不好意思，我不知道。我也是外地人。" }
+        {
+          "speaker": "A",
+          "de": "Entschuldigung … Gibt es hier in der Nähe eine Post?",
+          "zh": "不好意思…附近有郵局嗎？"
+        },
+        {
+          "speaker": "B",
+          "de": "Ja, die XYZ Bank ist neben der Post. Das ist nicht weit.",
+          "zh": "有的，XYZ 銀行就在郵局隔壁。不會很遠。"
+        },
+        {
+          "speaker": "A",
+          "de": "Entschuldigung … Ist hier ein Geldautomat in der Nähe?",
+          "zh": "請問…附近有提款機嗎？"
+        },
+        {
+          "speaker": "B",
+          "de": "Ja, im Hauptbahnhof ist ein Geldautomat.",
+          "zh": "有，主火車站裡面就有一台。"
+        },
+        {
+          "speaker": "A",
+          "de": "Haben Sie kurz Zeit? Wir suchen die Magnus Kirche.",
+          "zh": "請問有空嗎？我們在找 Magnus 教堂。"
+        },
+        {
+          "speaker": "B",
+          "de": "Die Magnus Kirche ist gleich hinter dem Krankenhaus.",
+          "zh": "Magnus 教堂就在醫院後面。"
+        },
+        {
+          "speaker": "A",
+          "de": "Wo ist die Bushaltestelle?",
+          "zh": "公車站在哪？"
+        },
+        {
+          "speaker": "B",
+          "de": "Tut mir leid. Das weiß ich nicht. Ich bin auch fremd hier.",
+          "zh": "不好意思，我不知道。我也是外地人。"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "指路：典型句型",
       "lines": [
-        { "speaker": "A", "de": "Entschuldigung. Wie komme ich zum Bahnhof?", "zh": "請問怎麼去火車站？" },
-        { "speaker": "A", "de": "Kennen Sie den Weg zum Bahnhof?", "zh": "您知道去火車站的路嗎？" },
-        { "speaker": "B", "de": "Zuerst fahren Sie ca. 300 Meter geradeaus.", "zh": "先直走大約 300 公尺。" },
-        { "speaker": "B", "de": "Sie kommen an einer Post und einem Krankenhaus vorbei.", "zh": "您會經過一間郵局和一間醫院。" },
-        { "speaker": "B", "de": "Vor der Kirche fahren Sie dann links und gleich wieder rechts.", "zh": "在教堂前左轉，馬上再右轉。" },
-        { "speaker": "B", "de": "Und an der Ampel biegen Sie dann links ab.", "zh": "然後在紅綠燈左轉。" },
-        { "speaker": "B", "de": "Danach noch 100 m geradeaus. Dann sind Sie da.", "zh": "接著再直走 100 公尺，就到了。" }
+        {
+          "speaker": "A",
+          "de": "Entschuldigung. Wie komme ich zum Bahnhof?",
+          "zh": "請問怎麼去火車站？"
+        },
+        {
+          "speaker": "A",
+          "de": "Kennen Sie den Weg zum Bahnhof?",
+          "zh": "您知道去火車站的路嗎？"
+        },
+        {
+          "speaker": "B",
+          "de": "Zuerst fahren Sie ca. 300 Meter geradeaus.",
+          "zh": "先直走大約 300 公尺。"
+        },
+        {
+          "speaker": "B",
+          "de": "Sie kommen an einer Post und einem Krankenhaus vorbei.",
+          "zh": "您會經過一間郵局和一間醫院。"
+        },
+        {
+          "speaker": "B",
+          "de": "Vor der Kirche fahren Sie dann links und gleich wieder rechts.",
+          "zh": "在教堂前左轉，馬上再右轉。"
+        },
+        {
+          "speaker": "B",
+          "de": "Und an der Ampel biegen Sie dann links ab.",
+          "zh": "然後在紅綠燈左轉。"
+        },
+        {
+          "speaker": "B",
+          "de": "Danach noch 100 m geradeaus. Dann sind Sie da.",
+          "zh": "接著再直走 100 公尺，就到了。"
+        }
       ]
     },
-
     {
       "type": "phrases",
       "title_zh": "重點短句與單字",
@@ -135,39 +361,104 @@
           "title_de": "Wegbeschreibung",
           "title_zh": "問路 / 指路",
           "items": [
-            { "de": "Wie komme ich zu / zum / zur … ?", "zh": "我要怎麼去…？" },
-            { "de": "Kennen Sie den Weg zu / zum / zur … ?", "zh": "您知道去…的路嗎？" },
-            { "de": "Gibt es hier in der Nähe …?", "zh": "這附近有…嗎？" },
-            { "de": "Tut mir leid, das weiß ich nicht.", "zh": "抱歉我不知道。" },
-            { "de": "Ich bin auch fremd hier.", "zh": "我也是外地人。" },
-            { "de": "geradeaus", "zh": "直走" },
-            { "de": "an … vorbei", "zh": "經過…" },
-            { "de": "ab|biegen", "zh": "轉彎（可分動詞）" },
-            { "de": "links / rechts", "zh": "左 / 右" },
-            { "de": "(nach) links / (nach) rechts", "zh": "向左 / 向右" },
-            { "de": "gleich wieder", "zh": "馬上又…（再一次）" },
-            { "de": "da", "zh": "在那裡 / 到了" },
-            { "de": "der Meter", "zh": "公尺" },
-            { "de": "der Weg (-e)", "zh": "路 / 路徑" },
-            { "de": "zuerst", "zh": "首先" },
-            { "de": "dann", "zh": "然後" },
-            { "de": "danach", "zh": "之後" },
-            { "de": "in der Nähe", "zh": "附近" }
+            {
+              "de": "Wie komme ich zu / zum / zur … ?",
+              "zh": "我要怎麼去…？"
+            },
+            {
+              "de": "Kennen Sie den Weg zu / zum / zur … ?",
+              "zh": "您知道去…的路嗎？"
+            },
+            {
+              "de": "Gibt es hier in der Nähe …?",
+              "zh": "這附近有…嗎？"
+            },
+            {
+              "de": "Tut mir leid, das weiß ich nicht.",
+              "zh": "抱歉我不知道。"
+            },
+            {
+              "de": "Ich bin auch fremd hier.",
+              "zh": "我也是外地人。"
+            },
+            {
+              "de": "geradeaus",
+              "zh": "直走"
+            },
+            {
+              "de": "an … vorbei",
+              "zh": "經過…"
+            },
+            {
+              "de": "ab|biegen",
+              "zh": "轉彎（可分動詞）"
+            },
+            {
+              "de": "links / rechts",
+              "zh": "左 / 右"
+            },
+            {
+              "de": "(nach) links / (nach) rechts",
+              "zh": "向左 / 向右"
+            },
+            {
+              "de": "gleich wieder",
+              "zh": "馬上又…（再一次）"
+            },
+            {
+              "de": "da",
+              "zh": "在那裡 / 到了"
+            },
+            {
+              "de": "der Meter",
+              "zh": "公尺"
+            },
+            {
+              "de": "der Weg (-e)",
+              "zh": "路 / 路徑"
+            },
+            {
+              "de": "zuerst",
+              "zh": "首先"
+            },
+            {
+              "de": "dann",
+              "zh": "然後"
+            },
+            {
+              "de": "danach",
+              "zh": "之後"
+            },
+            {
+              "de": "in der Nähe",
+              "zh": "附近"
+            }
           ]
         },
         {
           "title_de": "zu + Dativ 縮寫",
           "title_zh": "zu 的常用縮寫",
           "items": [
-            { "de": "zu dem → zum", "zh": "陽 / 中性 → zum (z.B. zum Bahnhof)" },
-            { "de": "zu der → zur", "zh": "陰性 → zur (z.B. zur Kirche)" },
-            { "de": "in dem → im", "zh": "在…裡（im Hauptbahnhof）" },
-            { "de": "an dem → am", "zh": "在…旁（am Tisch）" }
+            {
+              "de": "zu dem → zum",
+              "zh": "陽 / 中性 → zum (z.B. zum Bahnhof)"
+            },
+            {
+              "de": "zu der → zur",
+              "zh": "陰性 → zur (z.B. zur Kirche)"
+            },
+            {
+              "de": "in dem → im",
+              "zh": "在…裡（im Hauptbahnhof）"
+            },
+            {
+              "de": "an dem → am",
+              "zh": "在…旁（am Tisch）"
+            }
           ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 1：完成冠詞變化表",
@@ -177,38 +468,150 @@
         {
           "id": "ch1-ex1",
           "type": "table-fill",
-          "headers": ["", "NOM def.", "NOM indef.", "AKK def.", "AKK indef.", "DAT def.", "DAT indef."],
-          "rows": [
-            { "cells": [
-              { "text": "陽 (m.)" },
-              { "text": "der" }, { "text": "ein" },
-              { "input": true, "answer": "den" }, { "input": true, "answer": "einen" },
-              { "input": true, "answer": "dem" }, { "input": true, "answer": "einem" }
-            ]},
-            { "cells": [
-              { "text": "中 (n.)" },
-              { "text": "das" }, { "text": "ein" },
-              { "input": true, "answer": "das" }, { "input": true, "answer": "ein" },
-              { "input": true, "answer": "dem" }, { "input": true, "answer": "einem" }
-            ]},
-            { "cells": [
-              { "text": "陰 (f.)" },
-              { "text": "die" }, { "text": "eine" },
-              { "input": true, "answer": "die" }, { "input": true, "answer": "eine" },
-              { "input": true, "answer": "der" }, { "input": true, "answer": "einer" }
-            ]},
-            { "cells": [
-              { "text": "Plural" },
-              { "text": "die" }, { "text": "—" },
-              { "input": true, "answer": "die" }, { "text": "—" },
-              { "input": true, "answer": "den" }, { "text": "—" }
-            ]}
+          "headers": [
+            "",
+            "NOM def.",
+            "NOM indef.",
+            "AKK def.",
+            "AKK indef.",
+            "DAT def.",
+            "DAT indef."
           ],
-          "answer": ["den", "einen", "dem", "einem", "das", "ein", "dem", "einem", "die", "eine", "der", "einer", "die", "den"]
+          "rows": [
+            {
+              "cells": [
+                {
+                  "text": "陽 (m.)"
+                },
+                {
+                  "text": "der"
+                },
+                {
+                  "text": "ein"
+                },
+                {
+                  "input": true,
+                  "answer": "den"
+                },
+                {
+                  "input": true,
+                  "answer": "einen"
+                },
+                {
+                  "input": true,
+                  "answer": "dem"
+                },
+                {
+                  "input": true,
+                  "answer": "einem"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "中 (n.)"
+                },
+                {
+                  "text": "das"
+                },
+                {
+                  "text": "ein"
+                },
+                {
+                  "input": true,
+                  "answer": "das"
+                },
+                {
+                  "input": true,
+                  "answer": "ein"
+                },
+                {
+                  "input": true,
+                  "answer": "dem"
+                },
+                {
+                  "input": true,
+                  "answer": "einem"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "陰 (f.)"
+                },
+                {
+                  "text": "die"
+                },
+                {
+                  "text": "eine"
+                },
+                {
+                  "input": true,
+                  "answer": "die"
+                },
+                {
+                  "input": true,
+                  "answer": "eine"
+                },
+                {
+                  "input": true,
+                  "answer": "der"
+                },
+                {
+                  "input": true,
+                  "answer": "einer"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "Plural"
+                },
+                {
+                  "text": "die"
+                },
+                {
+                  "text": "—"
+                },
+                {
+                  "input": true,
+                  "answer": "die"
+                },
+                {
+                  "text": "—"
+                },
+                {
+                  "input": true,
+                  "answer": "den"
+                },
+                {
+                  "text": "—"
+                }
+              ]
+            }
+          ],
+          "answer": [
+            "den",
+            "einen",
+            "dem",
+            "einem",
+            "das",
+            "ein",
+            "dem",
+            "einem",
+            "die",
+            "eine",
+            "der",
+            "einer",
+            "die",
+            "den"
+          ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 2：選出合適的介係詞與冠詞（Dativ）",
@@ -220,68 +623,133 @@
           "label": "a)",
           "type": "multi-blank",
           "prompt_md": "Der Laptop ist ___ ___ Tisch.",
-          "answer": [["auf"], ["dem"]],
-          "hint_zh": "電腦在桌『上』"
+          "answer": [
+            [
+              "auf"
+            ],
+            [
+              "dem"
+            ]
+          ],
+          "hint_zh": "位置介係詞 + 陽性 Dativ 冠詞"
         },
         {
           "id": "ch1-ex2b",
           "label": "b)",
           "type": "multi-blank",
           "prompt_md": "___ ___ Tisch und ___ Sofa ist eine Pflanze.",
-          "answer": [["Zwischen", "zwischen"], ["dem"], ["dem"]],
-          "hint_zh": "在桌子和沙發『之間』"
+          "answer": [
+            [
+              "Zwischen",
+              "zwischen"
+            ],
+            [
+              "dem"
+            ],
+            [
+              "dem"
+            ]
+          ],
+          "hint_zh": "兩物之間 → 句首要大寫；介係詞後接 Dativ"
         },
         {
           "id": "ch1-ex2c",
           "label": "c)",
           "type": "multi-blank",
           "prompt_md": "Und ___ ___ Sofa sind Lisas Bücher.",
-          "answer": [["unter"], ["dem"]],
-          "hint_zh": "Lisa 的書在沙發『下』"
+          "answer": [
+            [
+              "unter"
+            ],
+            [
+              "dem"
+            ]
+          ],
+          "hint_zh": "位置介係詞 + 中性 Dativ"
         },
         {
           "id": "ch1-ex2d",
           "label": "d)",
           "type": "multi-blank",
           "prompt_md": "Die Lampe ___ ___ Sofa ist schon alt.",
-          "answer": [["neben"], ["dem"]],
-          "hint_zh": "燈在沙發『隔壁』"
+          "answer": [
+            [
+              "neben"
+            ],
+            [
+              "dem"
+            ]
+          ],
+          "hint_zh": "位置介係詞 + 中性 Dativ"
         },
         {
           "id": "ch1-ex2e",
           "label": "e)",
           "type": "multi-blank",
           "prompt_md": "Die Uhr ist ___ ___ Wand ___ ___ Sofa.",
-          "answer": [["an"], ["der"], ["hinter", "über"], ["dem"]],
-          "hint_zh": "時鐘掛在牆上、在沙發後方／上方"
+          "answer": [
+            [
+              "an"
+            ],
+            [
+              "der"
+            ],
+            [
+              "hinter",
+              "über"
+            ],
+            [
+              "dem"
+            ]
+          ],
+          "hint_zh": "die Wand 陰性、das Sofa 中性"
         },
         {
           "id": "ch1-ex2f",
           "label": "f)",
           "type": "multi-blank",
           "prompt_md": "Die Klimaanlage ist ___ ___ Uhr.",
-          "answer": [["über"], ["der"]],
-          "hint_zh": "冷氣在時鐘『上方』（沒接觸）"
+          "answer": [
+            [
+              "über"
+            ],
+            [
+              "der"
+            ]
+          ],
+          "hint_zh": "「上方但不接觸」用哪個介係詞？die Uhr 是陰性"
         },
         {
           "id": "ch1-ex2g",
           "label": "g)",
           "type": "multi-blank",
           "prompt_md": "___ Schrank ist ein Rucksack und ___ ___ Schrank ist ein Teppich.",
-          "answer": [["Im", "im"], ["vor"], ["dem"]],
-          "hint_zh": "in + dem = im；衣櫃『裡面』有背包，『前面』有地毯"
+          "answer": [
+            [
+              "Im",
+              "im"
+            ],
+            [
+              "vor"
+            ],
+            [
+              "dem"
+            ]
+          ],
+          "hint_zh": "衣櫃「裡」vs「前」是兩個介係詞；別忘 in+dem 的縮寫"
         },
         {
           "id": "ch1-ex2h",
           "label": "h)",
           "type": "fill-blank",
           "prompt_md": "Der Spiegel ___ Schrank ist sehr praktisch.",
-          "answer": ["am"],
-          "hint_zh": "an + dem = am（鏡子靠在櫃子上）"
+          "answer": [
+            "am"
+          ],
+          "hint_zh": "an + dem 的縮寫"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 3：城市地點配對",
@@ -293,21 +761,50 @@
           "type": "match",
           "prompt": "把德文與中文配對：",
           "pairs": [
-            { "left": "der Geldautomat", "right": "提款機" },
-            { "left": "die Kirche", "right": "教堂" },
-            { "left": "die Bank", "right": "銀行" },
-            { "left": "das Restaurant", "right": "餐廳" },
-            { "left": "das Krankenhaus", "right": "醫院" },
-            { "left": "die Post", "right": "郵局" },
-            { "left": "die Polizei", "right": "警察局" },
-            { "left": "das Café", "right": "咖啡店" },
-            { "left": "die Tankstelle", "right": "加油站" },
-            { "left": "der Bahnhof", "right": "火車站" }
+            {
+              "left": "der Geldautomat",
+              "right": "提款機"
+            },
+            {
+              "left": "die Kirche",
+              "right": "教堂"
+            },
+            {
+              "left": "die Bank",
+              "right": "銀行"
+            },
+            {
+              "left": "das Restaurant",
+              "right": "餐廳"
+            },
+            {
+              "left": "das Krankenhaus",
+              "right": "醫院"
+            },
+            {
+              "left": "die Post",
+              "right": "郵局"
+            },
+            {
+              "left": "die Polizei",
+              "right": "警察局"
+            },
+            {
+              "left": "das Café",
+              "right": "咖啡店"
+            },
+            {
+              "left": "die Tankstelle",
+              "right": "加油站"
+            },
+            {
+              "left": "der Bahnhof",
+              "right": "火車站"
+            }
           ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 4：問路句型填空",
@@ -319,36 +816,40 @@
           "label": "a)",
           "type": "fill-blank",
           "prompt_md": "Entschuldigung. Gibt es hier ___ ein Krankenhaus?",
-          "answer": ["in der Nähe"],
-          "hint_zh": "「附近」"
+          "answer": [
+            "in der Nähe"
+          ]
         },
         {
           "id": "ch1-ex4b",
           "label": "b)",
           "type": "fill-blank",
           "prompt_md": "Haben Sie kurz Zeit? Wir ___ den Hauptbahnhof.",
-          "answer": ["suchen"],
-          "hint_zh": "「找」(動詞)"
+          "answer": [
+            "suchen"
+          ]
         },
         {
           "id": "ch1-ex4c",
           "label": "c)",
           "type": "fill-blank",
           "prompt_md": "Kennen Sie den ___ zur Marienkirche?",
-          "answer": ["Weg"],
-          "hint_zh": "「路 / 路徑」"
+          "answer": [
+            "Weg"
+          ]
         },
         {
           "id": "ch1-ex4d",
           "label": "d)",
           "type": "fill-blank",
           "prompt_md": "Wie ___ ich zum Restaurant Müller?",
-          "answer": ["komme"],
-          "hint_zh": "「我怎麼去到…」(動詞 kommen 變位)"
+          "answer": [
+            "komme"
+          ],
+          "hint_zh": "kommen 的 ich 變位"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 5：描述路線",
@@ -360,36 +861,56 @@
           "label": "a)",
           "type": "multi-blank",
           "prompt_md": "Zuerst gehen Sie 200 m ___ und dann an der ___ links.",
-          "answer": [["geradeaus"], ["Ampel"]],
-          "hint_zh": "「直走」、「紅綠燈」"
+          "answer": [
+            [
+              "geradeaus"
+            ],
+            [
+              "Ampel"
+            ]
+          ]
         },
         {
           "id": "ch1-ex5b",
           "label": "b)",
           "type": "multi-blank",
           "prompt_md": "Dann kommen Sie ___ einer Kirche ___.",
-          "answer": [["an"], ["vorbei"]],
-          "hint_zh": "「an … vorbei」表示「經過某地」"
+          "answer": [
+            [
+              "an"
+            ],
+            [
+              "vorbei"
+            ]
+          ],
+          "hint_zh": "「an … vorbei」是固定結構"
         },
         {
           "id": "ch1-ex5c",
           "label": "c)",
           "type": "multi-blank",
           "prompt_md": "Danach fahren Sie (nach) ___ und gleich wieder (nach) ___.",
-          "answer": [["links"], ["rechts"]],
-          "hint_zh": "「往左」、「再向右」"
+          "answer": [
+            [
+              "links"
+            ],
+            [
+              "rechts"
+            ]
+          ],
+          "hint_zh": "兩個相反方向"
         },
         {
           "id": "ch1-ex5d",
           "label": "d)",
           "type": "fill-blank",
           "prompt_md": "Dann sehen Sie eine ___. Und dort ist auch das Krankenhaus.",
-          "answer": ["Tankstelle"],
-          "hint_zh": "「加油站」"
+          "answer": [
+            "Tankstelle"
+          ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 6：選擇正確的冠詞",
@@ -400,40 +921,55 @@
           "label": "1.",
           "type": "choice",
           "prompt_de": "Das Buch liegt auf ___ Tisch.",
-          "options": ["der", "dem", "den"],
+          "options": [
+            "der",
+            "dem",
+            "den"
+          ],
           "answer": "dem",
-          "hint_zh": "der Tisch（陽性）→ Dativ = dem"
+          "hint_zh": "der Tisch 是陽性"
         },
         {
           "id": "ch1-ex6b",
           "label": "2.",
           "type": "choice",
           "prompt_de": "Die Lampe ist neben ___ Sofa.",
-          "options": ["der", "dem", "das"],
+          "options": [
+            "der",
+            "dem",
+            "das"
+          ],
           "answer": "dem",
-          "hint_zh": "das Sofa（中性）→ Dativ = dem"
+          "hint_zh": "das Sofa 是中性"
         },
         {
           "id": "ch1-ex6c",
           "label": "3.",
           "type": "choice",
           "prompt_de": "Der Spiegel hängt an ___ Wand.",
-          "options": ["der", "die", "dem"],
+          "options": [
+            "der",
+            "die",
+            "dem"
+          ],
           "answer": "der",
-          "hint_zh": "die Wand（陰性）→ Dativ = der"
+          "hint_zh": "die Wand 是陰性"
         },
         {
           "id": "ch1-ex6d",
           "label": "4.",
           "type": "choice",
           "prompt_de": "Das Sofa steht zwischen ___ Pflanzen.",
-          "options": ["der", "den", "die"],
+          "options": [
+            "der",
+            "den",
+            "die"
+          ],
           "answer": "den",
-          "hint_zh": "die Pflanzen（複數）→ Dativ = den（且名詞會加 n）"
+          "hint_zh": "die Pflanzen 是複數 — 複數 Dativ 名詞還會加 n"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 7：自由作答",

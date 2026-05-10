@@ -3,14 +3,16 @@
   "title_de": "In a hotel",
   "title_zh": "在飯店",
   "topic_zh": "預訂房間、約 / 改 / 取消預約、時間介係詞",
-  "grammar_focus": ["temporal prepositions: vor, nach, in, für", "mit + Dativ"],
+  "grammar_focus": [
+    "temporal prepositions: vor, nach, in, für",
+    "mit + Dativ"
+  ],
   "sections": [
     {
       "type": "intro",
       "title_zh": "本章你會學到",
       "zh": "在德國訂飯店、講飯店有什麼問題（沒熱水、燈不亮、暖氣壞了…），跟櫃檯預約 / 改期 / 取消，並學會 4 個重要的時間介係詞：vor（之前）、nach（之後）、in（多久後）、für（持續多久）。"
     },
-
     {
       "type": "grammar",
       "title_de": "Temporale Präpositionen",
@@ -19,134 +21,417 @@
       "tables": [
         {
           "title": "時間介係詞 vs 格位",
-          "headers": ["介係詞", "中文意思", "格位", "用法"],
+          "headers": [
+            "介係詞",
+            "中文意思",
+            "格位",
+            "用法"
+          ],
           "rows": [
-            ["vor", "在…之前", "Dativ", "vor dem Deutschkurs（在德文課之前）"],
-            ["nach", "在…之後", "Dativ", "nach dem Deutschkurs（在德文課之後）"],
-            ["in", "在…之後（未來）", "Dativ", "in einem Jahr（一年後）、in 10 Minuten（10 分鐘後）"],
-            ["für", "持續…", "Akkusativ", "für einen Monat（持續一個月）"]
+            [
+              "vor",
+              "在…之前",
+              "Dativ",
+              "vor dem Deutschkurs（在德文課之前）"
+            ],
+            [
+              "nach",
+              "在…之後",
+              "Dativ",
+              "nach dem Deutschkurs（在德文課之後）"
+            ],
+            [
+              "in",
+              "在…之後（未來）",
+              "Dativ",
+              "in einem Jahr（一年後）、in 10 Minuten（10 分鐘後）"
+            ],
+            [
+              "für",
+              "持續…",
+              "Akkusativ",
+              "für einen Monat（持續一個月）"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Er macht Hausaufgaben vor dem Deutschkurs.", "zh": "他在德文課前寫作業。" },
-        { "de": "Nach dem Deutschkurs macht er Sport.", "zh": "下課後去運動。" },
-        { "de": "Er möchte in einem Jahr in Deutschland studieren.", "zh": "他想一年後到德國念書。" },
-        { "de": "Er trainiert für 2 Stunden.", "zh": "他訓練兩個小時。" }
+        {
+          "de": "Er macht Hausaufgaben vor dem Deutschkurs.",
+          "zh": "他在德文課前寫作業。"
+        },
+        {
+          "de": "Nach dem Deutschkurs macht er Sport.",
+          "zh": "下課後去運動。"
+        },
+        {
+          "de": "Er möchte in einem Jahr in Deutschland studieren.",
+          "zh": "他想一年後到德國念書。"
+        },
+        {
+          "de": "Er trainiert für 2 Stunden.",
+          "zh": "他訓練兩個小時。"
+        }
       ],
       "tips_zh": "für 在口語常省略 — 「Ich bleibe 3 Tage」和「Ich bleibe für 3 Tage」都可以。"
     },
-
     {
       "type": "grammar",
       "title_de": "mit + Dativ",
       "title_zh": "mit 永遠接 Dativ",
       "explanation_zh": "mit（跟 / 用 / 帶有）後面一定接 Dativ。在飯店場景超常用：mit Frühstück（含早餐）、mit Halbpension（含半膳）。",
       "examples": [
-        { "de": "Ein Zimmer mit Frühstück, bitte.", "zh": "請給我一間附早餐的房間。" },
-        { "de": "Ein Zimmer mit Halbpension.", "zh": "一間半膳的房間（含早餐和晚餐）。" },
-        { "de": "Ich fahre mit dem Zug nach München.", "zh": "我搭火車去慕尼黑。（mit dem Zug = 搭火車）" }
+        {
+          "de": "Ein Zimmer mit Frühstück, bitte.",
+          "zh": "請給我一間附早餐的房間。"
+        },
+        {
+          "de": "Ein Zimmer mit Halbpension.",
+          "zh": "一間半膳的房間（含早餐和晚餐）。"
+        },
+        {
+          "de": "Ich fahre mit dem Zug nach München.",
+          "zh": "我搭火車去慕尼黑。（mit dem Zug = 搭火車）"
+        }
       ]
     },
-
     {
       "type": "vocabulary",
       "title_de": "Im Hotel",
       "title_zh": "飯店相關",
       "items": [
-        { "de": "das Hotel", "plural": "-s", "zh": "飯店" },
-        { "de": "die Rezeption", "plural": "-en", "zh": "櫃檯 / 接待處" },
-        { "de": "der Zimmerschlüssel", "plural": "-", "zh": "房間鑰匙" },
-        { "de": "der Zimmerservice", "plural": "-", "zh": "客房服務" },
-        { "de": "der Techniker", "plural": "-", "zh": "技師 / 維修人員" },
-        { "de": "das Problem", "plural": "-e", "zh": "問題" },
-        { "de": "das Einzelzimmer", "plural": "-", "zh": "單人房" },
-        { "de": "das Doppelzimmer", "plural": "-", "zh": "雙人房" },
-        { "de": "das Mehrbettzimmer", "plural": "-", "zh": "多人房 / 背包客房" },
-        { "de": "das Frühstück", "plural": "-e", "zh": "早餐" },
-        { "de": "die Halbpension", "plural": "-", "zh": "半膳（早餐 + 晚餐）" },
-        { "de": "die Klimaanlage", "plural": "-n", "zh": "冷氣" },
-        { "de": "die Heizung", "plural": "-en", "zh": "暖氣" },
-        { "de": "das Licht", "plural": "-er", "zh": "燈光" },
-        { "de": "die Dusche", "plural": "-n", "zh": "淋浴" },
-        { "de": "das Handtuch", "plural": "⸚er", "zh": "毛巾" },
-        { "de": "der Föhn", "plural": "-e", "zh": "吹風機" },
-        { "de": "das Toilettenpapier", "plural": "-e", "zh": "衛生紙" }
+        {
+          "de": "das Hotel",
+          "plural": "-s",
+          "zh": "飯店"
+        },
+        {
+          "de": "die Rezeption",
+          "plural": "-en",
+          "zh": "櫃檯 / 接待處"
+        },
+        {
+          "de": "der Zimmerschlüssel",
+          "plural": "-",
+          "zh": "房間鑰匙"
+        },
+        {
+          "de": "der Zimmerservice",
+          "plural": "-",
+          "zh": "客房服務"
+        },
+        {
+          "de": "der Techniker",
+          "plural": "-",
+          "zh": "技師 / 維修人員"
+        },
+        {
+          "de": "das Problem",
+          "plural": "-e",
+          "zh": "問題"
+        },
+        {
+          "de": "das Einzelzimmer",
+          "plural": "-",
+          "zh": "單人房"
+        },
+        {
+          "de": "das Doppelzimmer",
+          "plural": "-",
+          "zh": "雙人房"
+        },
+        {
+          "de": "das Mehrbettzimmer",
+          "plural": "-",
+          "zh": "多人房 / 背包客房"
+        },
+        {
+          "de": "das Frühstück",
+          "plural": "-e",
+          "zh": "早餐"
+        },
+        {
+          "de": "die Halbpension",
+          "plural": "-",
+          "zh": "半膳（早餐 + 晚餐）"
+        },
+        {
+          "de": "die Klimaanlage",
+          "plural": "-n",
+          "zh": "冷氣"
+        },
+        {
+          "de": "die Heizung",
+          "plural": "-en",
+          "zh": "暖氣"
+        },
+        {
+          "de": "das Licht",
+          "plural": "-er",
+          "zh": "燈光"
+        },
+        {
+          "de": "die Dusche",
+          "plural": "-n",
+          "zh": "淋浴"
+        },
+        {
+          "de": "das Handtuch",
+          "plural": "⸚er",
+          "zh": "毛巾"
+        },
+        {
+          "de": "der Föhn",
+          "plural": "-e",
+          "zh": "吹風機"
+        },
+        {
+          "de": "das Toilettenpapier",
+          "plural": "-e",
+          "zh": "衛生紙"
+        }
       ]
     },
-
     {
       "type": "vocabulary",
       "title_de": "Termine & Zeit",
       "title_zh": "預約 / 時間用語",
       "items": [
-        { "de": "der Termin", "plural": "-e", "zh": "預約 / 約會" },
-        { "de": "der Terminkalender", "plural": "-", "zh": "行事曆" },
-        { "de": "der Moment", "plural": "-e", "zh": "片刻" },
-        { "de": "der Anruf", "plural": "-e", "zh": "電話 / 來電" },
-        { "de": "die Aktivität", "plural": "-en", "zh": "活動" },
-        { "de": "die Zukunft", "plural": "-", "zh": "未來" },
-        { "de": "vereinbaren", "plural": "", "zh": "約定 / 訂下（約）" },
-        { "de": "verschieben", "plural": "", "zh": "延期 / 改時間" },
-        { "de": "ab|sagen", "plural": "", "zh": "取消（可分動詞）" },
-        { "de": "bleiben", "plural": "", "zh": "停留 / 住" },
-        { "de": "funktionieren", "plural": "", "zh": "運作 / 正常" },
-        { "de": "schicken", "plural": "", "zh": "派 / 寄" },
-        { "de": "bringen", "plural": "", "zh": "拿來 / 送來" },
-        { "de": "schlafen", "plural": "", "zh": "睡覺" },
-        { "de": "trainieren", "plural": "", "zh": "訓練 / 健身" },
-        { "de": "frei", "plural": "", "zh": "空著的 / 有空" },
-        { "de": "frisch", "plural": "", "zh": "新鮮的" },
-        { "de": "unterwegs", "plural": "", "zh": "在路上" },
-        { "de": "noch", "plural": "", "zh": "還 / 仍" },
-        { "de": "noch einmal", "plural": "", "zh": "再一次" },
-        { "de": "noch nicht", "plural": "", "zh": "還沒" },
-        { "de": "in Ordnung", "plural": "", "zh": "好的 / 沒問題" },
-        { "de": "leider", "plural": "", "zh": "可惜 / 不巧" }
+        {
+          "de": "der Termin",
+          "plural": "-e",
+          "zh": "預約 / 約會"
+        },
+        {
+          "de": "der Terminkalender",
+          "plural": "-",
+          "zh": "行事曆"
+        },
+        {
+          "de": "der Moment",
+          "plural": "-e",
+          "zh": "片刻"
+        },
+        {
+          "de": "der Anruf",
+          "plural": "-e",
+          "zh": "電話 / 來電"
+        },
+        {
+          "de": "die Aktivität",
+          "plural": "-en",
+          "zh": "活動"
+        },
+        {
+          "de": "die Zukunft",
+          "plural": "-",
+          "zh": "未來"
+        },
+        {
+          "de": "vereinbaren",
+          "plural": "",
+          "zh": "約定 / 訂下（約）"
+        },
+        {
+          "de": "verschieben",
+          "plural": "",
+          "zh": "延期 / 改時間"
+        },
+        {
+          "de": "ab|sagen",
+          "plural": "",
+          "zh": "取消（可分動詞）"
+        },
+        {
+          "de": "bleiben",
+          "plural": "",
+          "zh": "停留 / 住"
+        },
+        {
+          "de": "funktionieren",
+          "plural": "",
+          "zh": "運作 / 正常"
+        },
+        {
+          "de": "schicken",
+          "plural": "",
+          "zh": "派 / 寄"
+        },
+        {
+          "de": "bringen",
+          "plural": "",
+          "zh": "拿來 / 送來"
+        },
+        {
+          "de": "schlafen",
+          "plural": "",
+          "zh": "睡覺"
+        },
+        {
+          "de": "trainieren",
+          "plural": "",
+          "zh": "訓練 / 健身"
+        },
+        {
+          "de": "frei",
+          "plural": "",
+          "zh": "空著的 / 有空"
+        },
+        {
+          "de": "frisch",
+          "plural": "",
+          "zh": "新鮮的"
+        },
+        {
+          "de": "unterwegs",
+          "plural": "",
+          "zh": "在路上"
+        },
+        {
+          "de": "noch",
+          "plural": "",
+          "zh": "還 / 仍"
+        },
+        {
+          "de": "noch einmal",
+          "plural": "",
+          "zh": "再一次"
+        },
+        {
+          "de": "noch nicht",
+          "plural": "",
+          "zh": "還沒"
+        },
+        {
+          "de": "in Ordnung",
+          "plural": "",
+          "zh": "好的 / 沒問題"
+        },
+        {
+          "de": "leider",
+          "plural": "",
+          "zh": "可惜 / 不巧"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "訂房對話",
       "lines": [
-        { "speaker": "客人", "de": "Guten Tag. Haben Sie noch ein Zimmer frei?", "zh": "您好，還有空房嗎？" },
-        { "speaker": "櫃檯", "de": "Guten Tag. Ja natürlich. Möchten Sie zwei Einzel- oder ein Doppelzimmer?", "zh": "您好，當然有。要兩間單人房還是一間雙人房？" },
-        { "speaker": "客人", "de": "Ein Doppelzimmer bitte.", "zh": "一間雙人房謝謝。" },
-        { "speaker": "櫃檯", "de": "Mit Frühstück oder mit Halbpension?", "zh": "含早餐還是半膳？" },
-        { "speaker": "客人", "de": "Bitte nur mit Frühstück.", "zh": "只要早餐就好。" },
-        { "speaker": "櫃檯", "de": "Sehr gerne. Und wie lange bleiben Sie?", "zh": "好的。要住幾晚？" },
-        { "speaker": "客人", "de": "Wir bleiben 2 Nächte.", "zh": "兩晚。" },
-        { "speaker": "櫃檯", "de": "Hier bitte... Das ist der Zimmerschlüssel.", "zh": "請收下，這是您的房卡。" }
+        {
+          "speaker": "客人",
+          "de": "Guten Tag. Haben Sie noch ein Zimmer frei?",
+          "zh": "您好，還有空房嗎？"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Guten Tag. Ja natürlich. Möchten Sie zwei Einzel- oder ein Doppelzimmer?",
+          "zh": "您好，當然有。要兩間單人房還是一間雙人房？"
+        },
+        {
+          "speaker": "客人",
+          "de": "Ein Doppelzimmer bitte.",
+          "zh": "一間雙人房謝謝。"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Mit Frühstück oder mit Halbpension?",
+          "zh": "含早餐還是半膳？"
+        },
+        {
+          "speaker": "客人",
+          "de": "Bitte nur mit Frühstück.",
+          "zh": "只要早餐就好。"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Sehr gerne. Und wie lange bleiben Sie?",
+          "zh": "好的。要住幾晚？"
+        },
+        {
+          "speaker": "客人",
+          "de": "Wir bleiben 2 Nächte.",
+          "zh": "兩晚。"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Hier bitte... Das ist der Zimmerschlüssel.",
+          "zh": "請收下，這是您的房卡。"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "房間有問題",
       "lines": [
-        { "speaker": "客人", "de": "Entschuldigen Sie. Wir haben ein Problem mit der Heizung.", "zh": "不好意思，我們的暖氣有問題。" },
-        { "speaker": "櫃檯", "de": "Oh das tut mir leid. Ich schicke sofort einen Techniker.", "zh": "真抱歉，我馬上派技師過去。" },
-        { "speaker": "客人", "de": "Ich bin in Zimmer 103. Im Bad gibt es keine Handtücher.", "zh": "我住 103，浴室沒有毛巾。" },
-        { "speaker": "櫃檯", "de": "Der Zimmerservice bringt sofort frische Handtücher.", "zh": "客房服務馬上送新毛巾過去。" },
-        { "speaker": "客人", "de": "In meinem Zimmer funktioniert das Licht nicht. Meine Zimmernummer ist 201.", "zh": "我房間的燈壞了，房號 201。" },
-        { "speaker": "櫃檯", "de": "Einen Moment bitte... Der Techniker ist schon unterwegs. Er ist in einer Minute da.", "zh": "請稍等…技師已經在路上，一分鐘就到。" }
+        {
+          "speaker": "客人",
+          "de": "Entschuldigen Sie. Wir haben ein Problem mit der Heizung.",
+          "zh": "不好意思，我們的暖氣有問題。"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Oh das tut mir leid. Ich schicke sofort einen Techniker.",
+          "zh": "真抱歉，我馬上派技師過去。"
+        },
+        {
+          "speaker": "客人",
+          "de": "Ich bin in Zimmer 103. Im Bad gibt es keine Handtücher.",
+          "zh": "我住 103，浴室沒有毛巾。"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Der Zimmerservice bringt sofort frische Handtücher.",
+          "zh": "客房服務馬上送新毛巾過去。"
+        },
+        {
+          "speaker": "客人",
+          "de": "In meinem Zimmer funktioniert das Licht nicht. Meine Zimmernummer ist 201.",
+          "zh": "我房間的燈壞了，房號 201。"
+        },
+        {
+          "speaker": "櫃檯",
+          "de": "Einen Moment bitte... Der Techniker ist schon unterwegs. Er ist in einer Minute da.",
+          "zh": "請稍等…技師已經在路上，一分鐘就到。"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "預約 / 改期 / 取消",
       "lines": [
-        { "speaker": "🆕", "de": "Haben Sie morgen noch einen Termin frei?", "zh": "明天還有空檔嗎？（vereinbaren — 約）" },
-        { "speaker": "✅", "de": "Ja, um 16 Uhr haben wir noch einen Termin frei.", "zh": "下午 4 點還有。" },
-        { "speaker": "♻️", "de": "Ich habe morgen einen Termin um 16 Uhr. Kann ich den Termin verschieben?", "zh": "我明天 4 點有約，可以延嗎？（verschieben — 延）" },
-        { "speaker": "✅", "de": "Ja, morgen ist um 18:30 Uhr noch ein Termin frei.", "zh": "可以，明天 6:30 還有空。" },
-        { "speaker": "❌", "de": "Ich möchte den Termin absagen. Ich vereinbare nächste Woche einen neuen Termin.", "zh": "我想取消，下週再重新約。（absagen — 取消）" },
-        { "speaker": "✅", "de": "In Ordnung. Vielen Dank für den Anruf.", "zh": "好的，謝謝您來電。" }
+        {
+          "speaker": "🆕",
+          "de": "Haben Sie morgen noch einen Termin frei?",
+          "zh": "明天還有空檔嗎？（vereinbaren — 約）"
+        },
+        {
+          "speaker": "✅",
+          "de": "Ja, um 16 Uhr haben wir noch einen Termin frei.",
+          "zh": "下午 4 點還有。"
+        },
+        {
+          "speaker": "♻️",
+          "de": "Ich habe morgen einen Termin um 16 Uhr. Kann ich den Termin verschieben?",
+          "zh": "我明天 4 點有約，可以延嗎？（verschieben — 延）"
+        },
+        {
+          "speaker": "✅",
+          "de": "Ja, morgen ist um 18:30 Uhr noch ein Termin frei.",
+          "zh": "可以，明天 6:30 還有空。"
+        },
+        {
+          "speaker": "❌",
+          "de": "Ich möchte den Termin absagen. Ich vereinbare nächste Woche einen neuen Termin.",
+          "zh": "我想取消，下週再重新約。（absagen — 取消）"
+        },
+        {
+          "speaker": "✅",
+          "de": "In Ordnung. Vielen Dank für den Anruf.",
+          "zh": "好的，謝謝您來電。"
+        }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 1：時間介係詞填空",
@@ -158,76 +443,116 @@
           "label": "a)",
           "type": "multi-blank",
           "prompt_md": "___ fliegt Martin nach New York? — Ich glaube ___ einem Monat.",
-          "answer": [["Wann"], ["in"]],
-          "hint_zh": "問時間用 Wann；一個月後 → in"
+          "answer": [
+            [
+              "Wann"
+            ],
+            [
+              "in"
+            ]
+          ],
+          "hint_zh": "問時間用哪個疑問詞？接 + 一段時間後"
         },
         {
           "id": "ch3-ex1b",
           "label": "b)",
           "type": "fill-blank",
           "prompt_md": "___ der Reise hat er ein Hotel im Internet gebucht.",
-          "answer": ["Vor"],
-          "hint_zh": "在旅行『之前』訂飯店"
+          "answer": [
+            "Vor"
+          ],
+          "hint_zh": "「在某事之前」"
         },
         {
           "id": "ch3-ex1c",
           "label": "c)",
           "type": "fill-blank",
           "prompt_md": "Diana möchte im Sommer ___ einen Monat einen A1 Intensivkurs machen.",
-          "answer": ["für", ""],
-          "hint_zh": "持續一個月（für 也可省略）"
+          "answer": [
+            "für",
+            ""
+          ],
+          "hint_zh": "「持續一段時間」（口語可省略）"
         },
         {
           "id": "ch3-ex1d",
           "label": "d)",
           "type": "fill-blank",
           "prompt_md": "Und ___ dem Kurs macht sie ein Praktikum bei Mercedes.",
-          "answer": ["nach"],
-          "hint_zh": "課程『之後』"
+          "answer": [
+            "nach"
+          ],
+          "hint_zh": "「在某事之後」"
         },
         {
           "id": "ch3-ex1e",
           "label": "e)",
           "type": "fill-blank",
           "prompt_md": "Karl arbeitet heute bis 18 Uhr. ___ der Arbeit geht er joggen.",
-          "answer": ["Nach"],
-          "hint_zh": "下班『之後』"
+          "answer": [
+            "Nach"
+          ],
+          "hint_zh": "「在某事之後」"
         },
         {
           "id": "ch3-ex1f",
           "label": "f)",
           "type": "fill-blank",
           "prompt_md": "Bernd und Lina haben ___ einer Stunde ein Date.",
-          "answer": ["in"],
-          "hint_zh": "一小時『後』"
+          "answer": [
+            "in"
+          ],
+          "hint_zh": "「一段時間後」（未來）"
         },
         {
           "id": "ch3-ex1g",
           "label": "g)",
           "type": "multi-blank",
           "prompt_md": "___ bleibst du in Berlin? — Ich denke ___ zwei Wochen.",
-          "answer": [["Wie lange"], ["für", ""]],
-          "hint_zh": "問持續多久 → Wie lange"
+          "answer": [
+            [
+              "Wie lange"
+            ],
+            [
+              "für",
+              ""
+            ]
+          ],
+          "hint_zh": "問持續多久"
         },
         {
           "id": "ch3-ex1h",
           "label": "h)",
           "type": "multi-blank",
           "prompt_md": "___ rufst du deine Eltern an? — Ich rufe sie ___ 10 Minuten an.",
-          "answer": [["Wann"], ["in"]],
-          "hint_zh": "10 分鐘後打電話"
+          "answer": [
+            [
+              "Wann"
+            ],
+            [
+              "in"
+            ]
+          ],
+          "hint_zh": "問時間 + 未來時間"
         },
         {
           "id": "ch3-ex1i",
           "label": "i)",
           "type": "multi-blank",
           "prompt_md": "___ siehst du fern? — Ich sehe immer ___ dem Abendessen fern.",
-          "answer": [["Wann"], ["vor", "nach"]],
-          "hint_zh": "晚餐前或晚餐後都合理"
+          "answer": [
+            [
+              "Wann"
+            ],
+            [
+              "vor",
+              "nach"
+            ]
+          ],
+          "hint_zh": "問時間 + 動作前 / 後"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 2：根據描述猜飯店物品 / 設施",
@@ -239,68 +564,75 @@
           "label": "a)",
           "type": "fill-blank",
           "prompt_md": "Im Sommer ist das sehr praktisch. → ___",
-          "answer": ["die Klimaanlage"],
-          "hint_zh": "夏天用的"
+          "answer": [
+            "die Klimaanlage"
+          ]
         },
         {
           "id": "ch3-ex2b",
           "label": "b)",
           "type": "fill-blank",
           "prompt_md": "Nach dem Duschen braucht man das. → ___",
-          "answer": ["das Handtuch"],
-          "hint_zh": "洗完澡需要的"
+          "answer": [
+            "das Handtuch"
+          ]
         },
         {
           "id": "ch3-ex2c",
           "label": "c)",
           "type": "fill-blank",
           "prompt_md": "Hier können 2 Personen schlafen. → ___",
-          "answer": ["das Doppelzimmer"],
-          "hint_zh": "兩人睡的房間"
+          "answer": [
+            "das Doppelzimmer"
+          ]
         },
         {
           "id": "ch3-ex2d",
           "label": "d)",
           "type": "fill-blank",
           "prompt_md": "Frühstück und Abendessen im Hotel → ___",
-          "answer": ["die Halbpension"],
-          "hint_zh": "早餐 + 晚餐"
+          "answer": [
+            "die Halbpension"
+          ]
         },
         {
           "id": "ch3-ex2e",
           "label": "e)",
           "type": "fill-blank",
           "prompt_md": "Ein Job im Hotel (nicht Techniker). → ___",
-          "answer": ["der Zimmerservice"],
-          "hint_zh": "送毛巾、整理房間"
+          "answer": [
+            "der Zimmerservice"
+          ]
         },
         {
           "id": "ch3-ex2f",
           "label": "f)",
           "type": "fill-blank",
           "prompt_md": "Alle Hotels haben das. → ___",
-          "answer": ["die Rezeption"],
-          "hint_zh": "進飯店第一個看到的地方"
+          "answer": [
+            "die Rezeption"
+          ]
         },
         {
           "id": "ch3-ex2g",
           "label": "g)",
           "type": "fill-blank",
           "prompt_md": "Das macht hell in der Nacht. → ___",
-          "answer": ["das Licht"],
-          "hint_zh": "晚上會亮的"
+          "answer": [
+            "das Licht"
+          ]
         },
         {
           "id": "ch3-ex2h",
           "label": "h)",
           "type": "fill-blank",
           "prompt_md": "Das Gegenteil von „Klimaanlage\". → ___",
-          "answer": ["die Heizung"],
-          "hint_zh": "冷氣的相反"
+          "answer": [
+            "die Heizung"
+          ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 3：句子重組",
@@ -312,23 +644,29 @@
           "label": "a1)",
           "type": "fill-blank",
           "prompt_md": "Zimmer | Sie | frei | haben | noch | ein ?",
-          "answer": ["Haben Sie noch ein Zimmer frei?"],
-          "hint_zh": "問句：動詞先"
+          "answer": [
+            "Haben Sie noch ein Zimmer frei?"
+          ],
+          "hint_zh": "問句：動詞放第一位"
         },
         {
           "id": "ch3-ex3a2",
           "label": "a2)",
           "type": "fill-blank",
           "prompt_md": "Nächte | Sie | wie viele | bleiben | möchten ?",
-          "answer": ["Wie viele Nächte möchten Sie bleiben?"],
-          "hint_zh": "Wie viele Nächte 在第一位"
+          "answer": [
+            "Wie viele Nächte möchten Sie bleiben?"
+          ],
+          "hint_zh": "Wie viele … 在第一位、動詞放第二位"
         },
         {
           "id": "ch3-ex3b1",
           "label": "b1)",
           "type": "fill-blank",
           "prompt_md": "Problem | haben | mit | ein | wir | dem | Licht .",
-          "answer": ["Wir haben ein Problem mit dem Licht."],
+          "answer": [
+            "Wir haben ein Problem mit dem Licht."
+          ],
           "hint_zh": "陳述句：主詞 + 動詞 + …"
         },
         {
@@ -336,36 +674,43 @@
           "label": "b2)",
           "type": "fill-blank",
           "prompt_md": "sofort | Techniker | der | kommen .",
-          "answer": ["Der Techniker kommt sofort."],
-          "hint_zh": "kommen 要變位 → kommt"
+          "answer": [
+            "Der Techniker kommt sofort."
+          ],
+          "hint_zh": "主詞是 der Techniker → 第三人稱單數"
         },
         {
           "id": "ch3-ex3c1",
           "label": "c1)",
           "type": "fill-blank",
           "prompt_md": "mehr | kein | geben | es | Toilettenpapier .",
-          "answer": ["Es gibt kein Toilettenpapier mehr."],
-          "hint_zh": "es gibt 慣用句型"
+          "answer": [
+            "Es gibt kein Toilettenpapier mehr."
+          ],
+          "hint_zh": "「es gibt + Akk」慣用句型"
         },
         {
           "id": "ch3-ex3d",
           "label": "d)",
           "type": "fill-blank",
           "prompt_md": "funktionieren | in | Heizung | nicht | meinem | die | Zimmer .",
-          "answer": ["In meinem Zimmer funktioniert die Heizung nicht."],
-          "hint_zh": "前置時間／地點 → 動詞還是放第二位"
+          "answer": [
+            "In meinem Zimmer funktioniert die Heizung nicht."
+          ],
+          "hint_zh": "前置地點時、動詞還是放第二位"
         },
         {
           "id": "ch3-ex3e",
           "label": "e)",
           "type": "fill-blank",
           "prompt_md": "möchten | Einzelzimmer | ein | buchen | ich | mit Frühstück .",
-          "answer": ["Ich möchte ein Einzelzimmer mit Frühstück buchen."],
-          "hint_zh": "möchten 變位 + 第二動詞 buchen 放最後"
+          "answer": [
+            "Ich möchte ein Einzelzimmer mit Frühstück buchen."
+          ],
+          "hint_zh": "情態動詞變位放第二位、第二動詞原型放句尾"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 4：vereinbaren / verschieben / absagen",
@@ -377,52 +722,74 @@
           "label": "a)",
           "type": "fill-blank",
           "prompt_md": "Möchten Sie einen Termin für morgen ___?",
-          "answer": ["vereinbaren"],
-          "hint_zh": "想『約』新時間"
+          "answer": [
+            "vereinbaren"
+          ],
+          "hint_zh": "原型動詞（接在 möchten 之後）"
         },
         {
           "id": "ch3-ex4b1",
           "label": "b1)",
           "type": "fill-blank",
           "prompt_md": "Ich hatte keine Zeit und habe ihn ___.",
-          "answer": ["abgesagt"],
-          "hint_zh": "haben + 過去分詞 → abgesagt"
+          "answer": [
+            "abgesagt"
+          ],
+          "hint_zh": "可分動詞 → 過去分詞要把前綴拼回去"
         },
         {
           "id": "ch3-ex4b2",
           "label": "b2)",
           "type": "fill-blank",
           "prompt_md": "Warum hast du den Termin nicht ___?",
-          "answer": ["verschoben"],
-          "hint_zh": "verschieben 的過去分詞"
+          "answer": [
+            "verschoben"
+          ],
+          "hint_zh": "verschieben 強動詞 → Partizip II 不規則"
         },
         {
           "id": "ch3-ex4c1",
           "label": "c1)",
           "type": "fill-blank",
           "prompt_md": "Ich habe einen Termin für 15:30 Uhr ___.",
-          "answer": ["vereinbart"],
-          "hint_zh": "已經『約好了』"
+          "answer": [
+            "vereinbart"
+          ],
+          "hint_zh": "完成式（haben + 過去分詞）"
         },
         {
           "id": "ch3-ex4c2",
           "label": "c2)",
           "type": "fill-blank",
           "prompt_md": "Können wir den Termin auf 16:30 Uhr ___?",
-          "answer": ["verschieben"],
-          "hint_zh": "原型動詞（情態 können 後面）"
+          "answer": [
+            "verschieben"
+          ],
+          "hint_zh": "情態動詞 können 之後 → 原型"
         },
         {
           "id": "ch3-ex4d",
           "label": "d)",
           "type": "multi-blank",
           "prompt_md": "Er ___ ständig Termine, ___ sie ein- oder zweimal und ___ sie am Ende dann ___.",
-          "answer": [["vereinbart"], ["verschiebt"], ["sagt"], ["ab"]],
-          "hint_zh": "現在式第三人稱單數變位 + absagen 是可分動詞，前綴放句尾"
+          "answer": [
+            [
+              "vereinbart"
+            ],
+            [
+              "verschiebt"
+            ],
+            [
+              "sagt"
+            ],
+            [
+              "ab"
+            ]
+          ],
+          "hint_zh": "第三人稱單數現在式；最後一個是可分動詞，前綴放句尾"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 5：自由作答",

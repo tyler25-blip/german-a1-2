@@ -3,14 +3,18 @@
   "title_de": "Plans & career",
   "title_zh": "計畫與職涯",
   "topic_zh": "聊人生與職涯規劃、序數與日期",
-  "grammar_focus": ["modal verb wollen", "verb werden", "mit + Dativ / ohne + Akk", "ordinal numbers"],
+  "grammar_focus": [
+    "modal verb wollen",
+    "verb werden",
+    "mit + Dativ / ohne + Akk",
+    "ordinal numbers"
+  ],
   "sections": [
     {
       "type": "intro",
       "title_zh": "本章你會學到",
       "zh": "用 wollen（想要）談未來計畫、用 werden（變成）談職涯、用 mit/ohne 表達『有 / 沒有』，並學德文序數（第一、第二…）和日期表達 — 一旦會說 am 9. September，你就能講你的生日了！"
     },
-
     {
       "type": "grammar",
       "title_de": "Modalverb: wollen",
@@ -19,25 +23,61 @@
       "tables": [
         {
           "title": "wollen 變位",
-          "headers": ["人稱", "wollen", "möchten（禮貌版）"],
+          "headers": [
+            "人稱",
+            "wollen",
+            "möchten（禮貌版）"
+          ],
           "rows": [
-            ["ich", "will", "möchte"],
-            ["du", "willst", "möchtest"],
-            ["er / sie / es", "will", "möchte"],
-            ["wir", "wollen", "möchten"],
-            ["ihr", "wollt", "möchtet"],
-            ["sie / Sie", "wollen", "möchten"]
+            [
+              "ich",
+              "will",
+              "möchte"
+            ],
+            [
+              "du",
+              "willst",
+              "möchtest"
+            ],
+            [
+              "er / sie / es",
+              "will",
+              "möchte"
+            ],
+            [
+              "wir",
+              "wollen",
+              "möchten"
+            ],
+            [
+              "ihr",
+              "wollt",
+              "möchtet"
+            ],
+            [
+              "sie / Sie",
+              "wollen",
+              "möchten"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Willst du im Ausland leben? — Ja, ich will in Australien leben.", "zh": "你想到國外住嗎？— 想，我想住澳洲。" },
-        { "de": "Ich will nur ein Kind haben, aber Karin will 3 Kinder haben.", "zh": "我只想要一個小孩，但 Karin 想要三個。" },
-        { "de": "Wollt ihr eine große Familie haben?", "zh": "你們想要大家庭嗎？" }
+        {
+          "de": "Willst du im Ausland leben? — Ja, ich will in Australien leben.",
+          "zh": "你想到國外住嗎？— 想，我想住澳洲。"
+        },
+        {
+          "de": "Ich will nur ein Kind haben, aber Karin will 3 Kinder haben.",
+          "zh": "我只想要一個小孩，但 Karin 想要三個。"
+        },
+        {
+          "de": "Wollt ihr eine große Familie haben?",
+          "zh": "你們想要大家庭嗎？"
+        }
       ],
       "tips_zh": "情態動詞通用規則：被變位的情態動詞放第二位，主要動詞用原型放句尾。Ich will Profisportler werden = 我想成為職業運動員（werden 放最後）。"
     },
-
     {
       "type": "grammar",
       "title_de": "Verb: werden",
@@ -46,25 +86,57 @@
       "tables": [
         {
           "title": "werden 變位（注意 du / er 是不規則）",
-          "headers": ["人稱", "werden"],
+          "headers": [
+            "人稱",
+            "werden"
+          ],
           "rows": [
-            ["ich", "werde"],
-            ["du", "wirst"],
-            ["er / sie / es", "wird"],
-            ["wir", "werden"],
-            ["ihr", "werdet"],
-            ["sie / Sie", "werden"]
+            [
+              "ich",
+              "werde"
+            ],
+            [
+              "du",
+              "wirst"
+            ],
+            [
+              "er / sie / es",
+              "wird"
+            ],
+            [
+              "wir",
+              "werden"
+            ],
+            [
+              "ihr",
+              "werdet"
+            ],
+            [
+              "sie / Sie",
+              "werden"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Ich will Profisportler werden.", "zh": "我想當職業運動員。" },
-        { "de": "Wollt ihr reich werden?", "zh": "你們想變有錢嗎？" },
-        { "de": "Nein, wir wollen berühmt werden.", "zh": "不，我們想出名。" },
-        { "de": "Bei BMW wirst du reich!", "zh": "進 BMW 你會發財！" }
+        {
+          "de": "Ich will Profisportler werden.",
+          "zh": "我想當職業運動員。"
+        },
+        {
+          "de": "Wollt ihr reich werden?",
+          "zh": "你們想變有錢嗎？"
+        },
+        {
+          "de": "Nein, wir wollen berühmt werden.",
+          "zh": "不，我們想出名。"
+        },
+        {
+          "de": "Bei BMW wirst du reich!",
+          "zh": "進 BMW 你會發財！"
+        }
       ]
     },
-
     {
       "type": "grammar",
       "title_de": "mit + Dativ / ohne + Akkusativ",
@@ -72,20 +144,43 @@
       "explanation_zh": "簡單對立的兩個介係詞：mit 後面接 Dativ，ohne 後面接 Akkusativ。",
       "tables": [
         {
-          "headers": ["介係詞", "中文", "格位", "範例"],
+          "headers": [
+            "介係詞",
+            "中文",
+            "格位",
+            "範例"
+          ],
           "rows": [
-            ["mit", "和、用、有", "Dativ", "mit seiner Mutter / mit dem Bus"],
-            ["ohne", "沒有", "Akkusativ", "ohne seine Mutter / ohne den Bus"]
+            [
+              "mit",
+              "和、用、有",
+              "Dativ",
+              "mit seiner Mutter / mit dem Bus"
+            ],
+            [
+              "ohne",
+              "沒有",
+              "Akkusativ",
+              "ohne seine Mutter / ohne den Bus"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Moritz geht mit seiner Mutter einkaufen.", "zh": "Moritz 跟他媽媽去買東西。（mit + 陰 Dat → seiner）" },
-        { "de": "Er kauft nie ohne seine Mutter ein.", "zh": "他從來沒在沒媽媽的情況下買過。（ohne + 陰 Akk → seine）" },
-        { "de": "Sabrina kann ohne ihren Hund nicht leben.", "zh": "Sabrina 沒她的狗活不了。（陽 Akk → ihren）" }
+        {
+          "de": "Moritz geht mit seiner Mutter einkaufen.",
+          "zh": "Moritz 跟他媽媽去買東西。（mit + 陰 Dat → seiner）"
+        },
+        {
+          "de": "Er kauft nie ohne seine Mutter ein.",
+          "zh": "他從來沒在沒媽媽的情況下買過。（ohne + 陰 Akk → seine）"
+        },
+        {
+          "de": "Sabrina kann ohne ihren Hund nicht leben.",
+          "zh": "Sabrina 沒她的狗活不了。（陽 Akk → ihren）"
+        }
       ]
     },
-
     {
       "type": "grammar",
       "title_de": "Ordinalzahlen",
@@ -94,104 +189,351 @@
       "tables": [
         {
           "title": "1. – 10. 序數",
-          "headers": ["數字", "Nominativ (-te)", "Dativ (-ten)", "中文"],
+          "headers": [
+            "數字",
+            "Nominativ (-te)",
+            "Dativ (-ten)",
+            "中文"
+          ],
           "rows": [
-            ["1.", "erste", "ersten", "第一"],
-            ["2.", "zweite", "zweiten", "第二"],
-            ["3.", "dritte", "dritten", "第三"],
-            ["4.", "vierte", "vierten", "第四"],
-            ["5.", "fünfte", "fünften", "第五"],
-            ["6.", "sechste", "sechsten", "第六"],
-            ["7.", "siebte", "siebten", "第七"],
-            ["8.", "achte", "achten", "第八"],
-            ["9.", "neunte", "neunten", "第九"],
-            ["10.", "zehnte", "zehnten", "第十"]
+            [
+              "1.",
+              "erste",
+              "ersten",
+              "第一"
+            ],
+            [
+              "2.",
+              "zweite",
+              "zweiten",
+              "第二"
+            ],
+            [
+              "3.",
+              "dritte",
+              "dritten",
+              "第三"
+            ],
+            [
+              "4.",
+              "vierte",
+              "vierten",
+              "第四"
+            ],
+            [
+              "5.",
+              "fünfte",
+              "fünften",
+              "第五"
+            ],
+            [
+              "6.",
+              "sechste",
+              "sechsten",
+              "第六"
+            ],
+            [
+              "7.",
+              "siebte",
+              "siebten",
+              "第七"
+            ],
+            [
+              "8.",
+              "achte",
+              "achten",
+              "第八"
+            ],
+            [
+              "9.",
+              "neunte",
+              "neunten",
+              "第九"
+            ],
+            [
+              "10.",
+              "zehnte",
+              "zehnten",
+              "第十"
+            ]
           ]
         },
         {
           "title": "20. 起（規則：-ste / -sten）",
-          "headers": ["數字", "Nominativ", "Dativ"],
+          "headers": [
+            "數字",
+            "Nominativ",
+            "Dativ"
+          ],
           "rows": [
-            ["20.", "zwanzigste", "zwanzigsten"],
-            ["21.", "einundzwanzigste", "einundzwanzigsten"],
-            ["22.", "zweiundzwanzigste", "zweiundzwanzigsten"]
+            [
+              "20.",
+              "zwanzigste",
+              "zwanzigsten"
+            ],
+            [
+              "21.",
+              "einundzwanzigste",
+              "einundzwanzigsten"
+            ],
+            [
+              "22.",
+              "zweiundzwanzigste",
+              "zweiundzwanzigsten"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Heute ist der 12. (zwölfte) Januar.", "zh": "今天是 1 月 12 日。（主格：der）" },
-        { "de": "Ich habe am 9. (neunten) September Geburtstag.", "zh": "我 9 月 9 日生日。（am = an + dem，Dativ）" },
-        { "de": "Wir sind vom 1. bis zum 15. August in Urlaub.", "zh": "我們 8 月 1 日到 15 日在度假。（vom...bis zum 都是 Dativ）" },
-        { "de": "Ab dem 16. April mache ich eine Weltreise.", "zh": "我 4 月 16 日起去環遊世界。" }
+        {
+          "de": "Heute ist der 12. (zwölfte) Januar.",
+          "zh": "今天是 1 月 12 日。（主格：der）"
+        },
+        {
+          "de": "Ich habe am 9. (neunten) September Geburtstag.",
+          "zh": "我 9 月 9 日生日。（am = an + dem，Dativ）"
+        },
+        {
+          "de": "Wir sind vom 1. bis zum 15. August in Urlaub.",
+          "zh": "我們 8 月 1 日到 15 日在度假。（vom...bis zum 都是 Dativ）"
+        },
+        {
+          "de": "Ab dem 16. April mache ich eine Weltreise.",
+          "zh": "我 4 月 16 日起去環遊世界。"
+        }
       ],
       "tips_zh": "日期格位口訣：『今天是…』用 Nominativ（der 12. Januar）；『在某天…』用 Dativ（am 12. Januar、vom 1. bis zum 15.）。月份永遠大寫（Januar、Februar…）；序數當形容詞，因此不大寫。"
     },
-
     {
       "type": "vocabulary",
       "title_de": "Über Pläne sprechen",
       "title_zh": "計畫 / 職涯相關",
       "items": [
-        { "de": "der Plan", "plural": "⸚e", "zh": "計畫" },
-        { "de": "der Abschluss", "plural": "⸚e", "zh": "畢業 / 學位" },
-        { "de": "das Studium", "plural": "-", "zh": "大學學業" },
-        { "de": "der Studienplatz", "plural": "⸚e", "zh": "大學名額" },
-        { "de": "das Semester", "plural": "-", "zh": "學期" },
-        { "de": "die Prüfung", "plural": "-en", "zh": "考試" },
-        { "de": "die Fremdsprache", "plural": "-n", "zh": "外語" },
-        { "de": "der Geburtstag", "plural": "-e", "zh": "生日" },
-        { "de": "der Feiertag", "plural": "-e", "zh": "國定假日" },
-        { "de": "die Ferien", "plural": "Pl.", "zh": "假期（複數專用）" },
-        { "de": "das Ferienhaus", "plural": "⸚er", "zh": "度假屋" },
-        { "de": "die Weltreise", "plural": "-n", "zh": "環遊世界" },
-        { "de": "die Welt", "plural": "-en", "zh": "世界" },
-        { "de": "der Profi", "plural": "-s", "zh": "專業人士" },
-        { "de": "der Profisportler", "plural": "-", "zh": "職業運動員" },
-        { "de": "das Gehalt", "plural": "⸚er", "zh": "薪水" },
-        { "de": "das Geld", "plural": "-", "zh": "錢" },
-        { "de": "das Ausland", "plural": "-", "zh": "國外" },
-        { "de": "der Hund", "plural": "-e", "zh": "狗" },
-        { "de": "die Party", "plural": "-s", "zh": "派對" }
+        {
+          "de": "der Plan",
+          "plural": "⸚e",
+          "zh": "計畫"
+        },
+        {
+          "de": "der Abschluss",
+          "plural": "⸚e",
+          "zh": "畢業 / 學位"
+        },
+        {
+          "de": "das Studium",
+          "plural": "-",
+          "zh": "大學學業"
+        },
+        {
+          "de": "der Studienplatz",
+          "plural": "⸚e",
+          "zh": "大學名額"
+        },
+        {
+          "de": "das Semester",
+          "plural": "-",
+          "zh": "學期"
+        },
+        {
+          "de": "die Prüfung",
+          "plural": "-en",
+          "zh": "考試"
+        },
+        {
+          "de": "die Fremdsprache",
+          "plural": "-n",
+          "zh": "外語"
+        },
+        {
+          "de": "der Geburtstag",
+          "plural": "-e",
+          "zh": "生日"
+        },
+        {
+          "de": "der Feiertag",
+          "plural": "-e",
+          "zh": "國定假日"
+        },
+        {
+          "de": "die Ferien",
+          "plural": "Pl.",
+          "zh": "假期（複數專用）"
+        },
+        {
+          "de": "das Ferienhaus",
+          "plural": "⸚er",
+          "zh": "度假屋"
+        },
+        {
+          "de": "die Weltreise",
+          "plural": "-n",
+          "zh": "環遊世界"
+        },
+        {
+          "de": "die Welt",
+          "plural": "-en",
+          "zh": "世界"
+        },
+        {
+          "de": "der Profi",
+          "plural": "-s",
+          "zh": "專業人士"
+        },
+        {
+          "de": "der Profisportler",
+          "plural": "-",
+          "zh": "職業運動員"
+        },
+        {
+          "de": "das Gehalt",
+          "plural": "⸚er",
+          "zh": "薪水"
+        },
+        {
+          "de": "das Geld",
+          "plural": "-",
+          "zh": "錢"
+        },
+        {
+          "de": "das Ausland",
+          "plural": "-",
+          "zh": "國外"
+        },
+        {
+          "de": "der Hund",
+          "plural": "-e",
+          "zh": "狗"
+        },
+        {
+          "de": "die Party",
+          "plural": "-s",
+          "zh": "派對"
+        }
       ]
     },
-
     {
       "type": "vocabulary",
       "title_de": "Verben",
       "title_zh": "本章動詞",
       "items": [
-        { "de": "wollen", "plural": "", "zh": "想要" },
-        { "de": "werden", "plural": "", "zh": "變成" },
-        { "de": "ab|schließen", "plural": "", "zh": "完成（學業）" },
-        { "de": "bestehen", "plural": "", "zh": "通過（考試）" },
-        { "de": "schaffen", "plural": "", "zh": "辦到 / 成功" },
-        { "de": "verdienen", "plural": "", "zh": "賺（錢）" },
-        { "de": "hoffen", "plural": "", "zh": "希望" },
-        { "de": "reisen", "plural": "", "zh": "旅行" },
-        { "de": "Wie läuft ... ?", "plural": "", "zh": "…進行得如何？" },
-        { "de": "fertig", "plural": "", "zh": "完成的 / 準備好的" },
-        { "de": "reich", "plural": "", "zh": "有錢的" },
-        { "de": "im Ausland", "plural": "", "zh": "在國外" }
+        {
+          "de": "wollen",
+          "plural": "",
+          "zh": "想要"
+        },
+        {
+          "de": "werden",
+          "plural": "",
+          "zh": "變成"
+        },
+        {
+          "de": "ab|schließen",
+          "plural": "",
+          "zh": "完成（學業）"
+        },
+        {
+          "de": "bestehen",
+          "plural": "",
+          "zh": "通過（考試）"
+        },
+        {
+          "de": "schaffen",
+          "plural": "",
+          "zh": "辦到 / 成功"
+        },
+        {
+          "de": "verdienen",
+          "plural": "",
+          "zh": "賺（錢）"
+        },
+        {
+          "de": "hoffen",
+          "plural": "",
+          "zh": "希望"
+        },
+        {
+          "de": "reisen",
+          "plural": "",
+          "zh": "旅行"
+        },
+        {
+          "de": "Wie läuft ... ?",
+          "plural": "",
+          "zh": "…進行得如何？"
+        },
+        {
+          "de": "fertig",
+          "plural": "",
+          "zh": "完成的 / 準備好的"
+        },
+        {
+          "de": "reich",
+          "plural": "",
+          "zh": "有錢的"
+        },
+        {
+          "de": "im Ausland",
+          "plural": "",
+          "zh": "在國外"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "聊未來計畫",
       "lines": [
-        { "speaker": "A", "de": "Wie läuft dein Deutschkurs?", "zh": "你德文課上得怎麼樣？" },
-        { "speaker": "B", "de": "Gut. Ich habe die B1-Prüfung bestanden. Und mein Bachelor ist auch bald fertig.", "zh": "不錯，B1 過了，學士也快完成。" },
-        { "speaker": "A", "de": "Du machst einen Bachelor, oder?", "zh": "你在念學士對吧？" },
-        { "speaker": "B", "de": "Ja. Noch 2 Semester, dann schließe ich ihn ab.", "zh": "對，再兩學期就畢業。" },
-        { "speaker": "A", "de": "Was willst du nach dem Abschluss machen?", "zh": "畢業後想做什麼？" },
-        { "speaker": "B", "de": "Zuerst möchte ich eine Weltreise machen, und dann einen Studienplatz an der Uni in München bekommen.", "zh": "先環遊世界，再去慕尼黑大學念書。" },
-        { "speaker": "A", "de": "Und was willst du studieren?", "zh": "想念什麼科系？" },
-        { "speaker": "B", "de": "Einen Master in Industriedesign. Ich will Designer werden und später bei BMW arbeiten.", "zh": "工業設計碩士。我想當設計師，之後進 BMW。" },
-        { "speaker": "A", "de": "Bei BMW! Dann wirst du reich!", "zh": "BMW！那你會發財！" },
-        { "speaker": "B", "de": "Ja, das hoffe ich auch. Ich will viel verdienen und ein Ferienhaus in Spanien kaufen.", "zh": "希望啦，我想多賺點錢，在西班牙買間度假屋。" }
+        {
+          "speaker": "A",
+          "de": "Wie läuft dein Deutschkurs?",
+          "zh": "你德文課上得怎麼樣？"
+        },
+        {
+          "speaker": "B",
+          "de": "Gut. Ich habe die B1-Prüfung bestanden. Und mein Bachelor ist auch bald fertig.",
+          "zh": "不錯，B1 過了，學士也快完成。"
+        },
+        {
+          "speaker": "A",
+          "de": "Du machst einen Bachelor, oder?",
+          "zh": "你在念學士對吧？"
+        },
+        {
+          "speaker": "B",
+          "de": "Ja. Noch 2 Semester, dann schließe ich ihn ab.",
+          "zh": "對，再兩學期就畢業。"
+        },
+        {
+          "speaker": "A",
+          "de": "Was willst du nach dem Abschluss machen?",
+          "zh": "畢業後想做什麼？"
+        },
+        {
+          "speaker": "B",
+          "de": "Zuerst möchte ich eine Weltreise machen, und dann einen Studienplatz an der Uni in München bekommen.",
+          "zh": "先環遊世界，再去慕尼黑大學念書。"
+        },
+        {
+          "speaker": "A",
+          "de": "Und was willst du studieren?",
+          "zh": "想念什麼科系？"
+        },
+        {
+          "speaker": "B",
+          "de": "Einen Master in Industriedesign. Ich will Designer werden und später bei BMW arbeiten.",
+          "zh": "工業設計碩士。我想當設計師，之後進 BMW。"
+        },
+        {
+          "speaker": "A",
+          "de": "Bei BMW! Dann wirst du reich!",
+          "zh": "BMW！那你會發財！"
+        },
+        {
+          "speaker": "B",
+          "de": "Ja, das hoffe ich auch. Ich will viel verdienen und ein Ferienhaus in Spanien kaufen.",
+          "zh": "希望啦，我想多賺點錢，在西班牙買間度假屋。"
+        }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 1：wollen / möchten / werden 變位",
@@ -201,27 +543,151 @@
         {
           "id": "ch5-ex1",
           "type": "table-fill",
-          "headers": ["", "wollen", "möchten", "werden"],
+          "headers": [
+            "",
+            "wollen",
+            "möchten",
+            "werden"
+          ],
           "rows": [
-            { "cells": [{ "text": "ich" }, { "input": true, "answer": "will" }, { "input": true, "answer": "möchte" }, { "input": true, "answer": "werde" }] },
-            { "cells": [{ "text": "du" }, { "input": true, "answer": "willst" }, { "input": true, "answer": "möchtest" }, { "input": true, "answer": "wirst" }] },
-            { "cells": [{ "text": "er/sie/es" }, { "input": true, "answer": "will" }, { "input": true, "answer": "möchte" }, { "input": true, "answer": "wird" }] },
-            { "cells": [{ "text": "wir" }, { "input": true, "answer": "wollen" }, { "input": true, "answer": "möchten" }, { "input": true, "answer": "werden" }] },
-            { "cells": [{ "text": "ihr" }, { "input": true, "answer": "wollt" }, { "input": true, "answer": "möchtet" }, { "input": true, "answer": "werdet" }] },
-            { "cells": [{ "text": "sie/Sie" }, { "input": true, "answer": "wollen" }, { "input": true, "answer": "möchten" }, { "input": true, "answer": "werden" }] }
+            {
+              "cells": [
+                {
+                  "text": "ich"
+                },
+                {
+                  "input": true,
+                  "answer": "will"
+                },
+                {
+                  "input": true,
+                  "answer": "möchte"
+                },
+                {
+                  "input": true,
+                  "answer": "werde"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "du"
+                },
+                {
+                  "input": true,
+                  "answer": "willst"
+                },
+                {
+                  "input": true,
+                  "answer": "möchtest"
+                },
+                {
+                  "input": true,
+                  "answer": "wirst"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "er/sie/es"
+                },
+                {
+                  "input": true,
+                  "answer": "will"
+                },
+                {
+                  "input": true,
+                  "answer": "möchte"
+                },
+                {
+                  "input": true,
+                  "answer": "wird"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "wir"
+                },
+                {
+                  "input": true,
+                  "answer": "wollen"
+                },
+                {
+                  "input": true,
+                  "answer": "möchten"
+                },
+                {
+                  "input": true,
+                  "answer": "werden"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "ihr"
+                },
+                {
+                  "input": true,
+                  "answer": "wollt"
+                },
+                {
+                  "input": true,
+                  "answer": "möchtet"
+                },
+                {
+                  "input": true,
+                  "answer": "werdet"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "text": "sie/Sie"
+                },
+                {
+                  "input": true,
+                  "answer": "wollen"
+                },
+                {
+                  "input": true,
+                  "answer": "möchten"
+                },
+                {
+                  "input": true,
+                  "answer": "werden"
+                }
+              ]
+            }
           ],
           "answer": [
-            "will", "möchte", "werde",
-            "willst", "möchtest", "wirst",
-            "will", "möchte", "wird",
-            "wollen", "möchten", "werden",
-            "wollt", "möchtet", "werdet",
-            "wollen", "möchten", "werden"
+            "will",
+            "möchte",
+            "werde",
+            "willst",
+            "möchtest",
+            "wirst",
+            "will",
+            "möchte",
+            "wird",
+            "wollen",
+            "möchten",
+            "werden",
+            "wollt",
+            "möchtet",
+            "werdet",
+            "wollen",
+            "möchten",
+            "werden"
           ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 2：wollen + 第二動詞",
@@ -233,84 +699,154 @@
           "label": "a)",
           "type": "multi-blank",
           "prompt_md": "Was ___ du später einmal ___? — Vielleicht Kinderärztin.",
-          "answer": [["willst"], ["werden"]],
-          "hint_zh": "你以後想當什麼？"
+          "answer": [
+            [
+              "willst"
+            ],
+            [
+              "werden"
+            ]
+          ],
+          "hint_zh": "想要 + 變成（兩個動詞）"
         },
         {
           "id": "ch5-ex2b",
           "label": "b)",
           "type": "multi-blank",
           "prompt_md": "Warum ___ Kim ihr Auto ___?",
-          "answer": [["will"], ["verkaufen"]],
-          "hint_zh": "為什麼 Kim 想賣她的車？"
+          "answer": [
+            [
+              "will"
+            ],
+            [
+              "verkaufen"
+            ]
+          ],
+          "hint_zh": "想要 + 賣"
         },
         {
           "id": "ch5-ex2c",
           "label": "c)",
           "type": "multi-blank",
           "prompt_md": "___ ihr viele Kinder ___? — Ja, wir ___ eine große Familie ___.",
-          "answer": [["Wollt"], ["haben"], ["wollen"], ["haben"]],
-          "hint_zh": "你們想要很多小孩嗎？"
+          "answer": [
+            [
+              "Wollt"
+            ],
+            [
+              "haben"
+            ],
+            [
+              "wollen"
+            ],
+            [
+              "haben"
+            ]
+          ],
+          "hint_zh": "ihr 的變位 + 「有 / 擁有」"
         },
         {
           "id": "ch5-ex2d",
           "label": "d)",
           "type": "multi-blank",
           "prompt_md": "Klaus ___ nächstes Jahr in Deutschland Medizin ___.",
-          "answer": [["will"], ["studieren"]],
-          "hint_zh": "Klaus 明年要在德國念醫學"
+          "answer": [
+            [
+              "will"
+            ],
+            [
+              "studieren"
+            ]
+          ],
+          "hint_zh": "念書 → 哪個動詞？"
         },
         {
           "id": "ch5-ex2e",
           "label": "e)",
           "type": "multi-blank",
           "prompt_md": "Wir ___ ins Kino ___.",
-          "answer": [["wollen"], ["gehen"]],
-          "hint_zh": "我們想去看電影"
+          "answer": [
+            [
+              "wollen"
+            ],
+            [
+              "gehen"
+            ]
+          ],
+          "hint_zh": "想要 + 去（去看電影）"
         },
         {
           "id": "ch5-ex2f",
           "label": "f)",
           "type": "multi-blank",
           "prompt_md": "Roman liest sehr viel. Er ___ einen E-Book Reader ___.",
-          "answer": [["will"], ["kaufen"]],
-          "hint_zh": "他想買電子書閱讀器"
+          "answer": [
+            [
+              "will"
+            ],
+            [
+              "kaufen"
+            ]
+          ],
+          "hint_zh": "想要 + 買"
         },
         {
           "id": "ch5-ex2g",
           "label": "g)",
           "type": "fill-blank",
           "prompt_md": "___ Sie wirklich keinen Wein?",
-          "answer": ["Wollen"],
-          "hint_zh": "您真的不要葡萄酒嗎？"
+          "answer": [
+            "Wollen"
+          ],
+          "hint_zh": "敬語 Sie 的變位"
         },
         {
           "id": "ch5-ex2h",
           "label": "h)",
           "type": "multi-blank",
           "prompt_md": "Was ___ Michael nach seiner Ausbildung ___?",
-          "answer": [["will"], ["machen"]],
-          "hint_zh": "Michael 學徒結束後想做什麼？"
+          "answer": [
+            [
+              "will"
+            ],
+            [
+              "machen"
+            ]
+          ],
+          "hint_zh": "想要 + 做"
         },
         {
           "id": "ch5-ex2i",
           "label": "i)",
           "type": "multi-blank",
           "prompt_md": "Monika und ihr Bruder ___ nicht für immer in Deutschland ___.",
-          "answer": [["wollen"], ["leben"]],
-          "hint_zh": "他們不想永遠住德國"
+          "answer": [
+            [
+              "wollen"
+            ],
+            [
+              "leben"
+            ]
+          ],
+          "hint_zh": "想要 + 居住"
         },
         {
           "id": "ch5-ex2j",
           "label": "j)",
           "type": "multi-blank",
           "prompt_md": "Wie viel Geld ___ du nach deinem Studium ___?",
-          "answer": [["willst"], ["verdienen"]],
-          "hint_zh": "畢業後想賺多少錢？"
+          "answer": [
+            [
+              "willst"
+            ],
+            [
+              "verdienen"
+            ]
+          ],
+          "hint_zh": "想要 + 賺（錢）"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 3：填動詞或名詞",
@@ -322,36 +858,61 @@
           "label": "a)",
           "type": "fill-blank",
           "prompt_md": "Hoffentlich ___ Lorenz seine A1-Prüfung.",
-          "answer": ["schafft"],
-          "hint_zh": "希望他通過考試（第三人稱單數）"
+          "answer": [
+            "schafft"
+          ],
+          "hint_zh": "第三人稱單數變位"
         },
         {
           "id": "ch5-ex3b",
           "label": "b)",
           "type": "multi-blank",
           "prompt_md": "Was machst du nach deinem ___? — Ich möchte im ___ arbeiten.",
-          "answer": [["Abschluss"], ["Ausland"]],
-          "hint_zh": "畢業後 → 想在國外工作"
+          "answer": [
+            [
+              "Abschluss"
+            ],
+            [
+              "Ausland"
+            ]
+          ],
+          "hint_zh": "名詞：畢業 + 國外"
         },
         {
           "id": "ch5-ex3c",
           "label": "c)",
           "type": "multi-blank",
           "prompt_md": "Ich ___ mein ___ nächstes Jahr ___.",
-          "answer": [["schließe"], ["Studium"], ["ab"]],
-          "hint_zh": "abschließen 是可分動詞，前綴放句尾"
+          "answer": [
+            [
+              "schließe"
+            ],
+            [
+              "Studium"
+            ],
+            [
+              "ab"
+            ]
+          ],
+          "hint_zh": "abschließen 是可分動詞、前綴放句尾"
         },
         {
           "id": "ch5-ex3d",
           "label": "d)",
           "type": "multi-blank",
           "prompt_md": "Lukas will zuerst viel Geld ___ und dann eine ___ machen.",
-          "answer": [["verdienen"], ["Weltreise"]],
-          "hint_zh": "賺錢 + 環遊世界"
+          "answer": [
+            [
+              "verdienen"
+            ],
+            [
+              "Weltreise"
+            ]
+          ],
+          "hint_zh": "動詞「賺」+ 名詞「環遊世界」"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 4：mit 還是 ohne？",
@@ -363,52 +924,63 @@
           "label": "a)",
           "type": "fill-blank",
           "prompt_md": "___ deine Hilfe schaffe ich den A1 Test sicher nicht.",
-          "answer": ["Ohne"],
-          "hint_zh": "沒有你的幫忙我絕對過不了 → ohne + Akk（deine = Akk 形式）"
+          "answer": [
+            "Ohne"
+          ],
+          "hint_zh": "「沒有 + Akk」"
         },
         {
           "id": "ch5-ex4b",
           "label": "b)",
           "type": "fill-blank",
           "prompt_md": "Manuel geht nicht gerne ___ seiner Freundin einkaufen.",
-          "answer": ["mit"],
-          "hint_zh": "Manuel 不愛跟女友逛街 → mit + Dat（seiner）"
+          "answer": [
+            "mit"
+          ],
+          "hint_zh": "「和 + Dat」"
         },
         {
           "id": "ch5-ex4c",
           "label": "c)",
           "type": "fill-blank",
           "prompt_md": "Ich mache meine Hausaufgaben immer alleine und ___ mein Handy.",
-          "answer": ["ohne"],
-          "hint_zh": "不用手機 → ohne + Akk（mein）"
+          "answer": [
+            "ohne"
+          ],
+          "hint_zh": "「沒有 + Akk」"
         },
         {
           "id": "ch5-ex4d",
           "label": "d)",
           "type": "fill-blank",
           "prompt_md": "Pia kann ___ ihre Brille nicht gut sehen.",
-          "answer": ["ohne"],
-          "hint_zh": "沒眼鏡看不清 → ohne + Akk（ihre）"
+          "answer": [
+            "ohne"
+          ],
+          "hint_zh": "「沒有 + Akk」"
         },
         {
           "id": "ch5-ex4e",
           "label": "e)",
           "type": "fill-blank",
           "prompt_md": "Spielst du ___ mir Karten?",
-          "answer": ["mit"],
-          "hint_zh": "和我玩 → mit + Dat（mir）"
+          "answer": [
+            "mit"
+          ],
+          "hint_zh": "「和 + Dat」"
         },
         {
           "id": "ch5-ex4f",
           "label": "f)",
           "type": "fill-blank",
           "prompt_md": "Paolo macht nie ___ seinen Hund Urlaub.",
-          "answer": ["ohne"],
-          "hint_zh": "從不沒帶狗就度假 → ohne + Akk（seinen）"
+          "answer": [
+            "ohne"
+          ],
+          "hint_zh": "「沒有 + Akk」"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 5：寫日期（用文字拼出）",
@@ -420,44 +992,79 @@
           "label": "a)",
           "type": "fill-blank",
           "prompt_md": "Heute ist der 24. Mai. → der ___ Mai",
-          "answer": ["vierundzwanzigste"],
-          "hint_zh": "Nominativ（der ...）→ -te"
+          "answer": [
+            "vierundzwanzigste"
+          ],
+          "hint_zh": "Nominativ（der …）→ 序數加 -te"
         },
         {
           "id": "ch5-ex5b",
           "label": "b)",
           "type": "multi-blank",
           "prompt_md": "Martina hat am 7.12. Geburtstag. → am ___ ___",
-          "answer": [["siebten"], ["Zwölften"]],
-          "hint_zh": "am 後接 Dativ → -ten；月份要大寫"
+          "answer": [
+            [
+              "siebten"
+            ],
+            [
+              "Zwölften"
+            ]
+          ],
+          "hint_zh": "am 後接 Dativ → 加 -ten；月份首字大寫"
         },
         {
           "id": "ch5-ex5c",
           "label": "c)",
           "type": "multi-blank",
           "prompt_md": "Am 31.2. fahren wir in Urlaub. → am ___ ___",
-          "answer": [["einunddreißigsten"], ["Zweiten"]],
-          "hint_zh": "31. 規則 -sten；2 月 = Februar / Zweiten"
+          "answer": [
+            [
+              "einunddreißigsten"
+            ],
+            [
+              "Zweiten"
+            ]
+          ],
+          "hint_zh": "31. 適用 -sten 規則；月份首字大寫"
         },
         {
           "id": "ch5-ex5d",
           "label": "d)",
           "type": "multi-blank",
           "prompt_md": "In Deutschland ist der 3. Oktober ein Feiertag. → der ___ ___",
-          "answer": [["dritte"], ["Zehnte"]],
-          "hint_zh": "Nominativ（der ...）→ 3. = dritte（不規則）"
+          "answer": [
+            [
+              "dritte"
+            ],
+            [
+              "Zehnte"
+            ]
+          ],
+          "hint_zh": "Nominativ（der …）；3. 是不規則"
         },
         {
           "id": "ch5-ex5e",
           "label": "e)",
           "type": "multi-blank",
           "prompt_md": "Ich bin vom 1.8. bis zum 17.9. in Paris. → vom ___ ___ bis zum ___ ___",
-          "answer": [["ersten"], ["Achten"], ["siebzehnten"], ["Neunten"]],
-          "hint_zh": "vom 與 zum 都接 Dativ → -ten；序數小寫、月份大寫"
+          "answer": [
+            [
+              "ersten"
+            ],
+            [
+              "Achten"
+            ],
+            [
+              "siebzehnten"
+            ],
+            [
+              "Neunten"
+            ]
+          ],
+          "hint_zh": "vom 與 zum 都接 Dativ → -ten；月份首字大寫"
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 6：自由作答",

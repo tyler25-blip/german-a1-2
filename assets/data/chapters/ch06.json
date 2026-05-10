@@ -3,14 +3,17 @@
   "title_de": "Body & health",
   "title_zh": "身體與健康",
   "topic_zh": "形容身體狀況、給敬語建議、看醫生",
-  "grammar_focus": ["formal imperative (Sie)", "modal verb sollen", "body parts"],
+  "grammar_focus": [
+    "formal imperative (Sie)",
+    "modal verb sollen",
+    "body parts"
+  ],
   "sections": [
     {
       "type": "intro",
       "title_zh": "本章你會學到",
       "zh": "全身上下身體部位的德文，看醫生時怎麼描述身體不舒服（頭痛、感冒、發燒…），以及兩個重要文法：① Sie 命令式（醫生對病人這種敬語下達指令）；② sollen（情態動詞『應該 / 別人交代要…』）。"
     },
-
     {
       "type": "grammar",
       "title_de": "Imperativ mit Sie (formell)",
@@ -19,23 +22,51 @@
       "tables": [
         {
           "title": "命令式形式",
-          "headers": ["動詞", "Sie 命令式", "中文"],
+          "headers": [
+            "動詞",
+            "Sie 命令式",
+            "中文"
+          ],
           "rows": [
-            ["nehmen", "Nehmen Sie!", "請拿 / 服用！"],
-            ["trinken", "Trinken Sie!", "請喝！"],
-            ["schlafen", "Schlafen Sie!", "請睡！"],
-            ["bleiben", "Bleiben Sie!", "請留下！"]
+            [
+              "nehmen",
+              "Nehmen Sie!",
+              "請拿 / 服用！"
+            ],
+            [
+              "trinken",
+              "Trinken Sie!",
+              "請喝！"
+            ],
+            [
+              "schlafen",
+              "Schlafen Sie!",
+              "請睡！"
+            ],
+            [
+              "bleiben",
+              "Bleiben Sie!",
+              "請留下！"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Nehmen Sie dreimal pro Tag die Tabletten.", "zh": "請每天服用三次藥錠。" },
-        { "de": "Trinken Sie mindestens 2 Liter Wasser.", "zh": "請每天至少喝 2 公升的水。" },
-        { "de": "Schlafen Sie viel.", "zh": "請多睡。" }
+        {
+          "de": "Nehmen Sie dreimal pro Tag die Tabletten.",
+          "zh": "請每天服用三次藥錠。"
+        },
+        {
+          "de": "Trinken Sie mindestens 2 Liter Wasser.",
+          "zh": "請每天至少喝 2 公升的水。"
+        },
+        {
+          "de": "Schlafen Sie viel.",
+          "zh": "請多睡。"
+        }
       ],
       "tips_zh": "想讓命令聽起來不那麼硬，加 doch（『不如…』）：『Trinken Sie doch einen Hustentee.』 = 『不然喝杯止咳茶吧。』"
     },
-
     {
       "type": "grammar",
       "title_de": "Modalverb: sollen",
@@ -44,99 +75,329 @@
       "tables": [
         {
           "title": "sollen 變位",
-          "headers": ["人稱", "sollen"],
+          "headers": [
+            "人稱",
+            "sollen"
+          ],
           "rows": [
-            ["ich", "soll"],
-            ["du", "sollst"],
-            ["er / sie / es", "soll"],
-            ["wir", "sollen"],
-            ["ihr", "sollt"],
-            ["sie / Sie", "sollen"]
+            [
+              "ich",
+              "soll"
+            ],
+            [
+              "du",
+              "sollst"
+            ],
+            [
+              "er / sie / es",
+              "soll"
+            ],
+            [
+              "wir",
+              "sollen"
+            ],
+            [
+              "ihr",
+              "sollt"
+            ],
+            [
+              "sie / Sie",
+              "sollen"
+            ]
           ]
         }
       ],
       "examples": [
-        { "de": "Die Ärztin hat gesagt, ich soll diese Tabletten nehmen.", "zh": "醫生說我要吃這些藥。" },
-        { "de": "Du sollst auch viel Wasser trinken.", "zh": "你也應該多喝水（醫生說的）。" },
-        { "de": "Ich soll im Bett bleiben.", "zh": "我得躺床上。" }
+        {
+          "de": "Die Ärztin hat gesagt, ich soll diese Tabletten nehmen.",
+          "zh": "醫生說我要吃這些藥。"
+        },
+        {
+          "de": "Du sollst auch viel Wasser trinken.",
+          "zh": "你也應該多喝水（醫生說的）。"
+        },
+        {
+          "de": "Ich soll im Bett bleiben.",
+          "zh": "我得躺床上。"
+        }
       ],
       "tips_zh": "sollen 跟其他情態動詞一樣：sollen 變位放第二位，主要動詞用原型放句尾。"
     },
-
     {
       "type": "vocabulary",
       "title_de": "Körperteile",
       "title_zh": "身體部位",
       "items": [
-        { "de": "der Kopf", "plural": "⸚e", "zh": "頭" },
-        { "de": "das Auge", "plural": "-n", "zh": "眼睛" },
-        { "de": "die Nase", "plural": "-n", "zh": "鼻子" },
-        { "de": "der Mund", "plural": "⸚er", "zh": "嘴" },
-        { "de": "die Lippe", "plural": "-n", "zh": "嘴唇" },
-        { "de": "der Zahn", "plural": "⸚e", "zh": "牙齒" },
-        { "de": "das Ohr", "plural": "-en", "zh": "耳朵" },
-        { "de": "der Hals", "plural": "⸚e", "zh": "脖子 / 喉嚨" },
-        { "de": "die Brust", "plural": "⸚e", "zh": "胸 / 乳房" },
-        { "de": "der Bauch", "plural": "⸚e", "zh": "肚子" },
-        { "de": "der Rücken", "plural": "-", "zh": "背" },
-        { "de": "der Arm", "plural": "-e", "zh": "手臂" },
-        { "de": "die Hand", "plural": "⸚e", "zh": "手" },
-        { "de": "der Finger", "plural": "-", "zh": "手指" },
-        { "de": "die Hüfte", "plural": "-n", "zh": "臀部" },
-        { "de": "das Bein", "plural": "-e", "zh": "腿" },
-        { "de": "das Knie", "plural": "-", "zh": "膝蓋" },
-        { "de": "der Fuß", "plural": "⸚e", "zh": "腳" },
-        { "de": "der Zeh", "plural": "-en", "zh": "腳趾" },
-        { "de": "der Körper", "plural": "-", "zh": "身體" }
+        {
+          "de": "der Kopf",
+          "plural": "⸚e",
+          "zh": "頭"
+        },
+        {
+          "de": "das Auge",
+          "plural": "-n",
+          "zh": "眼睛"
+        },
+        {
+          "de": "die Nase",
+          "plural": "-n",
+          "zh": "鼻子"
+        },
+        {
+          "de": "der Mund",
+          "plural": "⸚er",
+          "zh": "嘴"
+        },
+        {
+          "de": "die Lippe",
+          "plural": "-n",
+          "zh": "嘴唇"
+        },
+        {
+          "de": "der Zahn",
+          "plural": "⸚e",
+          "zh": "牙齒"
+        },
+        {
+          "de": "das Ohr",
+          "plural": "-en",
+          "zh": "耳朵"
+        },
+        {
+          "de": "der Hals",
+          "plural": "⸚e",
+          "zh": "脖子 / 喉嚨"
+        },
+        {
+          "de": "die Brust",
+          "plural": "⸚e",
+          "zh": "胸 / 乳房"
+        },
+        {
+          "de": "der Bauch",
+          "plural": "⸚e",
+          "zh": "肚子"
+        },
+        {
+          "de": "der Rücken",
+          "plural": "-",
+          "zh": "背"
+        },
+        {
+          "de": "der Arm",
+          "plural": "-e",
+          "zh": "手臂"
+        },
+        {
+          "de": "die Hand",
+          "plural": "⸚e",
+          "zh": "手"
+        },
+        {
+          "de": "der Finger",
+          "plural": "-",
+          "zh": "手指"
+        },
+        {
+          "de": "die Hüfte",
+          "plural": "-n",
+          "zh": "臀部"
+        },
+        {
+          "de": "das Bein",
+          "plural": "-e",
+          "zh": "腿"
+        },
+        {
+          "de": "das Knie",
+          "plural": "-",
+          "zh": "膝蓋"
+        },
+        {
+          "de": "der Fuß",
+          "plural": "⸚e",
+          "zh": "腳"
+        },
+        {
+          "de": "der Zeh",
+          "plural": "-en",
+          "zh": "腳趾"
+        },
+        {
+          "de": "der Körper",
+          "plural": "-",
+          "zh": "身體"
+        }
       ]
     },
-
     {
       "type": "vocabulary",
       "title_de": "Rund um die Gesundheit",
       "title_zh": "健康相關",
       "items": [
-        { "de": "die Apotheke", "plural": "-n", "zh": "藥局" },
-        { "de": "die Praxis", "plural": "Praxen", "zh": "診所" },
-        { "de": "das Medikament", "plural": "-e", "zh": "藥" },
-        { "de": "die Tablette", "plural": "-n", "zh": "藥錠" },
-        { "de": "die Schmerztablette", "plural": "-n", "zh": "止痛藥" },
-        { "de": "das Rezept", "plural": "-e", "zh": "處方箋" },
-        { "de": "die Augentropfen", "plural": "Pl.", "zh": "眼藥水" },
-        { "de": "der Husten", "plural": "-", "zh": "咳嗽" },
-        { "de": "der Hustentee", "plural": "-s", "zh": "止咳茶" },
-        { "de": "der Schnupfen", "plural": "-", "zh": "鼻水 / 鼻塞" },
-        { "de": "das Fieber", "plural": "-", "zh": "發燒" },
-        { "de": "der Schmerz", "plural": "-en", "zh": "疼痛" },
-        { "de": "die Erkältung", "plural": "-en", "zh": "感冒" },
-        { "de": "die Krankheit", "plural": "-en", "zh": "疾病" },
-        { "de": "die Sorge", "plural": "-n", "zh": "擔憂" },
-        { "de": "krank", "plural": "", "zh": "生病的" },
-        { "de": "gesund", "plural": "", "zh": "健康的" },
-        { "de": "gegen", "plural": "", "zh": "對付（用於藥）" },
-        { "de": "weh|tun", "plural": "", "zh": "痛（可分動詞，接 Dativ）" },
-        { "de": "nehmen", "plural": "", "zh": "吃藥（不要用 essen）" }
+        {
+          "de": "die Apotheke",
+          "plural": "-n",
+          "zh": "藥局"
+        },
+        {
+          "de": "die Praxis",
+          "plural": "Praxen",
+          "zh": "診所"
+        },
+        {
+          "de": "das Medikament",
+          "plural": "-e",
+          "zh": "藥"
+        },
+        {
+          "de": "die Tablette",
+          "plural": "-n",
+          "zh": "藥錠"
+        },
+        {
+          "de": "die Schmerztablette",
+          "plural": "-n",
+          "zh": "止痛藥"
+        },
+        {
+          "de": "das Rezept",
+          "plural": "-e",
+          "zh": "處方箋"
+        },
+        {
+          "de": "die Augentropfen",
+          "plural": "Pl.",
+          "zh": "眼藥水"
+        },
+        {
+          "de": "der Husten",
+          "plural": "-",
+          "zh": "咳嗽"
+        },
+        {
+          "de": "der Hustentee",
+          "plural": "-s",
+          "zh": "止咳茶"
+        },
+        {
+          "de": "der Schnupfen",
+          "plural": "-",
+          "zh": "鼻水 / 鼻塞"
+        },
+        {
+          "de": "das Fieber",
+          "plural": "-",
+          "zh": "發燒"
+        },
+        {
+          "de": "der Schmerz",
+          "plural": "-en",
+          "zh": "疼痛"
+        },
+        {
+          "de": "die Erkältung",
+          "plural": "-en",
+          "zh": "感冒"
+        },
+        {
+          "de": "die Krankheit",
+          "plural": "-en",
+          "zh": "疾病"
+        },
+        {
+          "de": "die Sorge",
+          "plural": "-n",
+          "zh": "擔憂"
+        },
+        {
+          "de": "krank",
+          "plural": "",
+          "zh": "生病的"
+        },
+        {
+          "de": "gesund",
+          "plural": "",
+          "zh": "健康的"
+        },
+        {
+          "de": "gegen",
+          "plural": "",
+          "zh": "對付（用於藥）"
+        },
+        {
+          "de": "weh|tun",
+          "plural": "",
+          "zh": "痛（可分動詞，接 Dativ）"
+        },
+        {
+          "de": "nehmen",
+          "plural": "",
+          "zh": "吃藥（不要用 essen）"
+        }
       ]
     },
-
     {
       "type": "dialogue",
       "title_zh": "看醫生",
       "lines": [
-        { "speaker": "醫生", "de": "Hallo. Was kann ich für Sie tun?", "zh": "您好，需要什麼協助？" },
-        { "speaker": "病人", "de": "Mir geht es heute nicht so gut. Ich glaube, ich bin krank.", "zh": "我今天不舒服，我覺得我生病了。" },
-        { "speaker": "醫生", "de": "Aha. Haben Sie Fieber?", "zh": "嗯。有發燒嗎？" },
-        { "speaker": "病人", "de": "Ja, aber nur ein bisschen. Nicht sehr hoch... 38,2 °.", "zh": "有，但不高，38.2 度。" },
-        { "speaker": "醫生", "de": "Und haben Sie auch Husten?", "zh": "也有咳嗽嗎？" },
-        { "speaker": "病人", "de": "Nein, aber mein Hals tut weh und meine Nase läuft.", "zh": "沒有，但喉嚨痛、流鼻水。" },
-        { "speaker": "醫生", "de": "Keine Sorge! Ich glaube, das ist nur eine Erkältung. Bleiben Sie 2 Tage im Bett.", "zh": "別擔心，只是普通感冒。請臥床休息兩天。" },
-        { "speaker": "病人", "de": "Was kann ich gegen die Erkältung tun? Soll ich auch Schmerztabletten nehmen?", "zh": "感冒要怎麼處理？要吃止痛藥嗎？" },
-        { "speaker": "醫生", "de": "Ja, gegen das Fieber können Sie Tabletten nehmen.", "zh": "要，發燒可以吃藥。" },
-        { "speaker": "病人", "de": "Brauche ich ein Rezept für die Tabletten?", "zh": "需要處方箋嗎？" },
-        { "speaker": "醫生", "de": "Nein nein, die bekommen Sie in der Apotheke ohne Rezept.", "zh": "不用，到藥局直接買就好。" }
+        {
+          "speaker": "醫生",
+          "de": "Hallo. Was kann ich für Sie tun?",
+          "zh": "您好，需要什麼協助？"
+        },
+        {
+          "speaker": "病人",
+          "de": "Mir geht es heute nicht so gut. Ich glaube, ich bin krank.",
+          "zh": "我今天不舒服，我覺得我生病了。"
+        },
+        {
+          "speaker": "醫生",
+          "de": "Aha. Haben Sie Fieber?",
+          "zh": "嗯。有發燒嗎？"
+        },
+        {
+          "speaker": "病人",
+          "de": "Ja, aber nur ein bisschen. Nicht sehr hoch... 38,2 °.",
+          "zh": "有，但不高，38.2 度。"
+        },
+        {
+          "speaker": "醫生",
+          "de": "Und haben Sie auch Husten?",
+          "zh": "也有咳嗽嗎？"
+        },
+        {
+          "speaker": "病人",
+          "de": "Nein, aber mein Hals tut weh und meine Nase läuft.",
+          "zh": "沒有，但喉嚨痛、流鼻水。"
+        },
+        {
+          "speaker": "醫生",
+          "de": "Keine Sorge! Ich glaube, das ist nur eine Erkältung. Bleiben Sie 2 Tage im Bett.",
+          "zh": "別擔心，只是普通感冒。請臥床休息兩天。"
+        },
+        {
+          "speaker": "病人",
+          "de": "Was kann ich gegen die Erkältung tun? Soll ich auch Schmerztabletten nehmen?",
+          "zh": "感冒要怎麼處理？要吃止痛藥嗎？"
+        },
+        {
+          "speaker": "醫生",
+          "de": "Ja, gegen das Fieber können Sie Tabletten nehmen.",
+          "zh": "要，發燒可以吃藥。"
+        },
+        {
+          "speaker": "病人",
+          "de": "Brauche ich ein Rezept für die Tabletten?",
+          "zh": "需要處方箋嗎？"
+        },
+        {
+          "speaker": "醫生",
+          "de": "Nein nein, die bekommen Sie in der Apotheke ohne Rezept.",
+          "zh": "不用，到藥局直接買就好。"
+        }
       ]
     },
-
     {
       "type": "phrases",
       "title_zh": "病人會說的句子",
@@ -145,96 +406,386 @@
           "title_de": "Gesundheitsprobleme",
           "title_zh": "描述身體不舒服",
           "items": [
-            { "de": "Mein Hals tut weh.", "zh": "我喉嚨痛。" },
-            { "de": "Meine Augen tun weh.", "zh": "我眼睛痛。" },
-            { "de": "Ich habe Kopfschmerzen.", "zh": "我頭痛。" },
-            { "de": "Ich habe Bauchschmerzen.", "zh": "我肚子痛。" },
-            { "de": "Mein Bein tut weh.", "zh": "我的腿痛。" },
-            { "de": "Mir geht es nicht so gut.", "zh": "我不太舒服。" },
-            { "de": "Ich bin krank.", "zh": "我生病了。" },
-            { "de": "Ich habe Fieber / Husten / Schnupfen.", "zh": "我發燒 / 咳嗽 / 流鼻水。" }
+            {
+              "de": "Mein Hals tut weh.",
+              "zh": "我喉嚨痛。"
+            },
+            {
+              "de": "Meine Augen tun weh.",
+              "zh": "我眼睛痛。"
+            },
+            {
+              "de": "Ich habe Kopfschmerzen.",
+              "zh": "我頭痛。"
+            },
+            {
+              "de": "Ich habe Bauchschmerzen.",
+              "zh": "我肚子痛。"
+            },
+            {
+              "de": "Mein Bein tut weh.",
+              "zh": "我的腿痛。"
+            },
+            {
+              "de": "Mir geht es nicht so gut.",
+              "zh": "我不太舒服。"
+            },
+            {
+              "de": "Ich bin krank.",
+              "zh": "我生病了。"
+            },
+            {
+              "de": "Ich habe Fieber / Husten / Schnupfen.",
+              "zh": "我發燒 / 咳嗽 / 流鼻水。"
+            }
           ]
         },
         {
           "title_de": "Wehtun-Konstruktion",
           "title_zh": "wehtun 句型重點",
           "items": [
-            { "de": "wehtun = 痛", "zh": "可分動詞，主詞是『痛的部位』" },
-            { "de": "Mein Bein tut weh.", "zh": "我的腿痛（單數，動詞 tut）" },
-            { "de": "Meine Beine tun weh.", "zh": "我的雙腿痛（複數，動詞 tun）" }
+            {
+              "de": "wehtun = 痛",
+              "zh": "可分動詞，主詞是『痛的部位』"
+            },
+            {
+              "de": "Mein Bein tut weh.",
+              "zh": "我的腿痛（單數，動詞 tut）"
+            },
+            {
+              "de": "Meine Beine tun weh.",
+              "zh": "我的雙腿痛（複數，動詞 tun）"
+            }
           ]
         }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 1：身體部位（猜身體部位）",
       "instruction_zh": "依描述填入身體部位（含冠詞）。",
       "instruction_de": "Wie heißen die Körperteile?",
       "questions": [
-        { "id": "ch6-ex1a", "label": "1.", "type": "fill-blank", "prompt_md": "Mit ihm hört man Musik. → ___", "answer": ["das Ohr"], "hint_zh": "聽音樂的器官" },
-        { "id": "ch6-ex1b", "label": "2.", "type": "fill-blank", "prompt_md": "Mit ihnen kann man die Welt sehen. → ___", "answer": ["die Augen"], "hint_zh": "看世界的（複數！）" },
-        { "id": "ch6-ex1c", "label": "3.", "type": "fill-blank", "prompt_md": "Sie ist zwischen Mund und Augen. → ___", "answer": ["die Nase"], "hint_zh": "在嘴和眼睛之間" },
-        { "id": "ch6-ex1d", "label": "4.", "type": "fill-blank", "prompt_md": "Mit ihm spricht man. → ___", "answer": ["der Mund"], "hint_zh": "講話的部位" },
-        { "id": "ch6-ex1e", "label": "5.", "type": "fill-blank", "prompt_md": "Es liegt zwischen Bein und Fuß. → ___", "answer": ["das Knie"], "hint_zh": "腿和腳之間的關節" },
-        { "id": "ch6-ex1f", "label": "6.", "type": "fill-blank", "prompt_md": "Hier wohnt das Essen, nachdem man es isst. → ___", "answer": ["der Bauch"], "hint_zh": "食物進去的地方" }
+        {
+          "id": "ch6-ex1a",
+          "label": "1.",
+          "type": "fill-blank",
+          "prompt_md": "Mit ihm hört man Musik. → ___",
+          "answer": [
+            "das Ohr"
+          ]
+        },
+        {
+          "id": "ch6-ex1b",
+          "label": "2.",
+          "type": "fill-blank",
+          "prompt_md": "Mit ihnen kann man die Welt sehen. → ___",
+          "answer": [
+            "die Augen"
+          ],
+          "hint_zh": "（複數）"
+        },
+        {
+          "id": "ch6-ex1c",
+          "label": "3.",
+          "type": "fill-blank",
+          "prompt_md": "Sie ist zwischen Mund und Augen. → ___",
+          "answer": [
+            "die Nase"
+          ]
+        },
+        {
+          "id": "ch6-ex1d",
+          "label": "4.",
+          "type": "fill-blank",
+          "prompt_md": "Mit ihm spricht man. → ___",
+          "answer": [
+            "der Mund"
+          ]
+        },
+        {
+          "id": "ch6-ex1e",
+          "label": "5.",
+          "type": "fill-blank",
+          "prompt_md": "Es liegt zwischen Bein und Fuß. → ___",
+          "answer": [
+            "das Knie"
+          ]
+        },
+        {
+          "id": "ch6-ex1f",
+          "label": "6.",
+          "type": "fill-blank",
+          "prompt_md": "Hier wohnt das Essen, nachdem man es isst. → ___",
+          "answer": [
+            "der Bauch"
+          ]
+        }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 2：依描述猜健康相關名詞",
       "instruction_zh": "依描述填入名詞（含冠詞）。",
       "instruction_de": "Was ist das? (Nomen + Artikel)",
       "questions": [
-        { "id": "ch6-ex2a", "label": "a)", "type": "fill-blank", "prompt_md": "Dort kann man Medikamente kaufen. → ___", "answer": ["die Apotheke"], "hint_zh": "賣藥的地方" },
-        { "id": "ch6-ex2b", "label": "b)", "type": "fill-blank", "prompt_md": "Fieber + Husten + Schnupfen → ___", "answer": ["die Erkältung"], "hint_zh": "三個症狀加起來" },
-        { "id": "ch6-ex2c", "label": "c)", "type": "fill-blank", "prompt_md": "Ein Papier vom Arzt für Medikamente. → ___", "answer": ["das Rezept"], "hint_zh": "醫生開的紙" },
-        { "id": "ch6-ex2d", "label": "d)", "type": "fill-blank", "prompt_md": "Dort arbeitet ein Arzt (nicht Krankenhaus). → ___", "answer": ["die Praxis"], "hint_zh": "醫生工作的地方（非醫院）" },
-        { "id": "ch6-ex2e", "label": "e)", "type": "fill-blank", "prompt_md": "Mein Kopf tut weh... Das hilft. → ___", "answer": ["die Schmerztablette"], "hint_zh": "頭痛時吃的" },
-        { "id": "ch6-ex2f", "label": "f)", "type": "fill-blank", "prompt_md": "Normalerweise hat man 32. → ___", "answer": ["der Zahn", "die Zähne"], "hint_zh": "嘴裡有 32 顆" },
-        { "id": "ch6-ex2g", "label": "g)", "type": "fill-blank", "prompt_md": "Ein Verb für „Schmerzen\" → ___", "answer": ["wehtun", "weh tun", "weh|tun"], "hint_zh": "形容『痛』的動詞" }
+        {
+          "id": "ch6-ex2a",
+          "label": "a)",
+          "type": "fill-blank",
+          "prompt_md": "Dort kann man Medikamente kaufen. → ___",
+          "answer": [
+            "die Apotheke"
+          ]
+        },
+        {
+          "id": "ch6-ex2b",
+          "label": "b)",
+          "type": "fill-blank",
+          "prompt_md": "Fieber + Husten + Schnupfen → ___",
+          "answer": [
+            "die Erkältung"
+          ]
+        },
+        {
+          "id": "ch6-ex2c",
+          "label": "c)",
+          "type": "fill-blank",
+          "prompt_md": "Ein Papier vom Arzt für Medikamente. → ___",
+          "answer": [
+            "das Rezept"
+          ]
+        },
+        {
+          "id": "ch6-ex2d",
+          "label": "d)",
+          "type": "fill-blank",
+          "prompt_md": "Dort arbeitet ein Arzt (nicht Krankenhaus). → ___",
+          "answer": [
+            "die Praxis"
+          ]
+        },
+        {
+          "id": "ch6-ex2e",
+          "label": "e)",
+          "type": "fill-blank",
+          "prompt_md": "Mein Kopf tut weh... Das hilft. → ___",
+          "answer": [
+            "die Schmerztablette"
+          ]
+        },
+        {
+          "id": "ch6-ex2f",
+          "label": "f)",
+          "type": "fill-blank",
+          "prompt_md": "Normalerweise hat man 32. → ___",
+          "answer": [
+            "der Zahn",
+            "die Zähne"
+          ]
+        },
+        {
+          "id": "ch6-ex2g",
+          "label": "g)",
+          "type": "fill-blank",
+          "prompt_md": "Ein Verb für „Schmerzen\" → ___",
+          "answer": [
+            "wehtun",
+            "weh tun",
+            "weh|tun"
+          ]
+        }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 3：sollen + 動詞填空",
       "instruction_zh": "把 sollen 變位，並從框內選一個動詞填入：essen / bleiben / trinken / aufräumen / fernsehen / nehmen / machen。",
       "instruction_de": "Konjugieren Sie sollen und setzen Sie die Verben ein.",
       "questions": [
-        { "id": "ch6-ex3a", "label": "a)", "type": "multi-blank", "prompt_md": "Der Lehrer hat gesagt, du ___ deine Hausaufgaben ___.", "answer": [["sollst"], ["machen"]], "hint_zh": "你 = sollst" },
-        { "id": "ch6-ex3b", "label": "b)", "type": "multi-blank", "prompt_md": "Wie lange ___ ich die Tabletten ___?", "answer": [["soll"], ["nehmen"]], "hint_zh": "ich = soll" },
-        { "id": "ch6-ex3c", "label": "c)", "type": "multi-blank", "prompt_md": "Papa hat gesagt, wir ___ das Wohnzimmer ___.", "answer": [["sollen"], ["aufräumen"]], "hint_zh": "wir = sollen" },
-        { "id": "ch6-ex3d", "label": "d)", "type": "multi-blank", "prompt_md": "Pia, Peter! Ihr ___ jetzt schlafen und nicht ___.", "answer": [["sollt"], ["fernsehen"]], "hint_zh": "ihr = sollt" },
-        { "id": "ch6-ex3e", "label": "e)", "type": "multi-blank", "prompt_md": "Lisa ___ eigentlich zu Hause ___. Aber sie ist mit Freunden im Kino.", "answer": [["soll"], ["bleiben"]], "hint_zh": "Lisa = soll" },
-        { "id": "ch6-ex3f", "label": "f)", "type": "multi-blank", "prompt_md": "Du ___ nicht so viele Süßigkeiten ___! Das ist ungesund.", "answer": [["sollst"], ["essen"]], "hint_zh": "du = sollst" },
-        { "id": "ch6-ex3g", "label": "g)", "type": "multi-blank", "prompt_md": "Warum ___ man eigentlich zwei Liter Wasser pro Tag ___?", "answer": [["soll"], ["trinken"]], "hint_zh": "man = soll（第三人稱單數）" }
+        {
+          "id": "ch6-ex3a",
+          "label": "a)",
+          "type": "multi-blank",
+          "prompt_md": "Der Lehrer hat gesagt, du ___ deine Hausaufgaben ___.",
+          "answer": [
+            [
+              "sollst"
+            ],
+            [
+              "machen"
+            ]
+          ],
+          "hint_zh": "對應 du 的變位"
+        },
+        {
+          "id": "ch6-ex3b",
+          "label": "b)",
+          "type": "multi-blank",
+          "prompt_md": "Wie lange ___ ich die Tabletten ___?",
+          "answer": [
+            [
+              "soll"
+            ],
+            [
+              "nehmen"
+            ]
+          ],
+          "hint_zh": "對應 ich 的變位"
+        },
+        {
+          "id": "ch6-ex3c",
+          "label": "c)",
+          "type": "multi-blank",
+          "prompt_md": "Papa hat gesagt, wir ___ das Wohnzimmer ___.",
+          "answer": [
+            [
+              "sollen"
+            ],
+            [
+              "aufräumen"
+            ]
+          ],
+          "hint_zh": "對應 wir 的變位"
+        },
+        {
+          "id": "ch6-ex3d",
+          "label": "d)",
+          "type": "multi-blank",
+          "prompt_md": "Pia, Peter! Ihr ___ jetzt schlafen und nicht ___.",
+          "answer": [
+            [
+              "sollt"
+            ],
+            [
+              "fernsehen"
+            ]
+          ],
+          "hint_zh": "對應 ihr 的變位"
+        },
+        {
+          "id": "ch6-ex3e",
+          "label": "e)",
+          "type": "multi-blank",
+          "prompt_md": "Lisa ___ eigentlich zu Hause ___. Aber sie ist mit Freunden im Kino.",
+          "answer": [
+            [
+              "soll"
+            ],
+            [
+              "bleiben"
+            ]
+          ],
+          "hint_zh": "對應第三人稱單數"
+        },
+        {
+          "id": "ch6-ex3f",
+          "label": "f)",
+          "type": "multi-blank",
+          "prompt_md": "Du ___ nicht so viele Süßigkeiten ___! Das ist ungesund.",
+          "answer": [
+            [
+              "sollst"
+            ],
+            [
+              "essen"
+            ]
+          ],
+          "hint_zh": "對應 du 的變位"
+        },
+        {
+          "id": "ch6-ex3g",
+          "label": "g)",
+          "type": "multi-blank",
+          "prompt_md": "Warum ___ man eigentlich zwei Liter Wasser pro Tag ___?",
+          "answer": [
+            [
+              "soll"
+            ],
+            [
+              "trinken"
+            ]
+          ],
+          "hint_zh": "man 用第三人稱單數"
+        }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 4：把句子改成 Sie 命令式並配對",
       "instruction_zh": "把右邊的詞重新排列成 Sie 命令式（注意要加 doch / 詞序）。寫出整句即可。",
       "instruction_de": "Schreiben Sie die Sätze 1–6 im Imperativ.",
       "questions": [
-        { "id": "ch6-ex4-1", "label": "1)", "type": "fill-blank", "prompt_md": "doch | Sie | mit | dem | Bus | fahren →", "answer": ["Fahren Sie doch mit dem Bus."], "hint_zh": "Sie 命令式：動詞 + Sie + …" },
-        { "id": "ch6-ex4-2", "label": "2)", "type": "fill-blank", "prompt_md": "ein bisschen | fernsehen | Sie | doch →", "answer": ["Sehen Sie doch ein bisschen fern."], "hint_zh": "fernsehen 是可分動詞 → fern 放最後" },
-        { "id": "ch6-ex4-3", "label": "3)", "type": "fill-blank", "prompt_md": "Sie | machen | doch | mehr | Sport →", "answer": ["Machen Sie doch mehr Sport."], "hint_zh": "做更多運動" },
-        { "id": "ch6-ex4-4", "label": "4)", "type": "fill-blank", "prompt_md": "20 Minuten | Sie | jeden Tag | wiederholen →", "answer": ["Wiederholen Sie jeden Tag 20 Minuten."], "hint_zh": "每天複習 20 分鐘" },
-        { "id": "ch6-ex4-5", "label": "5)", "type": "fill-blank", "prompt_md": "eine Schmerztablette | Sie | nehmen →", "answer": ["Nehmen Sie eine Schmerztablette."], "hint_zh": "吃顆止痛藥" },
-        { "id": "ch6-ex4-6", "label": "6)", "type": "fill-blank", "prompt_md": "Musik | nicht | Sie | hören | so laut →", "answer": ["Hören Sie nicht so laut Musik."], "hint_zh": "別把音樂放這麼大聲" }
+        {
+          "id": "ch6-ex4-1",
+          "label": "1)",
+          "type": "fill-blank",
+          "prompt_md": "doch | Sie | mit | dem | Bus | fahren →",
+          "answer": [
+            "Fahren Sie doch mit dem Bus."
+          ],
+          "hint_zh": "Sie 命令式：動詞 + Sie + …"
+        },
+        {
+          "id": "ch6-ex4-2",
+          "label": "2)",
+          "type": "fill-blank",
+          "prompt_md": "ein bisschen | fernsehen | Sie | doch →",
+          "answer": [
+            "Sehen Sie doch ein bisschen fern."
+          ],
+          "hint_zh": "fernsehen 是可分動詞 → 前綴放最後"
+        },
+        {
+          "id": "ch6-ex4-3",
+          "label": "3)",
+          "type": "fill-blank",
+          "prompt_md": "Sie | machen | doch | mehr | Sport →",
+          "answer": [
+            "Machen Sie doch mehr Sport."
+          ]
+        },
+        {
+          "id": "ch6-ex4-4",
+          "label": "4)",
+          "type": "fill-blank",
+          "prompt_md": "20 Minuten | Sie | jeden Tag | wiederholen →",
+          "answer": [
+            "Wiederholen Sie jeden Tag 20 Minuten."
+          ]
+        },
+        {
+          "id": "ch6-ex4-5",
+          "label": "5)",
+          "type": "fill-blank",
+          "prompt_md": "eine Schmerztablette | Sie | nehmen →",
+          "answer": [
+            "Nehmen Sie eine Schmerztablette."
+          ]
+        },
+        {
+          "id": "ch6-ex4-6",
+          "label": "6)",
+          "type": "fill-blank",
+          "prompt_md": "Musik | nicht | Sie | hören | so laut →",
+          "answer": [
+            "Hören Sie nicht so laut Musik."
+          ]
+        }
       ]
     },
-
     {
       "type": "exercise",
       "title_zh": "練習 5：自由作答",
       "instruction_zh": "假設你發燒+喉嚨痛，去看醫生。寫 4 句話描述症狀並問醫生你應該怎麼做。可用：Mein/e ___ tut/tun weh、Ich habe ___、Soll ich ___?",
       "questions": [
-        { "id": "ch6-ex5", "type": "free", "prompt_md": "用德文寫 4 句去看醫生的對話。", "answer_zh": "範例：Hallo. Mir geht es nicht gut. Ich habe Fieber und mein Hals tut weh. Was kann ich gegen die Schmerzen tun? Soll ich Tabletten nehmen?", "explanation_zh": "完成後可以按「🤔 問 Claude」請它扮演醫生回應你。" }
+        {
+          "id": "ch6-ex5",
+          "type": "free",
+          "prompt_md": "用德文寫 4 句去看醫生的對話。",
+          "answer_zh": "範例：Hallo. Mir geht es nicht gut. Ich habe Fieber und mein Hals tut weh. Was kann ich gegen die Schmerzen tun? Soll ich Tabletten nehmen?",
+          "explanation_zh": "完成後可以按「🤔 問 Claude」請它扮演醫生回應你。"
+        }
       ]
     }
   ]
