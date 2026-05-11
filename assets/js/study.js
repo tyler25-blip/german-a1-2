@@ -57,16 +57,17 @@ const Study = (() => {
   const renderShell = (root) => {
     root.innerHTML = `
       <div class="study-page" id="study-page">
+        <div class="study-progress-bar"><div id="study-progress-fill" style="width: 0%"></div></div>
         <div class="study-header">
           <button class="end-btn" id="end-btn" aria-label="結束">← 結束</button>
           <span class="progress-text"><span class="accent" id="progress-num">0</span> / ${state.target}</span>
         </div>
         <div class="flashcard-area" id="card-area"></div>
         <div class="rating-bar hidden" id="rating-bar">
-          <button class="again" data-rating="again"><span class="label">Again</span><span class="interval" id="iv-again">—</span></button>
-          <button class="hard"  data-rating="hard"> <span class="label">Hard</span> <span class="interval" id="iv-hard">—</span></button>
-          <button class="good"  data-rating="good"> <span class="label">Good</span> <span class="interval" id="iv-good">—</span></button>
-          <button class="easy"  data-rating="easy"> <span class="label">Easy</span> <span class="interval" id="iv-easy">—</span></button>
+          <button class="rate-btn" data-rating="again">Again <span class="interval" id="iv-again">—</span></button>
+          <button class="rate-btn" data-rating="hard">Hard <span class="interval" id="iv-hard">—</span></button>
+          <button class="rate-btn" data-rating="good">Good <span class="interval" id="iv-good">—</span></button>
+          <button class="rate-btn" data-rating="easy">Easy <span class="interval" id="iv-easy">—</span></button>
         </div>
       </div>
     `;
@@ -112,78 +113,63 @@ const Study = (() => {
     }
     state.current = state.queue.shift();
     state.flipped = false;
-    renderFront();
+    
     document.getElementById('progress-num').textContent = state.seen + 1;
+    const pct = ((state.seen + 1) / state.target) * 100;
+    const fill = document.getElementById('study-progress-fill');
+    if (fill) fill.style.width = pct + '%';
+    
     document.getElementById('rating-bar').classList.add('hidden');
+    renderCard();
   };
 
-  const renderFront = () => {
+  const renderCard = () => {
     const c = state.current;
     const area = document.getElementById('card-area');
-    const showSide = c.dir === 'de2zh' ? 'de' : 'zh';
-    const dirIcon = c.dir === 'de2zh' ? '🇩🇪 → 🇹🇼' : '🇹🇼 → 🇩🇪';
+    const dirIcon = c.dir === 'de2zh' ? 'DEUTSCH' : '中文';
+    const backIcon = c.dir === 'de2zh' ? '中文' : 'DEUTSCH';
 
-    let frontHtml = '';
-    if (showSide === 'de') {
-      frontHtml = `
-        <div class="front de">${escapeHtml(c.de)}</div>
-        ${c.plural ? `<div class="front-meta">(${escapeHtml(c.plural)})</div>` : ''}
-      `;
-    } else {
-      frontHtml = `<div class="front">${escapeHtml(c.zh)}</div>`;
-    }
+    const frontContent = c.dir === 'de2zh' 
+      ? `<div class="card-word">${escapeHtml(c.de)}</div>${c.plural ? `<div class="card-plural">(${escapeHtml(c.plural)})</div>` : ''}`
+      : `<div class="card-word">${escapeHtml(c.zh)}</div>`;
+      
+    const backContent = c.dir === 'de2zh'
+      ? `<div class="card-word">${escapeHtml(c.zh)}</div>`
+      : `<div class="card-word">${escapeHtml(c.de)}</div>${c.plural ? `<div class="card-plural">(${escapeHtml(c.plural)})</div>` : ''}`;
+
+    const askQ = c.dir === 'de2zh'
+      ? `「${c.de}」(${c.zh}) 的詳細用法是什麼？舉幾個 A1 程度的例句並解釋。`
+      : `中文「${c.zh}」對應的德文「${c.de}」用法是什麼？舉幾個 A1 例句並解釋。`;
 
     area.innerHTML = `
-      <div class="flashcard">
-        <span class="direction-tag">${dirIcon}</span>
-        <span class="source-tag">L ${c.chapter}${c.source === 'phrase' ? ' · 短句' : ''}</span>
-        ${frontHtml}
-        <div class="flip-hint">點擊或按空白鍵翻面</div>
+      <div class="card-scene">
+        <div id="flashcard" class="flashcard">
+          <div class="card-face front">
+            <span class="card-label">${dirIcon} · L ${c.chapter}</span>
+            ${frontContent}
+            <div class="flip-hint">點擊翻面</div>
+          </div>
+          <div class="card-face back">
+            <span class="card-label">${backIcon} · L ${c.chapter}</span>
+            ${backContent}
+            <button class="ask-claude card-ask" data-q="${escapeAttr(askQ)}">問 Claude</button>
+          </div>
+        </div>
       </div>
     `;
+
+    area.querySelector('.card-ask').addEventListener('click', (e) => {
+      e.stopPropagation();
+      Chat.askWith(area.querySelector('.card-ask').dataset.q);
+    });
   };
 
   const flip = () => {
     state.flipped = true;
+    const card = document.getElementById('flashcard');
+    if (card) card.classList.add('is-flipped');
+    
     const c = state.current;
-    const area = document.getElementById('card-area');
-    const dirIcon = c.dir === 'de2zh' ? '🇩🇪 → 🇹🇼' : '🇹🇼 → 🇩🇪';
-
-    let html = '';
-    if (c.dir === 'de2zh') {
-      html = `
-        <div class="front de">${escapeHtml(c.de)}</div>
-        ${c.plural ? `<div class="front-meta">(${escapeHtml(c.plural)})</div>` : ''}
-        <div class="divider"></div>
-        <div class="back">${escapeHtml(c.zh)}</div>
-      `;
-    } else {
-      html = `
-        <div class="front">${escapeHtml(c.zh)}</div>
-        <div class="divider"></div>
-        <div class="back de">${escapeHtml(c.de)}</div>
-        ${c.plural ? `<div class="front-meta">(${escapeHtml(c.plural)})</div>` : ''}
-      `;
-    }
-
-    area.innerHTML = `
-      <div class="flashcard">
-        <span class="direction-tag">${dirIcon}</span>
-        <span class="source-tag">L ${c.chapter}${c.source === 'phrase' ? ' · 短句' : ''}</span>
-        ${html}
-        <button class="ask-btn" id="ask-btn">問 Claude</button>
-      </div>
-    `;
-
-    document.getElementById('ask-btn').addEventListener('click', (e) => {
-      e.stopPropagation();
-      const q = c.dir === 'de2zh'
-        ? `「${c.de}」(${c.zh}) 的詳細用法是什麼？舉幾個 A1 程度的例句並解釋。`
-        : `中文「${c.zh}」對應的德文「${c.de}」用法是什麼？舉幾個 A1 例句並解釋。`;
-      Chat.askWith(q);
-    });
-
-    // 預覽四個按鈕的下次間隔
     const sr = Flashcards.loadState();
     const previews = Flashcards.previewIntervals(sr[c.id]);
     document.getElementById('iv-again').textContent = Flashcards.formatInterval(previews.again);
