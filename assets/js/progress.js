@@ -16,6 +16,22 @@ const Progress = (() => {
   };
   const save = (data) => localStorage.setItem(KEY, JSON.stringify(data));
 
+  const READ_KEY = 'ygt_read_v1';
+  const loadRead = () => {
+    try { return JSON.parse(localStorage.getItem(READ_KEY) || '{}'); }
+    catch { return {}; }
+  };
+  const saveRead = (d) => localStorage.setItem(READ_KEY, JSON.stringify(d));
+  
+  const markRead = (chapterId, sectionId, isRead) => {
+    const d = loadRead();
+    if (!d[chapterId]) d[chapterId] = {};
+    d[chapterId][sectionId] = isRead;
+    saveRead(d);
+  };
+  const getRead = (chapterId) => loadRead()[chapterId] || {};
+
+
   const record = (chapterId, exerciseId, correct) => {
     const data = load();
     if (!data[chapterId]) data[chapterId] = {};
@@ -78,6 +94,7 @@ const Progress = (() => {
       const correct = Object.values(chData).filter(e => e.correct).length;
       let totalEx = 0;
       let totalVocab = 0;
+      let totalReadSecs = 0;
 
       if (ch.available) {
         try {
@@ -87,6 +104,7 @@ const Progress = (() => {
             (j.sections || []).forEach(s => {
               if (s.type === 'exercise') totalEx += (s.questions || []).length;
               if (s.type === 'vocabulary') totalVocab += (s.items || []).length;
+              if (s.type !== 'intro') totalReadSecs++;
             });
           }
         } catch {}
@@ -94,10 +112,15 @@ const Progress = (() => {
 
       const accChapter = answered ? Math.round(correct / answered * 100) : 0;
       const pctDisplay = answered === 0 ? '-' : accChapter + '%';
+      
+      const readData = loadRead()[ch.id] || {};
+      const readCount = Object.values(readData).filter(v => v).length;
+      const readDisplay = totalReadSecs > 0 ? `${readCount} / ${totalReadSecs}` : '-';
 
       return `
         <tr>
           <td class="num-cell">${ch.id < 10 ? '0'+ch.id : ch.id}</td>
+          <td>${readDisplay}</td>
           <td>${pctDisplay}</td>
           <td>${totalVocab > 0 ? totalVocab : '-'}</td>
         </tr>
@@ -110,10 +133,11 @@ const Progress = (() => {
       ${summaryHtml}
       
       <h2>DATA LAYOUT</h2>
-      <table class="progress-table">
+      <table class="progress-table gtable">
         <thead>
           <tr>
             <th>LEKTION</th>
+            <th>READING</th>
             <th>CORRECT</th>
             <th>VOCAB</th>
           </tr>
@@ -131,13 +155,14 @@ const Progress = (() => {
     `;
 
     document.getElementById('clear-all-progress').addEventListener('click', () => {
-      if (confirm('確定要清除所有作答記錄嗎？此動作無法還原。')) {
+      if (confirm('確定要清除所有作答記錄與閱讀進度嗎？此動作無法還原。')) {
         clearAll();
+        saveRead({});
         renderPage(root);
         toast('已清除');
       }
     });
   };
 
-  return { record, getChapter, summary, chapterStats, clearAll, renderPage };
+  return { record, getChapter, summary, chapterStats, clearAll, renderPage, markRead, getRead };
 })();

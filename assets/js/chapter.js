@@ -77,7 +77,23 @@ const Chapter = (() => {
       }
     });
 
-    const sectionsHtml = (d.sections || []).map(sec => renderSection(sec)).join('');
+    const sectionsHtml = (d.sections || []).map((sec, idx) => {
+      const innerHtml = renderSection(sec);
+      if (sec.type === 'intro') return innerHtml;
+      
+      const secId = `sec-${idx}`;
+      const isRead = Progress.getRead(state.id)[secId];
+      
+      const readHtml = `
+        <div class="mark-read-block" style="margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--border); display: flex; justify-content: flex-end;">
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.9rem; color: var(--text-muted);">
+            <input type="checkbox" class="mark-read-cb" data-sec="${secId}" ${isRead ? 'checked' : ''} style="width:18px;height:18px;margin:0;" />
+            <span>我已閱讀完此區塊</span>
+          </label>
+        </div>
+      `;
+      return innerHtml.replace(/<\/div>\s*$/, `\n${readHtml}</div>`);
+    }).join('');
 
     const stats = Progress.chapterStats(state.id, totalQs);
     const pct = totalQs ? Math.round(stats.answered / totalQs * 100) : 0;
@@ -93,6 +109,13 @@ const Chapter = (() => {
 
     Exercises.bindAll(root, allQuestions);
     bindAskClaudeButtons(root);
+    
+    root.querySelectorAll('.mark-read-cb').forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        Progress.markRead(state.id, e.target.dataset.sec, e.target.checked);
+        if(e.target.checked) toast('已標示為閱讀完畢');
+      });
+    });
   };
 
   const navHtml = () => {

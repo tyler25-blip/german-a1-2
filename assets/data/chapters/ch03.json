@@ -401,7 +401,7 @@
       "title_zh": "預約 / 改期 / 取消",
       "lines": [
         {
-          "speaker": "🆕",
+          "speaker": "",
           "de": "Haben Sie morgen noch einen Termin frei?",
           "zh": "明天還有空檔嗎？（vereinbaren — 約）"
         },
@@ -411,7 +411,7 @@
           "zh": "下午 4 點還有。"
         },
         {
-          "speaker": "♻️",
+          "speaker": "",
           "de": "Ich habe morgen einen Termin um 16 Uhr. Kann ich den Termin verschieben?",
           "zh": "我明天 4 點有約，可以延嗎？（verschieben — 延）"
         },
