@@ -700,3 +700,39 @@ button.ask-claude:hover {
   color: #fff;
   border-color: var(--accent-1);
 }
+
+/* Fill Table & Inputs */
+.fill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.fill-table th, .fill-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+.fill-table .q-input {
+  max-width: 100px;
+  min-width: 60px;
+  width: 100%;
+}
+.q-input {
+  font: inherit;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text-main);
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.q-input:focus {
+  outline: none;
+  border-color: var(--accent-1);
+}
