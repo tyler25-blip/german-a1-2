@@ -908,3 +908,27 @@ button.ask-claude:hover {
 
 .rate-btn[data-rating="again"]:hover { border-color: #E8704A; color: #E8704A; }
 .rate-btn[data-rating="easy"]:hover { border-color: #4CAF50; color: #4CAF50; }
+
+/* Toast Notifications */
+.toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--text-main);
+  color: var(--bg);
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  pointer-events: none;
+  white-space: nowrap;
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}

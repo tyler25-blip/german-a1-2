@@ -152,7 +152,7 @@ const Study = (() => {
           <div class="card-face back">
             <span class="card-label">${backIcon} · L ${c.chapter}</span>
             ${backContent}
-            <button class="ask-claude card-ask" data-q="${escapeAttr(askQ)}">問 Claude</button>
+            <button class="ask-claude card-ask" data-q="${escapeHtml(askQ).replace(/\"/g, '&quot;')}">問 Claude</button>
           </div>
         </div>
       </div>

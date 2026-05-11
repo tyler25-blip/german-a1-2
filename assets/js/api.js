@@ -15,18 +15,25 @@ const Api = (() => {
     'anthropic-dangerous-direct-browser-access': 'true',
   });
 
-  // 簡單的 key 驗證：呼叫 1-token 的請求
   const testKey = async (key) => {
     const res = await fetch(ENDPOINT, {
       method: 'POST',
       headers: headers(key),
       body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001',
+        model: typeof Settings !== 'undefined' ? Settings.model() : 'claude-3-haiku-20240307',
         max_tokens: 4,
         messages: [{ role: 'user', content: 'hi' }],
       }),
     });
-    return res.ok;
+    if (!res.ok) {
+      const txt = await res.text();
+      let errMsg = txt;
+      try {
+        errMsg = JSON.parse(txt).error.message;
+      } catch (e) {}
+      throw new Error(errMsg || `HTTP ${res.status}`);
+    }
+    return true;
   };
 
   // 串流發送（Phase 2 用）
