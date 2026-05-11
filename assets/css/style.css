@@ -46,7 +46,7 @@ html { font-size: var(--fs); }
 
 body {
   margin: 0;
-  font-family: "Taipei Sans TC Beta", sans-serif;
+  font-family: "Taipei Sans TC Beta", -apple-system, BlinkMacSystemFont, "SF Pro TC", "PingFang TC", "Noto Sans TC", "Helvetica Neue", sans-serif;
   background: var(--bg);
   color: var(--text-main);
   line-height: 1.6;
