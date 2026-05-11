@@ -645,21 +645,36 @@ table.gtable th { background: var(--bg); font-weight: 700; }
 }
 
 /* Exercise Button Fix */
+.q-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
 .exercise-question button {
   font: inherit;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 14px 24px;
-  background: var(--text-main);
-  color: var(--surface);
-  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  background: var(--surface);
+  color: var(--text-main);
+  border: 1px solid var(--border);
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 20px;
-  width: 100%;
-  transition: background 0.2s;
-  letter-spacing: 0.05em;
+  flex: 1;
+  min-width: 100px;
+  transition: all 0.2s;
+  letter-spacing: 0.02em;
+}
+.exercise-question button.primary {
+  background: var(--text-main);
+  color: #fff;
+  border-color: var(--text-main);
 }
 .exercise-question button:hover {
+  background: var(--bg);
+}
+.exercise-question button.primary:hover {
   background: var(--accent-1);
+  border-color: var(--accent-1);
 }
