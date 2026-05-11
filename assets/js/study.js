@@ -78,8 +78,10 @@ const Study = (() => {
       }
     });
 
-    document.getElementById('card-area').addEventListener('click', () => {
-      if (!state.flipped) flip();
+    document.getElementById('card-area').addEventListener('click', (e) => {
+      // 若點到問 Claude 就不翻面
+      if (e.target.closest('.card-ask')) return;
+      flip();
     });
 
     document.getElementById('rating-bar').querySelectorAll('button').forEach(btn => {
@@ -165,19 +167,22 @@ const Study = (() => {
   };
 
   const flip = () => {
-    state.flipped = true;
+    state.flipped = !state.flipped;
     const card = document.getElementById('flashcard');
-    if (card) card.classList.add('is-flipped');
     
-    const c = state.current;
-    const sr = Flashcards.loadState();
-    const previews = Flashcards.previewIntervals(sr[c.id]);
-    document.getElementById('iv-again').textContent = Flashcards.formatInterval(previews.again);
-    document.getElementById('iv-hard').textContent  = Flashcards.formatInterval(previews.hard);
-    document.getElementById('iv-good').textContent  = Flashcards.formatInterval(previews.good);
-    document.getElementById('iv-easy').textContent  = Flashcards.formatInterval(previews.easy);
-
-    document.getElementById('rating-bar').classList.remove('hidden');
+    if (state.flipped) {
+      if (card) card.classList.add('is-flipped');
+      const c = state.current;
+      const sr = Flashcards.loadState();
+      const previews = Flashcards.previewIntervals(sr[c.id]);
+      document.getElementById('iv-again').textContent = Flashcards.formatInterval(previews.again);
+      document.getElementById('iv-hard').textContent  = Flashcards.formatInterval(previews.hard);
+      document.getElementById('iv-good').textContent  = Flashcards.formatInterval(previews.good);
+      document.getElementById('iv-easy').textContent  = Flashcards.formatInterval(previews.easy);
+      document.getElementById('rating-bar').classList.remove('hidden');
+    } else {
+      if (card) card.classList.remove('is-flipped');
+    }
   };
 
   const rate = (rating) => {

@@ -803,6 +803,8 @@ button.ask-claude:hover {
 
 .card-face {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -857,10 +859,29 @@ button.ask-claude:hover {
   opacity: 0.7;
 }
 
+
 .card-ask {
   position: absolute;
   bottom: 24px;
+  background: var(--surface);
+  color: var(--accent-1);
+  border: 1px solid var(--accent-1);
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  /* Override any inherited ask-claude styles */
+  float: none !important;
+  margin: 0 !important;
 }
+.card-ask:hover {
+  background: var(--accent-1);
+  color: #fff;
+}
+
 
 .rating-bar {
   display: flex;
@@ -931,4 +952,9 @@ button.ask-claude:hover {
 .toast.show {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
+}
+
+.card-face.front {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
