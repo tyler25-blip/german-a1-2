@@ -14,7 +14,7 @@ const Grammar = (() => {
     } catch (e) {
       root.innerHTML = `
         <div class="section-block">
-          <h2>❌ 載入失敗</h2>
+          <h2>載入失敗</h2>
           <p>${escapeHtml(e.message)}</p>
           <p class="muted small">如果你是直接用瀏覽器打開 <code>file://</code>，請改用本地 server。</p>
         </div>

@@ -8,13 +8,16 @@
   <link rel="apple-touch-icon" href="./assets/icon.svg" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="德文 A1.2" />
-  <meta name="theme-color" content="#b45309" />
+  <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <h1 class="site-title"><a href="./index.html">🇩🇪 德文 A1.2 自學</a></h1>
+      <h1 class="site-title"><a href="./index.html" style="display:flex;align-items:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:middle;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> GERMAN A1.2</a></h1>
       <nav class="site-nav">
         <a href="./flashcards.html">單字卡</a>
         <a href="./grammar.html">文法手冊</a>
@@ -25,7 +28,7 @@
   </header>
 
   <main>
-    <h1>章節列表</h1>
+    <h1>章節列表<div class="deco-dots"><span></span><span></span><span></span></div></h1>
     <p class="lead">點選章節開始學習。每章包含文法、單字、對話與練習題。</p>
 
     <div id="chapter-grid" class="chapter-grid">
@@ -35,33 +38,33 @@
     <h2 style="margin-top: 40px;">其他工具</h2>
     <div class="chapter-grid">
       <a href="./flashcards.html" class="chapter-card">
-        <span class="num">📇</span>
+        <span class="num">Flashcards</span>
         <h3>單字卡</h3>
         <p class="topic">記憶曲線排程，每輪 20 題（手機友好）</p>
       </a>
       <a href="./grammar.html" class="chapter-card">
-        <span class="num">📚</span>
+        <span class="num">Grammar</span>
         <h3>文法手冊</h3>
         <p class="topic">A1.2 全套文法重點整理（11 個主題）</p>
       </a>
       <a href="./progress.html" class="chapter-card">
-        <span class="num">📊</span>
+        <span class="num">Progress</span>
         <h3>學習進度</h3>
         <p class="topic">看每章答對率、清除記錄</p>
       </a>
       <a href="./settings.html" class="chapter-card">
-        <span class="num">⚙️</span>
+        <span class="num">Settings</span>
         <h3>設定</h3>
         <p class="topic">填入 Anthropic API key 啟用 Claude 對話</p>
       </a>
     </div>
 
     <p class="muted small" style="margin-top: 30px; text-align: center;">
-      💡 鍵盤快捷鍵：<code>J</code>/<code>K</code> 切換章節 · <code>/</code> 開啟對話 · <code>?</code> 查看更多
+       鍵盤快捷鍵：<code>J</code>/<code>K</code> 切換章節 · <code>/</code> 開啟對話 · <code>?</code> 查看更多
     </p>
   </main>
 
-  <button id="chat-fab" class="chat-fab" aria-label="開啟 Claude 對話">💬</button>
+  <button id="chat-fab" class="chat-fab" aria-label="Open Chat"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
   <div id="chat-panel" class="chat-panel"></div>
   <div id="toast" class="toast"></div>
 
@@ -74,5 +77,27 @@
   <script>
     App.renderChapterGrid(document.getElementById('chapter-grid'));
   </script>
+    <nav class="mobile-bottom-nav">
+    <a href="./index.html" class="nav-item">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+      <span class="label">首頁</span>
+    </a>
+    <a href="./flashcards.html" class="nav-item">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+      <span class="label">單字卡</span>
+    </a>
+    <a href="./grammar.html" class="nav-item">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+      <span class="label">文法</span>
+    </a>
+    <a href="./progress.html" class="nav-item">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+      <span class="label">進度</span>
+    </a>
+    <a href="./settings.html" class="nav-item">
+      <span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+      <span class="label">設定</span>
+    </a>
+  </nav>
 </body>
 </html>

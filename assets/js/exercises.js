@@ -220,8 +220,8 @@ const Exercises = (() => {
     if (correct === true) qEl.classList.add('correct');
     else if (correct === false) qEl.classList.add('wrong');
 
-    const prefix = correct === true ? '✅ 答對了！'
-                  : correct === false ? '❌ 答錯了。'
+    const prefix = correct === true ? '答對了！'
+                  : correct === false ? '答錯了。'
                   : '';
     fb.innerHTML = (prefix ? `<strong>${prefix}</strong> ` : '') + detail;
     fb.hidden = false;

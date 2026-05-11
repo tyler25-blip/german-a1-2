@@ -20,7 +20,7 @@ const Study = (() => {
     if (!session || !session.settings) {
       root.innerHTML = `
         <div class="study-summary">
-          <h1>⚠️ 沒有 session 資料</h1>
+          <h1>沒有 session 資料</h1>
           <p>請從<a href="./flashcards.html">單字卡設定頁</a>開始。</p>
         </div>
       `;
@@ -37,7 +37,7 @@ const Study = (() => {
     if (pool.length === 0) {
       root.innerHTML = `
         <div class="study-summary">
-          <h1>⚠️ 池內無卡</h1>
+          <h1>池內無卡</h1>
           <a href="./flashcards.html" class="primary">回設定</a>
         </div>
       `;
@@ -225,7 +225,7 @@ const Study = (() => {
     root.innerHTML = `
       <div class="study-page">
         <div class="study-header">
-          <a href="./index.html" class="end-btn" aria-label="回首頁">🏠</a>
+          <a href="./index.html" class="end-btn" aria-label="回首頁"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
           <span class="progress-text">完成 🎉</span>
         </div>
         <div class="study-summary">
@@ -243,8 +243,8 @@ const Study = (() => {
           </div>
           <div class="summary-actions">
             <button class="primary" id="again-btn">🔁 再來一輪</button>
-            <a href="./flashcards.html">⚙️ 改設定</a>
-            <a href="./index.html">🏠 回首頁</a>
+            <a href="./flashcards.html">改設定</a>
+            <a href="./index.html">回首頁</a>
           </div>
         </div>
       </div>

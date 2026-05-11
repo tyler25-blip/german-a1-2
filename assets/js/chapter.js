@@ -28,7 +28,7 @@ const Chapter = (() => {
     } catch (e) {
       root.innerHTML = `
         <div class="section-block">
-          <h2>❌ 載入失敗</h2>
+          <h2>載入失敗</h2>
           <p>${escapeHtml(e.message)}</p>
           <p class="muted small">如果你是直接用瀏覽器打開 <code>file://</code>，請改用本地 server：<br>
           <code>cd "/Users/tyler/Documents/Cloud/德文" && python3 -m http.server 8080</code><br>
@@ -52,7 +52,7 @@ const Chapter = (() => {
         <p>暫時可以：</p>
         <ul>
           <li>翻 <code>A1.2_YGT_Kurs-_und_Arbeitsbuch_-_Digital.pdf</code>，章節 ${e.id}</li>
-          <li>用右下角的 💬 直接問 Claude 關於 <strong>${escapeHtml(e.grammar?.join('、') || '')}</strong> 的內容</li>
+          <li>用右下角的 直接問 Claude 關於 <strong>${escapeHtml(e.grammar?.join('、') || '')}</strong> 的內容</li>
           <li><a href="./chapter.html?ch=1">回章節 1</a></li>
         </ul>
       </div>
@@ -200,7 +200,7 @@ const Chapter = (() => {
     `).join('');
     return `
       <div class="section-block">
-        <h2>💬 對話 <span class="muted small">${escapeHtml(sec.title_zh || '')}</span></h2>
+        <h2>對話 <span class="muted small">${escapeHtml(sec.title_zh || '')}</span></h2>
         <div class="dialogue">${lines}</div>
       </div>
     `;
@@ -220,7 +220,7 @@ const Chapter = (() => {
     `).join('');
     return `
       <div class="section-block">
-        <h2>🗝️ 重點短句與單字 <span class="muted small">${escapeHtml(sec.title_zh || 'Important phrases & vocabulary')}</span></h2>
+        <h2>重點短句與單字 <span class="muted small">${escapeHtml(sec.title_zh || 'Important phrases & vocabulary')}</span></h2>
         ${groups}
       </div>
     `;
@@ -231,7 +231,7 @@ const Chapter = (() => {
     return `
       <div class="section-block">
         ${askBtn}
-        <h2>✏️ ${escapeHtml(sec.title_zh)}</h2>
+        <h2>${escapeHtml(sec.title_zh)}</h2>
         ${Exercises.renderBlock(sec, state.id)}
       </div>
     `;

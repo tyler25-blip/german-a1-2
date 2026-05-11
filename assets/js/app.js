@@ -33,7 +33,7 @@ const App = (() => {
     } catch (e) {
       container.innerHTML = `
         <div class="section-block" style="grid-column: 1 / -1;">
-          <p>❌ 載入章節索引失敗：${escapeHtml(e.message)}</p>
+          <p>錯誤：載入章節索引失敗：${escapeHtml(e.message)}</p>
           <p class="muted small">如果你是直接用瀏覽器打開 <code>file://</code>，請改用本地 server：<br>
           <code>cd "/Users/tyler/Documents/Cloud/德文" && python3 -m http.server 8080</code><br>
           再開 <code>http://localhost:8080</code></p>

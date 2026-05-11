@@ -63,9 +63,9 @@ const Chat = (() => {
 
     panel.innerHTML = `
       <div class="chat-header">
-        <span>💬 問 Claude <span class="ctx-pill">${ctxLabel}</span></span>
+        <span>Ask Claude <span class="ctx-pill">${ctxLabel}</span></span>
         <span>
-          <button id="chat-clear" title="清除對話">🗑</button>
+          <button id="chat-clear" title="清除對話"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
           <button id="chat-close" title="關閉">×</button>
         </span>
       </div>
@@ -73,7 +73,7 @@ const Chat = (() => {
       <div class="chat-input-row">
         <textarea id="chat-input" placeholder="輸入問題後按 Enter 送出，Shift+Enter 換行" rows="2"></textarea>
         <div class="chat-actions-row">
-          <span class="left">${Settings.apiKey() ? '✓ 已設定 API key' : '<a href="./settings.html">⚙️ 先設定 API key</a>'}</span>
+          <span class="left">${Settings.apiKey() ? '已設定 API key' : '<a href="./settings.html">請先設定 API key</a>'}</span>
           <button id="chat-send">送出</button>
         </div>
       </div>
@@ -174,7 +174,7 @@ const Chat = (() => {
     if (!text) return;
 
     if (!Settings.apiKey()) {
-      messages.push({ role: 'error', text: '⚠️ 尚未設定 API key — 請到「設定」頁填入' });
+      messages.push({ role: 'error', text: '尚未設定 API key — 請到「設定」頁填入' });
       renderMessages();
       return;
     }
@@ -209,7 +209,7 @@ const Chat = (() => {
         saveHistory();
       },
       onError: (err) => {
-        messages[assistantIdx] = { role: 'error', text: '❌ ' + err.message };
+        messages[assistantIdx] = { role: 'error', text: '錯誤：' + err.message };
         streaming = false;
         document.getElementById('chat-send').disabled = false;
         saveHistory();

@@ -55,9 +55,9 @@ const Settings = (() => {
       $test.textContent = '測試中…';
       try {
         const ok = await Api.testKey(k);
-        toast(ok ? '✅ API key 有效' : '❌ Key 無效或無權限');
+        toast(ok ? 'API key 有效' : 'Key 無效或無權限');
       } catch (e) {
-        toast('❌ 連線失敗：' + e.message);
+        toast('連線失敗：' + e.message);
       } finally {
         $test.disabled = false;
         $test.textContent = '測試 API key';
@@ -128,7 +128,7 @@ const Settings = (() => {
           toast('已合併匯入');
         }
       } catch (err) {
-        toast('❌ 匯入失敗：' + err.message);
+        toast('匯入失敗：' + err.message);
       } finally {
         e.target.value = ''; // 清空 input 讓下次同檔可重選
       }

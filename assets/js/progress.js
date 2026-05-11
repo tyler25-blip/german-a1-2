@@ -96,9 +96,20 @@ const Progress = (() => {
       const pct = total ? Math.round(answered / total * 100) : 0;
       const klass = answered === 0 ? 'untouched' : (answered < total ? 'partial' : '');
       const accChapter = answered ? Math.round(correct / answered * 100) : 0;
+
+      const getEmotion = (p) => {
+        if (p === 0) return 'Ruhend (靜止)';
+        if (p < 30) return 'Anfang (起步)';
+        if (p < 70) return 'Fortschritt (進步中)';
+        if (p < 100) return 'Sicher (穩固)';
+        return 'Meisterhaft (精通)';
+      };
+      const emo = getEmotion(pct);
+      
       const stats = answered === 0
         ? '尚未作答'
-        : `${answered} / ${total} 已答 · 正確率 ${accChapter}%`;
+        : `${answered} / ${total} 已答 · ${emo} · 正確率 ${accChapter}%`;
+
 
       return `
         <a href="./chapter.html?ch=${ch.id}" class="progress-row ${klass}">
