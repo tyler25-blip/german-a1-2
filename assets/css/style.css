@@ -1,6 +1,7 @@
 /* === 德文 A1.2 自學網站 === */
 
 :root {
+    color-scheme: dark;
   --bg-gradient: linear-gradient(160deg, #eef2f3 0%, #fceade 50%, #fde7f9 100%);
   --bg-solid: #f8fafc;
   --glass-bg: rgba(255, 255, 255, 0.92);
@@ -1492,6 +1493,7 @@ button.btn { transition: all 0.2s ease; }
 /* === Dark Mode (Luminous Night) === */
 @media (prefers-color-scheme: dark) {
   :root {
+    color-scheme: dark;
     --bg-gradient: linear-gradient(160deg, #09090b 0%, #171726 50%, #2a1635 100%);
     --bg-solid: #09090b;
     
