@@ -32,8 +32,6 @@ const Grammar = (() => {
 
     const sections = data.topics.map(t => renderTopic(t)).join('');
     root.innerHTML = `
-      <h1>${escapeHtml(data.title_zh)}</h1>
-      <p class="lead">${escapeHtml(data.subtitle_zh)}</p>
       ${toc}
       ${sections}
     `;

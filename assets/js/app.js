@@ -12,31 +12,57 @@ const App = (() => {
     return chapterIndex;
   };
 
-  // 渲染首頁的章節卡片
+  // 渲染首頁章節列表
   const renderChapterGrid = async (container) => {
     try {
       const chapters = await loadIndex();
-      container.innerHTML = chapters.map(ch => {
+      const progressData = (typeof Progress !== 'undefined') ? Progress : null;
+
+      const chapterRows = await Promise.all(chapters.map(async ch => {
         const stub = ch.available ? '' : 'stub';
         const href = ch.available ? `./chapter.html?ch=${ch.id}` : '#';
+        
+        let pct = 0;
+        let answered = 0;
+        if (progressData && ch.available) {
+          const chData = progressData.getChapter(ch.id);
+          answered = Object.keys(chData).length;
+          let totalEx = 0;
+          try {
+            const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json`);
+            if (res.ok) {
+              const j = await res.json();
+              (j.sections || []).forEach(s => {
+                if (s.type === 'exercise') totalEx += (s.questions || []).length;
+              });
+            }
+            if (totalEx > 0) pct = Math.round((answered / totalEx) * 100);
+          } catch(e) {}
+        }
+        
+        const pctDisplay = answered > 0 ? `${pct}%` : '<span style="font-size:0.8rem;color:var(--text-muted);font-weight:400;">–</span>';
+        const barWidth = answered > 0 ? pct : 0;
+
         return `
-          <a href="${href}" class="chapter-card ${stub}">
-            <span class="num">Lektion ${ch.id}</span>
-            <h3>${escapeHtml(ch.title_zh)}<span class="muted small"> · ${escapeHtml(ch.title_de)}</span></h3>
-            <p class="topic">${escapeHtml(ch.topic_zh)}</p>
-            <div class="grammar-tags">
-              ${(ch.grammar || []).map(g => `<span class="tag">${escapeHtml(g)}</span>`).join('')}
+          <a href="${href}" class="chapter-row ${stub}">
+            <span class="ch-num">${ch.id < 10 ? '0'+ch.id : ch.id}</span>
+            <div class="ch-info">
+              <h3>${escapeHtml(ch.title_de)} <span class="muted small">· ${escapeHtml(ch.title_zh)}</span></h3>
+              <p class="topic">${escapeHtml(ch.topic_zh)}</p>
+            </div>
+            <div class="ch-progress">
+              <span class="pct">${pctDisplay}</span>
+              <div class="bar"><div style="width: ${barWidth}%"></div></div>
             </div>
           </a>
         `;
-      }).join('');
+      }));
+      container.innerHTML = chapterRows.join('');
     } catch (e) {
       container.innerHTML = `
-        <div class="section-block" style="grid-column: 1 / -1;">
+        <div style="padding: 20px;">
           <p>錯誤：載入章節索引失敗：${escapeHtml(e.message)}</p>
-          <p class="muted small">如果你是直接用瀏覽器打開 <code>file://</code>，請改用本地 server：<br>
-          <code>cd "/Users/tyler/Documents/Cloud/德文" && python3 -m http.server 8080</code><br>
-          再開 <code>http://localhost:8080</code></p>
+          <p class="muted small">請用本地 server：<code>python3 -m http.server 8080</code></p>
         </div>
       `;
     }

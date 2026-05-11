@@ -404,9 +404,6 @@ const Flashcards = (() => {
     const hardCount = countHardCards();
 
     root.innerHTML = `
-      <h1>單字卡</h1>
-      <p class="lead">採用記憶曲線排程，每輪 20 題。手機友好。</p>
-
       <div class="flashcard-setup">
         <div class="fc-section">
           <h3>選擇章節</h3>
