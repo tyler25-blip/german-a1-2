@@ -437,10 +437,137 @@ button.btn.secondary:hover { background: #e5e5e5; }
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 .chat-input-row textarea {
-  padding: 12px;
+  width: 100%;
+  padding: 14px 16px;
   min-height: 48px;
   margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.chat-input-row textarea:focus {
+  outline: none;
+  border-color: var(--accent-1);
+}
+
+/* Chat actions row */
+.chat-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.chat-actions-row .left {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.chat-actions-row .left a {
+  color: var(--accent-1);
+  font-weight: 600;
+  text-decoration: none;
+}
+.chat-actions-row .left a:hover {
+  text-decoration: underline;
+}
+#chat-send {
+  padding: 10px 28px;
+  background: var(--text-main);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+#chat-send:hover {
+  background: var(--accent-1);
+}
+#chat-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Chat header buttons */
+.chat-header button {
+  background: none;
+  border: 1px solid var(--border);
   border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  transition: all 0.2s;
+  margin-left: 6px;
+}
+.chat-header button:hover {
+  background: var(--bg);
+  color: var(--text-main);
+  border-color: var(--text-muted);
+}
+
+/* Chat empty state & suggestions */
+.chat-empty {
+  text-align: center;
+  padding: 32px 16px;
+}
+.chat-empty p {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.suggestions button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.suggestions button:hover {
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+  background: rgba(232,112,74,0.06);
+}
+
+/* Chat context pill */
+.ctx-pill {
+  background: rgba(232,112,74,0.1);
+  color: var(--accent-1);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+/* Chat error message */
+.chat-msg.error {
+  background: #fef2f2;
+  color: #c53030;
+  align-self: stretch;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 /* Mobile Bottom Nav */
@@ -680,25 +807,31 @@ table.gtable th { background: var(--bg); font-weight: 700; }
   color: #fff;
 }
 
-/* Ask Claude Button */
+/* Ask Claude Button — unified across grammar, chapter, flashcard */
 button.ask-claude {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   float: right;
-  margin-top: 2px;
-  padding: 6px 14px;
+  margin-top: 4px;
+  padding: 8px 20px;
   font: inherit;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  border-radius: 99px;
+  border-radius: 20px;
   background: var(--surface);
-  color: var(--text-muted);
-  border: 1px solid var(--border);
+  color: var(--accent-1);
+  border: 1px solid var(--accent-1);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  line-height: 1.4;
 }
 button.ask-claude:hover {
   background: var(--accent-1);
   color: #fff;
   border-color: var(--accent-1);
+  box-shadow: 0 4px 12px rgba(232,112,74,0.2);
 }
 
 /* Fill Table & Inputs */
@@ -866,20 +999,20 @@ button.ask-claude:hover {
   background: var(--surface);
   color: var(--accent-1);
   border: 1px solid var(--accent-1);
-  padding: 8px 24px;
+  padding: 10px 28px;
   border-radius: 20px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  /* Override any inherited ask-claude styles */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   float: none !important;
   margin: 0 !important;
 }
 .card-ask:hover {
   background: var(--accent-1);
   color: #fff;
+  box-shadow: 0 4px 12px rgba(232,112,74,0.2);
 }
 
 
