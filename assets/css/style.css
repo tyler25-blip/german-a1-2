@@ -619,3 +619,47 @@ table.gtable th { background: var(--bg); font-weight: 700; }
   .fc-chapter-row { flex-wrap: wrap; }
   .fc-chapter-row .ch-count { width: 100%; text-align: right; margin-top: 4px; }
 }
+
+/* Dialogue Styles */
+.dialogue {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+.dialogue .line {
+  display: flex;
+  gap: 16px;
+}
+.dialogue .speaker {
+  font-weight: 700;
+  color: var(--accent-1);
+  min-width: 80px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.dialogue .line > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Exercise Button Fix */
+.exercise-question button {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 24px;
+  background: var(--text-main);
+  color: var(--surface);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background 0.2s;
+  letter-spacing: 0.05em;
+}
+.exercise-question button:hover {
+  background: var(--accent-1);
+}
