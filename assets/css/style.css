@@ -1488,3 +1488,101 @@ button.btn { transition: all 0.2s ease; }
 }
 .chat-header button { color: var(--text-main); }
 .chat-msg.user { background: var(--text-main); }
+
+/* === Dark Mode (Luminous Night) === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-gradient: linear-gradient(160deg, #09090b 0%, #171726 50%, #2a1635 100%);
+    --bg-solid: #09090b;
+    
+    --glass-bg: rgba(24, 24, 27, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    
+    --text-main: #f8fafc;
+    --text-muted: #a1a1aa;
+    --text-light: #71717a;
+    
+    --accent: #f97316;
+    --accent-soft: rgba(249, 115, 22, 0.15);
+    
+    /* Progress bar track */
+    --bad: #818cf8;
+  }
+  
+  .chat-panel {
+    background: #18181b !important;
+    border: 1px solid var(--glass-border);
+  }
+  .chat-header {
+    background: #09090b;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .chat-msg.assistant {
+    background: #27272a;
+    color: var(--text-main);
+  }
+  .chat-msg.user {
+    background: var(--text-main);
+    color: #000;
+  }
+  
+  .site-header {
+    background: rgba(9, 9, 11, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .mobile-bottom-nav {
+    background: rgba(24, 24, 27, 0.85);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Inputs in dark mode */
+  input[type="text"], input[type="password"], select, textarea {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  input:focus, select:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent);
+  }
+  
+  button.btn.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  button.btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .exercise-question {
+    background: rgba(24, 24, 27, 0.5);
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .choice-options label {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .choice-options label.selected {
+    background: var(--text-main);
+    color: #000;
+  }
+  .exercise-question button {
+    background: #27272a;
+    color: var(--text-main);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Examples box */
+  .examples li {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  table.gtable th { background: rgba(255,255,255,0.05); }
+  table.gtable th, table.gtable td { border-color: rgba(255,255,255,0.1); }
+  
+  /* Decodots adjustment for dark mode to pop more */
+  .deco-dots span:nth-child(1) { background: #fb923c; } 
+  .deco-dots span:nth-child(2) { background: #fde047; } 
+  .deco-dots span:nth-child(3) { background: #d8b4fe; } 
+}
