@@ -133,7 +133,7 @@ const Progress = (() => {
       ${summaryHtml}
       
       <h2>DATA LAYOUT</h2>
-      <table class="progress-table gtable">
+      <table class="progress-table">
         <thead>
           <tr>
             <th>LEKTION</th>

@@ -383,7 +383,7 @@ const Flashcards = (() => {
     };
 
     const chapterRows = index.map(ch => {
-      const c = countById[ch.id];
+      const c = countById[ch.id] || { vocab: 0, phrase: 0 };
       const checked = settings.chapters.includes(ch.id) ? 'checked' : '';
       const total = (c.vocab + c.phrase) * dirMult;
       const learned = chapterLearnCount(ch.id);
