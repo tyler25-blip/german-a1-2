@@ -741,7 +741,7 @@
           "type": "free",
           "prompt_md": "用 5 個命令句叫家人做家事。",
           "answer_zh": "範例：Mach bitte dein Zimmer auf! Spül das Geschirr! Wisch den Boden! Häng die Wäsche auf! Vergesst nicht, den Müll wegzuwerfen!",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查。"
+          "explanation_zh": "完成後可以按「問 Claude」幫你檢查。"
         }
       ]
     }

@@ -54,14 +54,14 @@ const Grammar = (() => {
   const renderTopic = (t) => {
     const blocks = (t.blocks || []).map(b => renderBlock(b)).join('');
     const seeChapters = (t.see_chapters || []).length
-      ? `<p class="muted small">📖 相關章節：${t.see_chapters.map(n => `<a href="./chapter.html?ch=${n}">Lektion ${n}</a>`).join('、')}</p>`
+      ? `<p class="muted small">相關章節：${t.see_chapters.map(n => `<a href="./chapter.html?ch=${n}">Lektion ${n}</a>`).join('、')}</p>`
       : '';
-    const askBtn = `<button class="ask-claude" data-q="${escapeAttr('我想要更詳細了解 ' + t.title_de + '（' + t.title_zh + '），可以舉幾個例句並解釋嗎？')}">🤔 問 Claude</button>`;
+    const askBtn = `<button class="ask-claude" data-q="${escapeAttr('我想要更詳細了解 ' + t.title_de + '（' + t.title_zh + '），可以舉幾個例句並解釋嗎？')}">問 Claude</button>`;
 
     return `
       <section class="section-block grammar-topic" id="${escapeHtml(t.id)}">
         ${askBtn}
-        <h2>📐 ${escapeHtml(t.title_de)} <span class="muted small">${escapeHtml(t.title_zh)}</span></h2>
+        <h2>${escapeHtml(t.title_de)} <span class="muted small">${escapeHtml(t.title_zh)}</span></h2>
         <p>${escapeHtml(t.summary_zh)}</p>
         ${seeChapters}
         ${blocks}

@@ -784,7 +784,7 @@
           "type": "free",
           "prompt_md": "用德文寫 4 句去看醫生的對話。",
           "answer_zh": "範例：Hallo. Mir geht es nicht gut. Ich habe Fieber und mein Hals tut weh. Was kann ich gegen die Schmerzen tun? Soll ich Tabletten nehmen?",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」請它扮演醫生回應你。"
+          "explanation_zh": "完成後可以按「問 Claude」請它扮演醫生回應你。"
         }
       ]
     }

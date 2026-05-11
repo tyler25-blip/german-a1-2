@@ -136,7 +136,7 @@ const Study = (() => {
     area.innerHTML = `
       <div class="flashcard">
         <span class="direction-tag">${dirIcon}</span>
-        <span class="source-tag">📖 L ${c.chapter}${c.source === 'phrase' ? ' · 短句' : ''}</span>
+        <span class="source-tag">L ${c.chapter}${c.source === 'phrase' ? ' · 短句' : ''}</span>
         ${frontHtml}
         <div class="flip-hint">點擊或按空白鍵翻面</div>
       </div>
@@ -169,9 +169,9 @@ const Study = (() => {
     area.innerHTML = `
       <div class="flashcard">
         <span class="direction-tag">${dirIcon}</span>
-        <span class="source-tag">📖 L ${c.chapter}${c.source === 'phrase' ? ' · 短句' : ''}</span>
+        <span class="source-tag">L ${c.chapter}${c.source === 'phrase' ? ' · 短句' : ''}</span>
         ${html}
-        <button class="ask-btn" id="ask-btn">🤔 問 Claude</button>
+        <button class="ask-btn" id="ask-btn">問 Claude</button>
       </div>
     `;
 

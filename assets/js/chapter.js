@@ -141,12 +141,12 @@ const Chapter = (() => {
       </ul>
     ` : '';
     const tips = sec.tips_zh ? `<div class="tip">${escapeHtml(sec.tips_zh)}</div>` : '';
-    const askBtn = `<button class="ask-claude" data-q="${escapeAttr('再多舉幾個 ' + (sec.title_de || sec.title_zh) + ' 的德文例句，並用淺顯中文解釋')}">🤔 問 Claude</button>`;
+    const askBtn = `<button class="ask-claude" data-q="${escapeAttr('再多舉幾個 ' + (sec.title_de || sec.title_zh) + ' 的德文例句，並用淺顯中文解釋')}">問 Claude</button>`;
 
     return `
       <div class="section-block">
         ${askBtn}
-        <h2>📐 ${escapeHtml(sec.title_de || sec.title_zh)} <span class="muted small">${sec.title_de && sec.title_zh ? escapeHtml(sec.title_zh) : ''}</span></h2>
+        <h2>${escapeHtml(sec.title_de || sec.title_zh)} <span class="muted small">${sec.title_de && sec.title_zh ? escapeHtml(sec.title_zh) : ''}</span></h2>
         ${sec.explanation_zh ? `<p>${escapeHtml(sec.explanation_zh)}</p>` : ''}
         ${tables}
         ${examples}
@@ -181,7 +181,7 @@ const Chapter = (() => {
     `).join('');
     return `
       <div class="section-block">
-        <h2>📖 單字 <span class="muted small">${escapeHtml(sec.title_zh || '')}</span></h2>
+        <h2>單字 <span class="muted small">${escapeHtml(sec.title_zh || '')}</span></h2>
         ${sec.title_de ? `<p class="muted">${escapeHtml(sec.title_de)}</p>` : ''}
         <div class="vocab-grid">${items}</div>
       </div>
@@ -227,7 +227,7 @@ const Chapter = (() => {
   };
 
   const renderExercise = (sec) => {
-    const askBtn = `<button class="ask-claude" data-q="${escapeAttr('我想做更多關於「' + (sec.title_zh || '') + '」的練習，再給我 3 題')}">🤔 問 Claude</button>`;
+    const askBtn = `<button class="ask-claude" data-q="${escapeAttr('我想做更多關於「' + (sec.title_zh || '') + '」的練習，再給我 3 題')}">問 Claude</button>`;
     return `
       <div class="section-block">
         ${askBtn}

@@ -447,10 +447,10 @@ const Flashcards = (() => {
           <div><span class="num" id="sm-new">—</span><span class="label">未學</span></div>
         </div>
 
-        <button class="fc-start-btn" id="fc-start" disabled>🚀 載入中…</button>
+        <button class="fc-start-btn" id="fc-start" disabled>載入中…</button>
 
         <details class="fc-section" id="fc-stats" style="margin-top: 24px;">
-          <summary><strong>📈 過去 30 天統計</strong></summary>
+          <summary><strong>過去 30 天統計</strong></summary>
           <div id="fc-stats-content" style="margin-top: 12px;"></div>
         </details>
 
@@ -508,7 +508,7 @@ const Flashcards = (() => {
       startBtn.disabled = pool.length === 0;
       startBtn.textContent = pool.length === 0
         ? (s.hardOnly ? '沒有困難卡 🎉' : '池內無卡')
-        : `🚀 開始 ${sessionSize} 題`;
+        : `開始 ${sessionSize} 題`;
     };
 
     // 渲染統計圖

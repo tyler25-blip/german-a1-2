@@ -801,7 +801,7 @@
           "type": "free",
           "prompt_md": "用德文寫 5 句話描述你的喜好。",
           "answer_zh": "範例：Mir geht es gut. Mein Deutschkurs gefällt mir, denn der Lehrer ist sehr nett. Pizza schmeckt mir nicht so gut, aber Sushi schmeckt mir richtig gut. Meine Freundin hilft mir oft mit den Hausaufgaben. Mein neues Fahrrad gehört mir seit letzter Woche.",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」幫你改文法。"
+          "explanation_zh": "完成後可以按「問 Claude」幫你改文法。"
         }
       ]
     }

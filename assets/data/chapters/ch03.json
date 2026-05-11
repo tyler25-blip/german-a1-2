@@ -406,7 +406,7 @@
           "zh": "明天還有空檔嗎？（vereinbaren — 約）"
         },
         {
-          "speaker": "✅",
+          "speaker": "",
           "de": "Ja, um 16 Uhr haben wir noch einen Termin frei.",
           "zh": "下午 4 點還有。"
         },
@@ -416,17 +416,17 @@
           "zh": "我明天 4 點有約，可以延嗎？（verschieben — 延）"
         },
         {
-          "speaker": "✅",
+          "speaker": "",
           "de": "Ja, morgen ist um 18:30 Uhr noch ein Termin frei.",
           "zh": "可以，明天 6:30 還有空。"
         },
         {
-          "speaker": "❌",
+          "speaker": "",
           "de": "Ich möchte den Termin absagen. Ich vereinbare nächste Woche einen neuen Termin.",
           "zh": "我想取消，下週再重新約。（absagen — 取消）"
         },
         {
-          "speaker": "✅",
+          "speaker": "",
           "de": "In Ordnung. Vielen Dank für den Anruf.",
           "zh": "好的，謝謝您來電。"
         }
@@ -800,7 +800,7 @@
           "type": "free",
           "prompt_md": "用德文寫一段訂房（4 句）。",
           "answer_zh": "範例：Guten Tag, haben Sie noch ein Zimmer frei? Ich möchte ein Einzelzimmer mit Frühstück. Ich bleibe für 3 Nächte. Können Sie mir den Preis sagen?",
-          "explanation_zh": "寫完後可以按「🤔 問 Claude」請它回覆你（扮演飯店）。"
+          "explanation_zh": "寫完後可以按「問 Claude」請它回覆你（扮演飯店）。"
         }
       ]
     }

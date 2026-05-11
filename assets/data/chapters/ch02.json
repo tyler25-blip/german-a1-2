@@ -770,7 +770,7 @@
           "type": "free",
           "prompt_md": "請用德文描述你家有哪些房間，4–5 句。",
           "answer_zh": "範例：Meine Wohnung hat 3 Zimmer. Im Erdgeschoss sind die Küche und das Wohnzimmer. Im 1. Stock ist mein Schlafzimmer. Mein Badezimmer ist auch im 1. Stock. Wir haben keinen Garten, aber einen kleinen Balkon.",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」請它檢查文法 / 給更道地寫法。"
+          "explanation_zh": "完成後可以按「問 Claude」請它檢查文法 / 給更道地寫法。"
         }
       ]
     }

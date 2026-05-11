@@ -960,7 +960,7 @@
           "type": "free",
           "prompt_md": "用德文寫 5 句你的願望（用 würden + gern / am liebsten）。",
           "answer_zh": "範例：Ich würde am liebsten in Deutschland leben. Ich würde gern bei einer großen Firma arbeiten und viel Geld verdienen. Lieber als allein würde ich mit meiner Familie reisen. Ich würde gern ein Haus am Meer kaufen. Am liebsten würde ich noch eine Sprache lernen — vielleicht Französisch oder Spanisch.",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查 würden 的位置和形容詞比較。恭喜你完成 A1.2！"
+          "explanation_zh": "完成後可以按「問 Claude」幫你檢查 würden 的位置和形容詞比較。恭喜你完成 A1.2！"
         }
       ]
     }

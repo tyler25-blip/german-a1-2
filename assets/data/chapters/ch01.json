@@ -980,7 +980,7 @@
           "type": "free",
           "prompt_md": "請描述你房間裡 3–4 樣東西的位置。",
           "answer_zh": "範例：Mein Laptop ist auf dem Tisch. Die Lampe steht neben dem Bett. Vor dem Fenster ist ein Stuhl. Meine Bücher sind unter dem Bett.",
-          "explanation_zh": "寫完後可以按右上角「🤔 問 Claude」請它幫你檢查文法。"
+          "explanation_zh": "寫完後可以按右上角「問 Claude」請它幫你檢查文法。"
         }
       ]
     }

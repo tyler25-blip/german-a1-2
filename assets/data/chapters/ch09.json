@@ -854,7 +854,7 @@
           "type": "free",
           "prompt_md": "用 weil 寫 4 個解釋原因的句子。",
           "answer_zh": "範例：Ich kann heute nicht kommen, weil ich krank bin. Ich lerne Deutsch, weil ich nach Berlin fahren möchte. Mein Bruder ist sauer, weil ich sein Auto kaputt gemacht habe. Wir essen heute keine Pizza, weil wir gestern schon Pizza gegessen haben.",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查 weil 子句的動詞位置。"
+          "explanation_zh": "完成後可以按「問 Claude」幫你檢查 weil 子句的動詞位置。"
         }
       ]
     }

@@ -63,7 +63,7 @@ const Exercises = (() => {
         <div class="q-actions">
           <button class="primary q-check">對答案</button>
           <button class="q-reveal">直接看答案</button>
-          <button class="q-ask" title="把這題帶到 Claude 對話框">🤔 問 Claude</button>
+          <button class="q-ask" title="把這題帶到 Claude 對話框">問 Claude</button>
         </div>
         <div class="feedback" hidden></div>
       </div>
@@ -201,7 +201,7 @@ const Exercises = (() => {
       case 'free': {
         // 自由題：直接顯示參考答案，使用者自評
         const ref = qData.answer_zh || qData.answer || '(無參考答案)';
-        showFeedback(qEl, fb, null, `📖 參考答案：${formatAnswers(ref)}<br>${qData.explanation_zh ? '<small class="muted">' + escapeHtml(qData.explanation_zh) + '</small>' : ''}`);
+        showFeedback(qEl, fb, null, `參考答案：${formatAnswers(ref)}<br>${qData.explanation_zh ? '<small class="muted">' + escapeHtml(qData.explanation_zh) + '</small>' : ''}`);
         return;
       }
     }
@@ -231,7 +231,7 @@ const Exercises = (() => {
     const fb = qEl.querySelector('.feedback');
     let detail = '';
     if (qData.type === 'free') {
-      detail = `📖 參考答案：${formatAnswers(qData.answer_zh || qData.answer || '')}`;
+      detail = `參考答案：${formatAnswers(qData.answer_zh || qData.answer || '')}`;
     } else if (qData.type === 'match') {
       detail = (qData.pairs || []).map(p => `${escapeHtml(p.left)} → <code>${escapeHtml(p.right)}</code>`).join('<br>');
     } else if (qData.type === 'multi-blank' || qData.type === 'table-fill') {
@@ -239,7 +239,7 @@ const Exercises = (() => {
     } else {
       detail = formatAnswers(qData.answer);
     }
-    fb.innerHTML = `📖 答案：${detail}`;
+    fb.innerHTML = `答案：${detail}`;
     fb.hidden = false;
   };
 

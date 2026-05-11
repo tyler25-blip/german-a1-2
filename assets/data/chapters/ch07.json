@@ -716,7 +716,7 @@
           "type": "free",
           "prompt_md": "用德文 5 句話介紹你的好朋友。",
           "answer_zh": "範例：Mein bester Freund heißt Tim. Er hat kurze schwarze Haare und einen Bart. Er ist sehr nett und immer freundlich. Letzte Woche haben wir zusammen ein Konzert besucht. Wir haben viel Spaß gehabt.",
-          "explanation_zh": "完成後可以按「🤔 問 Claude」幫你檢查文法，特別是 Partizip II。"
+          "explanation_zh": "完成後可以按「問 Claude」幫你檢查文法，特別是 Partizip II。"
         }
       ]
     }
