@@ -93,7 +93,7 @@ const Settings = (() => {
       const a = document.createElement('a');
       const ts = new Date().toISOString().slice(0, 10);
       a.href = url;
-      a.download = `german-a1-2-backup-${ts}.json`;
+      a.download = `german-a1-2-backup-${ts}.json?v=5`;
       document.body.appendChild(a);
       a.click();
       a.remove();

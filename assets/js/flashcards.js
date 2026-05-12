@@ -27,7 +27,7 @@ const Flashcards = (() => {
     const wantVocab = sources.includes('vocabulary');
     const wantPhrases = sources.includes('phrases');
     for (const id of chapterIds) {
-      const res = await fetch(`./assets/data/chapters/ch${String(id).padStart(2, '0')}.json`);
+      const res = await fetch(`./assets/data/chapters/ch${String(id).padStart(2, '0')}.json?v=5`);
       if (!res.ok) continue;
       const data = await res.json();
       for (const sec of data.sections || []) {
@@ -354,7 +354,7 @@ const Flashcards = (() => {
     // 計算每章的 vocab + phrases 數量
     const counts = await Promise.all(index.map(async (ch) => {
       try {
-        const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json`);
+        const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json?v=5`);
         if (!res.ok) return { id: ch.id, vocab: 0, phrase: 0 };
         const d = await res.json();
         let vocab = 0, phrase = 0;

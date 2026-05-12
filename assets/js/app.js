@@ -6,7 +6,7 @@ const App = (() => {
   // 載入章節索引（首頁 / 章節頁都會用到）
   const loadIndex = async () => {
     if (chapterIndex) return chapterIndex;
-    const res = await fetch('./assets/data/chapters/index.json');
+    const res = await fetch('./assets/data/chapters/index.json?v=5');
     if (!res.ok) throw new Error('無法載入章節索引：' + res.status);
     chapterIndex = (await res.json()).chapters;
     return chapterIndex;
@@ -29,7 +29,7 @@ const App = (() => {
           answered = Object.keys(chData).length;
           let totalEx = 0;
           try {
-            const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json`);
+            const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json?v=5`);
             if (res.ok) {
               const j = await res.json();
               (j.sections || []).forEach(s => {

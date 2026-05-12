@@ -7,7 +7,7 @@ const Grammar = (() => {
   const load = async () => {
     const root = document.getElementById('grammar-content');
     try {
-      const res = await fetch('./assets/data/grammar/reference.json');
+      const res = await fetch('./assets/data/grammar/reference.json?v=5');
       if (!res.ok) throw new Error('HTTP ' + res.status);
       data = await res.json();
       render(root);

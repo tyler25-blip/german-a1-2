@@ -20,7 +20,7 @@ const Chapter = (() => {
         return;
       }
 
-      const res = await fetch(`./assets/data/chapters/ch${String(id).padStart(2, '0')}.json`);
+      const res = await fetch(`./assets/data/chapters/ch${String(id).padStart(2, '0')}.json?v=5`);
       if (!res.ok) throw new Error(`無法載入 ch${id} 內容：HTTP ${res.status}`);
       state.data = await res.json();
 

@@ -98,7 +98,7 @@ const Progress = (() => {
 
       if (ch.available) {
         try {
-          const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json`);
+          const res = await fetch(`./assets/data/chapters/ch${String(ch.id).padStart(2, '0')}.json?v=5`);
           if (res.ok) {
             const j = await res.json();
             (j.sections || []).forEach(s => {
