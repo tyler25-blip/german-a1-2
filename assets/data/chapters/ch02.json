@@ -140,7 +140,7 @@
       "items": [
         {
           "de": "das Haus",
-          "plural": "⸚er",
+          "plural": "¨er",
           "zh": "房子"
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "de": "das Bad / Badezimmer",
-          "plural": "⸚er / -",
+          "plural": "¨er / -",
           "zh": "浴室"
         },
         {
@@ -195,7 +195,7 @@
         },
         {
           "de": "der Garten",
-          "plural": "⸚",
+          "plural": "¨",
           "zh": "花園"
         },
         {
@@ -215,12 +215,12 @@
         },
         {
           "de": "der 1. Stock",
-          "plural": "⸚e",
+          "plural": "¨e",
           "zh": "二樓（德國的『1 樓』= 我們的 2 樓）"
         },
         {
           "de": "der 2. Stock",
-          "plural": "⸚e",
+          "plural": "¨e",
           "zh": "三樓"
         },
         {
@@ -230,7 +230,7 @@
         },
         {
           "de": "der Aufzug",
-          "plural": "⸚e",
+          "plural": "¨e",
           "zh": "電梯"
         },
         {
